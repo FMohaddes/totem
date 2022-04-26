@@ -1,0 +1,1328 @@
+:root {
+  --base-font-size: 1.9px;
+  --fluid-typography-ratio: 0.6;
+  --rem-lg: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --rem-md: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.2vw);
+  --rem-sm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
+  --rem-xsm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
+  --rem-xxsm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
+  --color-Primary: #E4F0FB;
+  --color-Primary-light: #F9FCFF;
+  --color-Primary-dark: #234361;
+  --color-Primary-Faded: radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Primary-dark-gradient: linear-gradient(78deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 77.31%);
+  --color-Primary-dark-gradient-overlay:
+    linear-gradient(78deg, rgba(72, 113, 152, 0.5925) 0%, rgba(25, 56, 92, 0.735) 70.31%);
+  --color-Primary-light-gradient:
+    radial-gradient(84.65% 84.65% at 50% 50%, #FFF 0%, #FFF 51%, rgba(255, 255, 255, 0) 81.78%);
+  --color-Primary-gradient:
+    radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Primary-gradient-o:
+    radial-gradient(66.7% 66.7% at 50% 33.3%, rgba(228, 240, 251, 0.77) 0%, rgba(228, 240, 251, 0.77) 35.94%, rgba(228, 240, 251, 0.519579) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Secondary: #FBD862;
+  --color-Secondary-o: rgb(250, 210, 100, .7);
+  --color-Tertiary: #47C3CD;
+  --color-Grey-light-1: #C6C6C6;
+  --color-Grey: #929292;
+  --color-Grey-dark-1: #393939;
+  --color-white: #FFF;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
+  --line: 1px solid var(--color-Grey-light-2);
+  --bdr: 0.5px solid rgba(186, 185, 185, 0.17);
+  --bdrs-3: 3rem;
+  --bdrs-1: 1rem;
+  --space-0-4: .4rem;
+  --space-0-8: .8rem;
+  --space-1-2: 1.2rem;
+  --space-1-6: 1.6rem;
+  --space-2-4: 2.4rem;
+  --space-3-2: 3.2rem;
+  --space-4: 4.0rem;
+  --space-4-8: 4.8rem;
+  --space-6-4: 6.4rem;
+  --space-8: 8.0rem;
+  --size-1: 1rem;
+  --size-1-4: 1.4rem;
+  --size-1-8: 1.8rem;
+  --size-2: 2rem;
+  --size-3-6: 3.6rem;
+}
+
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+html {
+  direction: rtl;
+  text-decoration: none;
+  font-size: var(--rem-lg);
+}
+@media only screen and (max-width: 76rem) {
+  html {
+    font-size: var(--rem-md);
+  }
+}
+@media only screen and (max-width: 57rem) {
+  html {
+    font-size: var(--rem-sm);
+  }
+}
+@media only screen and (max-width: 37rem) {
+  html {
+    font-size: var(--rem-xsm);
+  }
+}
+@media only screen and (max-width: 32rem) {
+  html {
+    font-size: var(--rem-xxsm);
+  }
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  font-family: IRANYekanWebRegula, serif;
+  background-color: #F9FCFF;
+  color: var(--color-Grey-dark-1);
+  line-height: 155%;
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+::selection {
+  background-color: var(--color-Primary);
+  color: var(--color-Grey-dark-1);
+}
+
+a:hover, a:active, a:visited, a:link {
+  color: var(--color-Grey-light-1);
+}
+
+@font-face {
+  font-family: BTitrBold;
+  src: url(/fonts/BTitr/BTitrBold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANYekanWebBold;
+  src: url(/fonts/IRANYekan/IRANYekanWebBold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANYekanWebLigth;
+  src: url(/fonts/IRANYekan/IRANYekanWebLight.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANYekanWebRegular;
+  src: url(/fonts/IRANYekan/IRANYekanWebRegular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANYekanWebBold;
+  src: url(/fonts/IRANYekan/IRANYekanWebBold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANYekanWebExtraBold;
+  src: url(/fonts/IRANYekan/IRANYekanWebExtraBold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+/* The emerging W3C standard */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-Secondary) transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-Primary-light);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-Secondary);
+  border-radius: 0.5rem;
+  border: var(--color-Secondary-o);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-Secondary-o);
+}
+
+.heading {
+  font-size: var(--size-3-6);
+  text-shadow: 0 0.5rem 1rem rgba(38, 38, 38, 0.25);
+  padding-bottom: var(--space-2-4);
+  color: var(--color-white);
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+}
+
+.sub-heading {
+  font-family: IRANYekanWebLigth, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-light-1);
+}
+
+.blue-heading {
+  background: linear-gradient(-2deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 84.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+header {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1.5fr;
+  overflow: hidden;
+}
+header .slider {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+header .slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .intro {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+header .intro .intro-logo {
+  z-index: 2;
+  width: 48rem;
+  height: 33rem;
+}
+header .intro p {
+  padding-left: var(--space-8);
+  direction: ltr;
+  z-index: 2;
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, serif;
+}
+header .intro .intro-curve {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 3fr 1.5fr;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1/-1;
+}
+.footer-content {
+  padding: var(--space-1-6) var(--space-6-4) 0;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  align-content: end;
+  display: grid;
+  grid-auto-rows: 38.4rem;
+  grid-template-columns: 33.4rem 1fr 45.3rem;
+}
+.footer-content .communicate {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.footer-content .communicate .address, .footer-content .communicate .email, .footer-content .communicate .call {
+  margin-top: var(--space-2-4);
+  display: flex;
+  align-items: center;
+}
+.footer-content .communicate .address img, .footer-content .communicate .email img, .footer-content .communicate .call img {
+  padding-left: var(--space-1-6);
+}
+.footer-content .communicate .address p, .footer-content .communicate .email p, .footer-content .communicate .call p {
+  font-family: IRANYekanWebRegular, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-light-1);
+}
+.footer-content .communicate h5 {
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+  color: var(--color-white);
+  font-size: var(--size-1-8);
+  margin-bottom: var(--space-2-4);
+}
+.footer-content .communicate .social-media {
+  margin: var(--space-2-4) 0;
+  display: flex;
+}
+.footer-content .communicate .social-media div {
+  margin-left: var(--space-1-6);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: var(--color-Primary-light-gradient);
+  width: 3.6rem;
+  height: 3.9rem;
+  border-radius: var(--bdrs-3);
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.footer-content .communicate .social-media div img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.footer-content .aboutus {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  align-items: center;
+  align-content: start;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-bottom: var(--space-8);
+}
+.footer-content .aboutus img {
+  width: 24rem;
+  height: 17rem;
+}
+.footer-content .aboutus p {
+  width: 70%;
+  font-family: IRANYekanWebLigth, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-white);
+  margin-bottom: var(--space-8);
+}
+.footer-content .access {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-auto-flow: column;
+  margin-bottom: var(--space-8);
+}
+.footer-content .access h6 {
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+  color: var(--color-white);
+  font-size: var(--size-1-8);
+  margin-bottom: var(--space-2-4);
+}
+.footer-content .access .column div {
+  margin: var(--space-2-4) 0 var(--space-2-4);
+  display: grid;
+  grid-template-columns: min-content min-content;
+}
+.footer-content .access .column .access-link {
+  justify-self: end;
+  display: flex;
+  height: 1rem;
+  align-items: center;
+  margin-top: var(--space-3-2);
+}
+.footer-content .access .column .access-link a {
+  font-family: IRANYekanWebLigth, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-light-1);
+  border-bottom: 0.1rem solid var(--color-Grey-light-1);
+}
+.footer-content .access .column .access-link .arrow-left {
+  margin: 0 0 0 var(--space-1-2);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer-curve {
+  transform: scale(1, -1);
+  width: 105%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+}
+.footer .copyright {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  display: flex;
+  background-color: var(--color-Primary-dark);
+  height: 4.3rem;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer .copyright-arrow {
+  height: 4.3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0 var(--space-1-6);
+  display: flex;
+}
+.footer .copyright img {
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: rotate(90deg);
+}
+
+nav {
+  position: relative;
+  grid-column: 1/-1;
+  padding: var(--space-4-8) var(--space-6-4) 0;
+  display: flex;
+  height: 15rem;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+nav .menu {
+  position: relative;
+  z-index: 1;
+  grid-column: 2/3;
+  display: flex;
+  width: 60%;
+  justify-content: start;
+}
+nav .item {
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, serif;
+  color: var(--color-Grey-light-1);
+  padding-left: var(--space-6-4);
+}
+nav .login-cart {
+  padding-bottom: var(--space-1-2);
+  display: flex;
+  position: relative;
+  z-index: 1;
+  font-family: IRANYekanWebBold, serif;
+  font-size: var(--size-1-4);
+}
+nav .login-cart .login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-light);
+  width: 14rem;
+  height: 4rem;
+  background-color: var(--color-Secondary);
+  border-radius: 3rem;
+}
+nav .login-cart .login a {
+  color: var(--color-Grey-dark-1);
+}
+nav .login-cart .cart {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: var(--space-2-4);
+  box-shadow: var(--shadow-light);
+  width: 14rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 3px solid #FBD862;
+  border-radius: 3rem;
+}
+nav .login-cart a {
+  color: var(--color-white);
+}
+nav .nav-curve {
+  width: 105%;
+  height: 50rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: var(--space-8) 1fr var(--space-8);
+  min-height: 100vh;
+  fill-opacity: 0.3;
+  grid-row-gap: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.academy-ravancavi {
+  z-index: 2;
+  position: relative;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.academy-ravancavi-text-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-white);
+}
+.academy-ravancavi-content-box {
+  border: var(--bdr);
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  border-radius: var(--bdrs-3);
+  margin-top: var(--space-3-2);
+  max-width: 100rem;
+  min-height: 46rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: grid;
+  grid-template-columns: 10% 55% 35%;
+  justify-content: center;
+  align-content: center;
+}
+.academy-ravancavi-content-box .number {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: var(--size-1-8);
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+  grid-row-gap: var(--size-3-6);
+  color: var(--color-Grey);
+}
+.academy-ravancavi-content-box .number span {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.academy-ravancavi-content-box .number :nth-child(2) {
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
+  color: var(--color-white);
+}
+.academy-ravancavi-content-box .context {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding-left: var(--size-3-6);
+  grid-row-gap: var(--space-2-4);
+}
+.academy-ravancavi-content-box .context h4 {
+  font-size: var(--size-1-8);
+  font-family: IRANYekanWebBold, Arial, serif;
+}
+.academy-ravancavi-content-box .context p {
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+.academy-ravancavi-content-box img {
+  filter: brightness(88%);
+  display: block;
+  width: 115%;
+  height: 32rem;
+  object-fit: cover;
+  border-radius: var(--bdrs-3);
+  position: relative;
+}
+.academy-ravancavi-content-box .more-info {
+  justify-self: start;
+  display: flex;
+  justify-content: center;
+  height: 1rem;
+  align-items: center;
+}
+.academy-ravancavi-content-box .more-info a {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  border-bottom: 0.1rem solid var(--color-Grey-dark-1);
+}
+.academy-ravancavi-content-box .more-info .arrow-left {
+  margin: var(--space-0-4) var(--space-1-2) 0 0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.academey-honary {
+  grid-column: 1/-1;
+  height: 77rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.academey-honary-text-box {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+  width: 30%;
+}
+@media only screen and (max-width: 37rem) {
+  .academey-honary-text-box {
+    width: 60%;
+  }
+}
+.academey-honary-text-box h3 {
+  z-index: 2;
+  padding-top: var(--space-1-2);
+}
+.academey-honary-text-box p {
+  z-index: 2;
+  color: var(--color-Primary-dark);
+}
+.academey-honary-content-box {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-row-gap: var(--space-4);
+  justify-items: center;
+}
+.academey-honary-content-box .course-card {
+  display: grid;
+  grid-template-columns: var(--space-2-4) 1fr 1fr var(--space-2-4);
+  padding-top: var(--space-4-8);
+  border: var(--bdr);
+  position: relative;
+  width: 36rem;
+  height: 28rem;
+  background: var(--color-Primary-light-gradient);
+  border-radius: 2rem 6rem 2rem 2rem;
+  justify-content: start;
+  align-content: start;
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.academey-honary-content-box .course-card-text-box {
+  grid-column: 2/3;
+  background: var(--color-Primary-gradient);
+  width: 18rem;
+  height: 11rem;
+  grid-row: 1/2;
+  opacity: 0.95;
+  box-shadow: var(--shadow-light);
+  border-radius: var(--bdrs-1);
+  color: var(--color-Grey-dark-1);
+  padding: var(--space-1-6);
+  margin-left: var(--space-1-6);
+}
+.academey-honary-content-box .course-card-text-box h2 {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  margin-bottom: var(--space-0-8);
+}
+.academey-honary-content-box .course-card-text-box p {
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  line-height: 155%;
+}
+.academey-honary-content-box .course-card-image {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  width: 16rem;
+  height: 16rem;
+  overflow: hidden;
+  border-radius: var(--bdrs-1);
+}
+.academey-honary-content-box .course-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(88%);
+}
+.academey-honary-content-box .course-card-price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 18rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.academey-honary-content-box .course-card-price p {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-dark-1);
+}
+.academey-honary-content-box .course-card-price div {
+  position: relative;
+  display: flex;
+}
+.academey-honary-content-box .course-card-price div h6 {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+}
+.academey-honary-content-box .course-card-price div span {
+  margin: 0 var(--space-0-4) var(--space-0-4) 0;
+  color: var(--color-Grey-light-1);
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebRegular, Arial, serif;
+}
+.academey-honary-content-box .course-card-price .sale {
+  color: var(--color-Grey-light-1);
+  position: relative;
+  font-size: var(--size-1-8);
+  align-self: end;
+}
+.academey-honary-content-box .course-card-price .sale::before {
+  position: absolute;
+  top: 0.8rem;
+  content: "";
+  display: block;
+  width: 5.5rem;
+  transform: rotate(170.42deg);
+  height: 0.3rem;
+  background-color: var(--color-Secondary);
+  border-radius: 55rem;
+}
+.academey-honary-content-box .course-card-price .sale-price {
+  position: absolute;
+  font-size: var(--size-2);
+  top: -1.4rem;
+  left: 3.5rem;
+  transform: rotate(-3deg);
+}
+.academey-honary-content-box .course-card-price .sale-price + span {
+  margin: 0 var(--space-1-6) var(--space-0-4) 0;
+}
+.academey-honary-content-box .course-card-info {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  width: 31.1rem;
+  height: 5.2rem;
+  margin-top: var(--space-0-8);
+  border-top: 0.1rem solid var(--color-Primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.academey-honary-content-box .course-card-info a {
+  font-size: var(--size-1);
+  font-family: IRANYekanWebBold, Arial, serif;
+  color: var(--color-Grey-dark-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
+  width: 9.7rem;
+  height: 3rem;
+}
+.academey-honary-content-box .course-card-info-icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: var(--space-1-2);
+}
+.academey-honary-content-box .course-card-info-icons div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: var(--space-0-8);
+}
+.academey-honary-content-box .course-card-info-icons div span {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-light-1);
+}
+.academey-honary-content-box .course-card-info-icons div img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.academey-honary-content-box .course-card-info .sale-percent {
+  display: flex;
+  align-items: center;
+}
+.academey-honary-content-box .course-card-info .sale-percent span {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+  margin-right: var(--space-1-2);
+}
+.academey-honary .academy-curve {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.academey-cinemae {
+  overflow: hidden;
+  grid-column: 1/-1;
+  height: 97vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: var(--space-4) 0 var(--space-8);
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.academey-cinemae-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: var(--color-Primary-dark-gradient);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius: var(--bdrs-3);
+}
+.academey-cinemae-wrapper > * {
+  fill-opacity: 1;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.academey-cinemae-wrapper .cinema-curve {
+  width: 100%;
+  position: absolute;
+  top: 23rem;
+  left: 0;
+  height: 55rem;
+}
+.academey-cinemae-text-box {
+  padding: var(--space-8);
+}
+.academey-cinemae-text-box p {
+  width: 30%;
+}
+.academey-cinemae-content-box {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-row-gap: var(--space-4);
+  justify-items: center;
+}
+.academey-cinemae-content-box .cinema-card {
+  display: grid;
+  border: var(--bdr);
+  position: relative;
+  width: 34rem;
+  height: 40rem;
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-3);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-row-gap: var(--space-3-2);
+  padding: var(--space-4);
+  text-align: center;
+  justify-items: center;
+  margin-top: var(--space-6-4);
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.academey-cinemae-content-box .cinema-card h2 {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-8);
+  margin-bottom: var(--space-0-8);
+}
+.academey-cinemae-content-box .cinema-card p {
+  font-size: var(--size-1-4);
+  color: var(--color-Grey);
+  line-height: 155%;
+}
+
+.nashr {
+  grid-column: 1/-1;
+  height: 66rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.nashr-text-box {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+  width: 30%;
+}
+@media only screen and (max-width: 37rem) {
+  .nashr-text-box {
+    width: 40%;
+  }
+}
+.nashr-text-box h3 {
+  z-index: 2;
+  padding-top: var(--space-1-2);
+}
+.nashr-text-box p {
+  z-index: 2;
+  color: var(--color-Primary-dark);
+}
+.nashr-content-box {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  grid-row-gap: var(--space-4);
+  width: 70%;
+  justify-content: space-between;
+}
+.nashr-content-box .ketab-card {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  padding: var(--space-2-4);
+  border: var(--bdr);
+  position: relative;
+  width: 34rem;
+  height: 29rem;
+  background: var(--color-Primary-light-gradient);
+  border-radius: 20px 20px 20px 60px;
+  grid-gap: var(--space-1-6);
+  justify-content: start;
+  align-content: start;
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.nashr-content-box .ketab-card-text-box {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.nashr-content-box .ketab-card-text-box h2 {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  margin-bottom: var(--space-0-8);
+}
+.nashr-content-box .ketab-card-text-box p {
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  line-height: 155%;
+}
+.nashr-content-box .ketab-card-image {
+  grid-column: 2/3;
+  grid-row: 6/1;
+  height: 20rem;
+  align-self: end;
+  overflow: hidden;
+}
+.nashr-content-box .ketab-card-image img {
+  transform: scale(1.3);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(88%);
+}
+.nashr-content-box .ketab-card-price {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  align-content: start;
+  align-items: start;
+}
+.nashr-content-box .ketab-card-price p {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-dark-1);
+}
+.nashr-content-box .ketab-card-price div {
+  position: relative;
+  display: flex;
+  padding: var(--space-0-8) var(--space-3-2) 0;
+}
+.nashr-content-box .ketab-card-price div h6 {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+}
+.nashr-content-box .ketab-card-price div span {
+  margin: 0 var(--space-0-4) var(--space-0-4) 0;
+  color: var(--color-Grey-light-1);
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebRegular, Arial, serif;
+}
+.nashr-content-box .ketab-card-price .sale {
+  color: var(--color-Grey-light-1);
+  position: relative;
+  font-size: var(--size-1-8);
+  align-self: end;
+}
+.nashr-content-box .ketab-card-price .sale::before {
+  position: absolute;
+  top: 0.8rem;
+  content: "";
+  display: block;
+  width: 5.5rem;
+  transform: rotate(170.42deg);
+  height: 0.3rem;
+  background-color: var(--color-Secondary);
+  border-radius: 55rem;
+}
+.nashr-content-box .ketab-card-price .sale-price {
+  position: absolute;
+  font-size: var(--size-2);
+  top: -1.4rem;
+  left: 3.5rem;
+  transform: rotate(-3deg);
+}
+.nashr-content-box .ketab-card-price .sale-price + span {
+  margin: 0 var(--space-1-6) var(--space-0-4) 0;
+}
+.nashr-content-box .ketab-card-info {
+  padding-top: var(--space-0-4);
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: end;
+  display: flex;
+}
+.nashr-content-box .ketab-card-info a {
+  font-size: var(--size-1);
+  font-family: IRANYekanWebBold, Arial, serif;
+  color: var(--color-Grey-dark-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
+  width: 9.7rem;
+  height: 3rem;
+}
+.nashr-content-box .ketab-card-info-icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.nashr-content-box .ketab-card-info-icons div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.nashr-content-box .ketab-card-info-icons div span {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-light-1);
+}
+.nashr-content-box .ketab-card-info-icons div img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.nashr-content-box .ketab-card-info .sale-percent {
+  display: flex;
+  align-items: center;
+}
+.nashr-content-box .ketab-card-info .sale-percent span {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+  margin-right: var(--space-1-2);
+}
+.nashr .nashr-curve {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cafe-ketab {
+  grid-column: 1/-1;
+  height: 98vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.cafe-ketab .cafe-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 40% 22%;
+  background-image: var(--color-Primary-dark-gradient-overlay), url("/img/cafe.jpg");
+  clip-path: url(#svgClip);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 46%;
+}
+.cafe-ketab-text-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-white);
+  width: 50%;
+  text-align: center;
+  margin: var(--space-6-4) auto;
+}
+.cafe-ketab-box {
+  border-radius: var(--bdrs-3);
+  border: var(--bdr);
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  background: var(--color-Primary-gradient-o);
+}
+.cafe-ketab-box h4 {
+  font-size: var(--size-1-8);
+  font-family: IRANYekanWebBold, Arial, serif;
+  margin-bottom: var(--space-1-2);
+}
+.cafe-ketab-box p {
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+.cafe-ketab-content-box {
+  position: relative;
+  height: 22rem;
+  padding: 0 var(--space-4);
+  display: grid;
+  grid-template-columns: 11rem 40rem 8.3rem 5.6rem 5.1rem 50rem 6rem;
+  grid-template-rows: 7.6rem 13.1rem 6.5rem 5.1rem 16.2rem 4.7rem;
+}
+.cafe-ketab-content-box .freudian-wednesdays {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  width: 59rem;
+  height: 27rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.cafe-ketab-content-box .freudian-wednesdays-context {
+  background-color: var(--color-white);
+  text-align: center;
+  border-radius: var(--bdrs-3);
+  width: 48rem;
+  height: 19.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--space-4);
+}
+.cafe-ketab-content-box .book-journal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  grid-row: 2/3;
+  grid-column: 3/5;
+  width: 68.5rem;
+  height: 24.4rem;
+  padding: var(--space-4);
+}
+.cafe-ketab-content-box .book-journal img {
+  width: 27.1rem;
+  height: 17.5rem;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  margin-left: var(--space-4);
+  border-radius: var(--bdrs-3);
+}
+.cafe-ketab-content-box .book-journal-yellow-square {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 19rem;
+  height: 18.8rem;
+  background-color: var(--color-Secondary);
+  border-radius: var(--bdrs-3);
+}
+.cafe-ketab-content-box .movie-review {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  grid-row: 3/6;
+  grid-column: 2/6;
+  width: 58.4rem;
+  height: 27.7rem;
+  padding: var(--space-4);
+  text-align: center;
+}
+.cafe-ketab-content-box .movie-review img {
+  width: 20.7rem;
+  height: 19.5rem;
+  position: relative;
+  z-index: 2;
+  margin-left: var(--space-4);
+  border-radius: var(--bdrs-3);
+  object-fit: cover;
+}
+.cafe-ketab-content-box .movie-review-yellow-square {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 19rem;
+  height: 18.8rem;
+  background-color: var(--color-Secondary);
+  border-radius: var(--bdrs-3);
+}
+.cafe-ketab-content-box .book-review {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  grid-row: 4/6;
+  grid-column: 5/7;
+  width: 61rem;
+  height: 26rem;
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.mahname {
+  overflow: hidden;
+  grid-column: 1/-1;
+  height: 66rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.mahname-text-box {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+  width: 30%;
+}
+@media only screen and (max-width: 37rem) {
+  .mahname-text-box {
+    width: 40%;
+  }
+}
+.mahname-text-box h3 {
+  z-index: 2;
+  padding-top: var(--space-1-2);
+}
+.mahname-text-box p {
+  z-index: 2;
+  color: var(--color-Primary-dark);
+}
+.mahname-content-box {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  grid-row-gap: var(--space-4);
+  width: 70%;
+  justify-content: space-between;
+}
+.mahname-card {
+  display: grid;
+  padding: var(--space-2-4);
+  border: var(--bdr);
+  position: relative;
+  width: 40rem;
+  height: 23.3rem;
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-3);
+  grid-gap: var(--space-1-6);
+  justify-content: start;
+  align-content: start;
+  box-shadow: 0px 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+}
+.mahname-card-text-box {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+.mahname-card-text-box h4 {
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+  margin-bottom: var(--space-1-2);
+}
+.mahname-card-text-box p {
+  padding: var(--space-1-2) 0;
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+.mahname-card img {
+  width: 16.7rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: var(--bdrs-1);
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.mahname-card-dates {
+  font-size: var(--size-1);
+  font-family: BTitrBold, Arial, serif;
+  display: flex;
+  color: var(--color-Grey);
+}
+.mahname-card-dates img {
+  margin-left: var(--space-1-2);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.mahname-card-info {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  height: 1rem;
+  align-items: center;
+}
+.mahname-card-info a {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  border-bottom: 0.1rem solid var(--color-Grey-dark-1);
+}
+.mahname-card-info .arrow-left {
+  margin: var(--space-0-4) var(--space-1-2) 0 0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.mahname-curve {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

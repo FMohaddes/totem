@@ -1,0 +1,25 @@
+.heading{
+  font-size       : var(--size-3-6);
+  text-shadow     : 0 .5rem 1rem rgba(38, 38, 38, 0.25);
+  padding-bottom  : var(--space-2-4);
+  color : var(--color-white);
+
+  font-family     : IRANYekanWebExtraBold ,Arial, serif;
+  }
+
+.sub-heading{
+  font-family : IRANYekanWebLigth, Arial, serif;
+  font-size       : var(--size-1-4);
+  color : var(--color-Grey-light-1);
+
+  }
+
+.blue-heading{
+  background: linear-gradient(-2deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 84.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  }
+
+

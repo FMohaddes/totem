@@ -1,0 +1,985 @@
+
+main {
+  display               : grid;
+  grid-template-columns : var(--space-8) 1fr var(--space-8);
+  min-height            : 100vh;
+  fill-opacity          : .3;
+  grid-row-gap          : var(--space-8);
+  position              : relative;
+  overflow              : hidden;
+  }
+
+.academy-ravancavi {
+  z-index        : 2;
+  position       : relative;
+  grid-column    : 2/3;
+  @include center;
+  flex-direction : column;
+  margin         : var(--space-4) 0 var(--space-8);
+
+  &-text-box {
+    @include center;
+    flex-direction : column;
+    color          : var(--color-white);
+
+    }
+
+  &-content-box {
+    border                : var(--bdr);
+    @include glassBox;
+    border-radius         : var(--bdrs-3);
+    margin-top            : var(--space-3-2);
+    max-width             : 100rem;
+    min-height            : 46rem;
+    background            : rgba(255, 255, 255, 0.05);
+    display               : grid;
+    grid-template-columns : 10% 55% 35%;
+    justify-content       : center;
+    align-content         : center;
+
+    .number {
+      display         : grid;
+      justify-content : center;
+      align-content   : center;
+      font-size       : var(--size-1-8);
+      font-family     : IRANYekanWebExtraBold, Arial, serif;
+      grid-row-gap    : var(--size-3-6);
+      color           : var(--color-Grey);
+
+      span {
+        @include center;
+        }
+
+      :nth-child(2) {
+        width            : 3.7rem;
+        height           : 3.7rem;
+        border-radius    : var(--bdrs-3);
+        background-color : var(--color-Secondary);
+        color            : var(--color-white);
+        }
+      }
+
+    .context {
+      display         : grid;
+      justify-content : center;
+      align-content   : center;
+      padding-left    : var(--size-3-6);
+      grid-row-gap    : var(--space-2-4);
+
+      h4 {
+        font-size   : var(--size-1-8);
+        font-family : IRANYekanWebBold, Arial, serif;
+
+        }
+
+      p {
+        font-family : IRANYekanWebLigth, Arial, serif;
+        }
+
+      }
+
+    img {
+      filter        : brightness(88%);
+
+      display       : block;
+      width         : 115%;
+      height        : 32rem;
+      object-fit    : cover;
+      border-radius : var(--bdrs-3);
+      position      : relative;
+
+      }
+
+    .more-info {
+      justify-self    : start;
+      display         : flex;
+      justify-content : center;
+      height          : 1rem;
+      align-items : center;
+      a {
+        font-family    : IRANYekanWebBold, Arial, serif;
+        font-size      : var(--size-1);
+        color          : var(--color-Grey-dark-1);
+        border-bottom  : .1rem solid var(--color-Grey-dark-1);
+        }
+
+      .arrow-left {
+        margin : var(--space-0-4)  var(--space-1-2) 0 0;
+        width        : 1.8rem;
+        height       : 1.8rem;
+        }
+      }
+    }
+
+  }
+
+.academey-honary {
+  grid-column    : 1/-1;
+  height         : 77rem;
+  position       : relative;
+  display        : flex;
+  flex-direction : column;
+  margin         : var(--space-4) 0 var(--space-8);
+
+  &-text-box {
+    display        : flex;
+    flex-direction : column;
+    padding        : var(--space-8);
+    width          : 30%;
+
+    @media only screen and (max-width : 37rem) {
+      width : 60%;
+      }
+
+    h3 {
+      z-index     : 2;
+      padding-top : var(--space-1-2);
+      }
+
+    p {
+
+      z-index : 2;
+      color   : var(--color-Primary-dark);
+
+      @media only screen and (max-width : 37rem) {
+        }
+
+      }
+    }
+
+  &-content-box {
+    position              : relative;
+    z-index               : 5;
+    display               : grid;
+    grid-template-columns : repeat(auto-fit, minmax(36rem, 1fr));
+    grid-row-gap          : var(--space-4);
+    justify-items         : center;
+
+    .course-card {
+      display               : grid;
+      grid-template-columns : var(--space-2-4) 1fr 1fr var(--space-2-4);
+      padding-top           : var(--space-4-8);
+      border                : var(--bdr);
+      position              : relative;
+      width                 : 36rem;
+      height                : 28rem;
+      background            : var(--color-Primary-light-gradient);
+      border-radius         : 2rem 6rem 2rem 2rem;
+      justify-content       : start;
+      align-content         : start;
+      @include glassBox;
+
+      &-text-box {
+        grid-column   : 2/3;
+        background    : var(--color-Primary-gradient);
+        width         : 18rem;
+        height        : 11rem;
+        grid-row      : 1/2;
+
+        opacity       : .95;
+        box-shadow    : var(--shadow-light);
+        border-radius : var(--bdrs-1);
+        color         : var(--color-Grey-dark-1);
+        padding       : var(--space-1-6);
+        margin-left   : var(--space-1-6);
+
+        h2 {
+          font-family   : IRANYekanWebBold, Arial, serif;
+          font-size     : var(--size-1-4);
+          margin-bottom : var(--space-0-8);
+          }
+
+        p {
+          font-size   : var(--size-1);
+          color       : var(--color-Grey);
+          line-height : 155%;
+
+          }
+
+        }
+
+      &-image {
+        grid-column   : 3/4;
+        grid-row      : 1/3;
+        width         : 16rem;
+        height        : 16rem;
+        overflow      : hidden;
+        border-radius : var(--bdrs-1);
+
+        img {
+          width      : 100%;
+          height     : 100%;
+          object-fit : cover;
+          filter     : brightness(88%);
+          }
+        }
+
+      &-price {
+
+        grid-column     : 2/3;
+        grid-row        : 2/3;
+        width           : 18rem;
+        height          : 6rem;
+        display         : flex;
+        justify-content : space-between;
+        align-content   : center;
+        align-items     : center;
+
+        p {
+          font-family : IRANYekanWebBold, Arial, serif;
+          font-size   : var(--size-1-4);
+          color       : var(--color-Grey-dark-1);
+
+          }
+
+        div {
+          position : relative;
+
+          display  : flex;
+
+          h6 {
+            color       : var(--color-Tertiary);
+            font-family : BTitrBold, Arial, serif;
+            font-size   : var(--size-2);
+
+            }
+
+          span {
+            margin      : 0 var(--space-0-4) var(--space-0-4) 0;
+            color       : var(--color-Grey-light-1);
+            font-size   : var(--size-1-4);
+            font-family : IRANYekanWebRegular, Arial, serif;
+            }
+          }
+
+        .sale {
+          color      : var(--color-Grey-light-1);
+          position   : relative;
+          font-size  : var(--size-1-8);
+          align-self : end;
+
+          &::before {
+            position         : absolute;
+            top              : .8rem;
+            content          : '';
+            display          : block;
+            width            : 5.5rem;
+            transform        : rotate(170.42deg);
+            height           : .3rem;
+            background-color : var(--color-Secondary);
+            border-radius    : 55rem;
+            }
+
+          }
+
+        .sale-price {
+          position  : absolute;
+          font-size : var(--size-2);
+          top       : -1.4rem;
+          left      : 3.5rem;
+          transform : rotate(-3deg);
+
+          & + span {
+            margin : 0 var(--space-1-6) var(--space-0-4) 0;
+
+            }
+          }
+
+        }
+
+      &-info {
+        grid-column     : 2/4;
+        grid-row        : 4/5;
+        width           : 31.1rem;
+        height          : 5.2rem;
+        margin-top      : var(--space-0-8);
+        border-top      : .1rem solid var(--color-Primary);
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+
+        a {
+          font-size        : var(--size-1);
+          font-family      : IRANYekanWebBold, Arial, serif;
+          color            : var(--color-Grey-dark-1);
+          display          : flex;
+          justify-content  : center;
+          align-items      : center;
+          border-radius    : var(--bdrs-3);
+          background-color : var(--color-Secondary);
+          width            : 9.7rem;
+          height           : 3rem;
+          }
+
+        &-icons {
+          display        : grid;
+          grid-auto-flow : column;
+          grid-gap       : var(--space-1-2);
+
+          div {
+            display        : grid;
+            grid-auto-flow : column;
+            align-items    : center;
+            grid-gap       : var(--space-0-8);
+
+            span {
+              font-family : BTitrBold, Arial, serif;
+              font-size   : var(--size-1);
+              color       : var(--color-Grey-light-1);
+              }
+
+            img {
+              width  : 1.8rem;
+              height : 1.8rem;
+              }
+            }
+
+          }
+
+        .sale-percent {
+          display     : flex;
+          align-items : center;
+
+          span {
+            color        : var(--color-Tertiary);
+            font-family  : BTitrBold, Arial, serif;
+            font-size    : var(--size-2);
+            margin-right : var(--space-1-2);
+            }
+          }
+
+        }
+
+      }
+    }
+
+  .academy-curve {
+    width    : 100%;
+    height   : 100%;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    }
+  }
+
+.academey-cinemae {
+  overflow       : hidden;
+  grid-column    : 1/-1;
+  height         : 97vh;
+  position       : relative;
+  display        : flex;
+  flex-direction : column;
+  margin         : var(--space-4) 0 var(--space-8);
+
+  @include glassBox;
+
+  &-wrapper {
+    overflow          : hidden;
+    width             : 100%;
+    height            : 100%;
+    background        : var(--color-Primary-dark-gradient);
+    -webkit-transform : scaleX(-1);
+    transform         : scaleX(-1);
+    border-radius     : var(--bdrs-3);
+
+    & > * {
+      fill-opacity      : 1;
+      -webkit-transform : scaleX(-1);
+      transform         : scaleX(-1);
+      }
+
+    .cinema-curve {
+      width    : 100%;
+      position : absolute;
+      top      : 23rem;
+      left     : 0;
+      height   : 55rem;
+
+      }
+    }
+
+  &-text-box {
+    padding : var(--space-8);
+
+    p {
+      width : 30%;
+      }
+    }
+
+  &-content-box {
+    position              : relative;
+    z-index               : 5;
+    display               : grid;
+    grid-template-columns : repeat(auto-fit, minmax(36rem, 1fr));
+    grid-row-gap          : var(--space-4);
+    justify-items         : center;
+
+    .cinema-card {
+      display         : grid;
+      border          : var(--bdr);
+      position        : relative;
+      width           : 34rem;
+      height          : 40rem;
+      background      : var(--color-Primary-light-gradient);
+      border-radius   : var(--bdrs-3);
+      justify-content : center;
+      align-content   : center;
+      align-items     : center;
+      grid-row-gap    : var(--space-3-2);
+      padding         : var(--space-4);
+      text-align      : center;
+      justify-items   : center;
+      margin-top      : var(--space-6-4);
+      @include glassBox;
+
+      h2 {
+        font-family   : IRANYekanWebBold, Arial, serif;
+        font-size     : var(--size-1-8);
+        margin-bottom : var(--space-0-8);
+        }
+
+      p {
+        font-size   : var(--size-1-4);
+        color       : var(--color-Grey);
+        line-height : 155%;
+
+        }
+
+      }
+    }
+
+  }
+
+.nashr {
+  grid-column : 1/-1;
+  height      : 66rem;
+  position    : relative;
+  display     : flex;
+  align-items : center;
+  margin      : var(--space-4) 0 var(--space-8);
+
+  &-text-box {
+    display        : flex;
+    flex-direction : column;
+    padding        : var(--space-8);
+    width          : 30%;
+
+    @media only screen and (max-width : 37rem) {
+      width : 40%;
+      }
+
+    h3 {
+      z-index     : 2;
+      padding-top : var(--space-1-2);
+      }
+
+    p {
+
+      z-index : 2;
+      color   : var(--color-Primary-dark);
+
+      @media only screen and (max-width : 37rem) {
+        }
+
+      }
+
+    }
+
+  &-content-box {
+    position              : relative;
+    z-index               : 5;
+    display               : grid;
+    grid-template-columns : repeat(auto-fit, minmax(34rem, 1fr));
+    grid-row-gap          : var(--space-4);
+    width                 : 70%;
+
+    justify-content       : space-between;
+
+    .ketab-card {
+      display               : grid;
+      grid-template-columns : 45% 55%;
+      padding               : var(--space-2-4);
+      border                : var(--bdr);
+      position              : relative;
+      width                 : 34rem;
+      height                : 29rem;
+      background            : var(--color-Primary-light-gradient);
+      border-radius         : 20px 20px 20px 60px;
+      grid-gap              : var(--space-1-6);
+      justify-content       : start;
+      align-content         : start;
+      @include glassBox;
+
+      &-text-box {
+        grid-column : 1/2;
+        grid-row    : 1/2;
+
+        h2 {
+          font-family   : IRANYekanWebBold, Arial, serif;
+          font-size     : var(--size-1-4);
+          margin-bottom : var(--space-0-8);
+          }
+
+        p {
+          font-size   : var(--size-1);
+          color       : var(--color-Grey);
+          line-height : 155%;
+
+          }
+        }
+
+      &-image {
+        grid-column : 2/3;
+        grid-row    : 6/1;
+        height      : 20rem;
+        align-self  : end;
+        overflow    : hidden;
+
+        img {
+          transform  : scale(1.3);
+          width      : 100%;
+          height     : 100%;
+          object-fit : cover;
+          filter     : brightness(88%);
+          }
+        }
+
+      &-price {
+        grid-row      : 2/3;
+
+        grid-column   : 1/2;
+        display       : grid;
+        align-content : start;
+        align-items   : start;
+
+        p {
+          font-family : IRANYekanWebBold, Arial, serif;
+          font-size   : var(--size-1-4);
+          color       : var(--color-Grey-dark-1);
+
+          }
+
+        div {
+          position : relative;
+          display  : flex;
+          padding  : var(--space-0-8) var(--space-3-2) 0;
+
+          h6 {
+            color       : var(--color-Tertiary);
+            font-family : BTitrBold, Arial, serif;
+            font-size   : var(--size-2);
+
+            }
+
+          span {
+            margin      : 0 var(--space-0-4) var(--space-0-4) 0;
+            color       : var(--color-Grey-light-1);
+            font-size   : var(--size-1-4);
+            font-family : IRANYekanWebRegular, Arial, serif;
+            }
+          }
+
+        .sale {
+          color      : var(--color-Grey-light-1);
+          position   : relative;
+          font-size  : var(--size-1-8);
+          align-self : end;
+
+          &::before {
+            position         : absolute;
+            top              : .8rem;
+            content          : '';
+            display          : block;
+            width            : 5.5rem;
+            transform        : rotate(170.42deg);
+            height           : .3rem;
+            background-color : var(--color-Secondary);
+            border-radius    : 55rem;
+            }
+
+          }
+
+        .sale-price {
+          position  : absolute;
+          font-size : var(--size-2);
+          top       : -1.4rem;
+          left      : 3.5rem;
+          transform : rotate(-3deg);
+
+          & + span {
+            margin : 0 var(--space-1-6) var(--space-0-4) 0;
+
+            }
+          }
+
+        }
+
+      &-info {
+        padding-top : var(--space-0-4);
+        grid-row    : 3/4;
+        grid-column : 1/2;
+        align-self  : end;
+        display     : flex;
+
+        a {
+          font-size        : var(--size-1);
+          font-family      : IRANYekanWebBold, Arial, serif;
+          color            : var(--color-Grey-dark-1);
+          display          : flex;
+          justify-content  : center;
+          align-items      : center;
+          border-radius    : var(--bdrs-3);
+          background-color : var(--color-Secondary);
+          width            : 9.7rem;
+          height           : 3rem;
+          }
+
+        &-icons {
+          display        : grid;
+          grid-auto-flow : column;
+          grid-column    : 1/2;
+          grid-row       : 5/6;
+
+          div {
+            display        : grid;
+            grid-auto-flow : column;
+            align-items    : center;
+
+            span {
+              font-family : BTitrBold, Arial, serif;
+              font-size   : var(--size-1);
+              color       : var(--color-Grey-light-1);
+              }
+
+            img {
+              width  : 1.8rem;
+              height : 1.8rem;
+              }
+            }
+
+          }
+
+        .sale-percent {
+          display     : flex;
+          align-items : center;
+
+          span {
+            color        : var(--color-Tertiary);
+            font-family  : BTitrBold, Arial, serif;
+            font-size    : var(--size-2);
+            margin-right : var(--space-1-2);
+            }
+          }
+
+        }
+      }
+    }
+
+  .nashr-curve {
+    width    : 100%;
+    height   : 100%;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    }
+
+  }
+
+.cafe-ketab {
+  grid-column : 1/-1;
+  height      : 98vh;
+  position    : relative;
+  display     : grid;
+  align-items : center;
+  margin      : var(--space-4) 0 var(--space-8);
+
+  .cafe-curve {
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    background-position : 40% 22%;
+    background-image    : var(--color-Primary-dark-gradient-overlay),
+    url('/img/cafe.jpg');
+    clip-path           : url(#svgClip);
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    width               : 100%;
+    height              : 46%;
+    }
+
+  &-text-box {
+    @include center;
+    align-items    : center;
+    flex-direction : column;
+    color          : var(--color-white);
+    width          : 50%;
+    text-align     : center;
+    margin         : var(--space-6-4) auto;
+
+    }
+
+  &-box {
+    border-radius : var(--bdrs-3);
+    border        : var(--bdr);
+    @include glassBox;
+    background    : var(--color-Primary-gradient-o);
+
+    h4 {
+      font-size     : var(--size-1-8);
+      font-family   : IRANYekanWebBold, Arial, serif;
+      margin-bottom : var(--space-1-2);
+      }
+
+    p {
+      font-size   : var(--size-1);
+      color       : var(--color-Grey);
+      font-family : IRANYekanWebLigth, Arial, serif;
+      }
+    }
+
+  &-content-box {
+    position              : relative;
+    height                : 22rem;
+    padding               : 0 var(--space-4);
+    display               : grid;
+    grid-template-columns : 11rem 40rem 8.3rem 5.6rem 5.1rem 50rem 6rem;
+    grid-template-rows    : 7.6rem 13.1rem 6.5rem 5.1rem 16.2rem 4.7rem;
+
+    .freudian-wednesdays {
+      grid-row    : 1/3;
+      grid-column : 1/3;
+      width       : 59rem;
+      height      : 27rem;
+      @include center;
+
+      &-context {
+        background-color : var(--color-white);
+        text-align       : center;
+        border-radius    : var(--bdrs-3);
+        width            : 48rem;
+        height           : 19.5rem;
+        @include center;
+        flex-direction   : column;
+        padding          : var(--space-4);
+
+        }
+
+      }
+
+    .book-journal {
+      @include center;
+      display     : flex;
+      grid-row    : 2/3;
+      grid-column : 3/5;
+      width       : 68.5rem;
+      height      : 24.4rem;
+      padding     : var(--space-4);
+
+      img {
+        width         : 27.1rem;
+        height        : 17.5rem;
+        object-fit    : cover;
+        position      : relative;
+        z-index       : 2;
+        margin-left   : var(--space-4);
+        border-radius : var(--bdrs-3);
+
+        }
+
+      &-yellow-square {
+        position         : absolute;
+        top              : -1px;
+        right            : 0;
+        width            : 19rem;
+        height           : 18.8rem;
+        background-color : var(--color-Secondary);
+        border-radius    : var(--bdrs-3);
+
+        }
+      }
+
+    .movie-review {
+      @include center;
+      display     : flex;
+      grid-row    : 3/6;
+      grid-column : 2/6;
+      width       : 58.4rem;
+      height      : 27.7rem;
+      padding     : var(--space-4);
+      text-align  : center;
+
+      img {
+        width         : 20.7rem;
+        height        : 19.5rem;
+        position      : relative;
+        z-index       : 2;
+        margin-left   : var(--space-4);
+        border-radius : var(--bdrs-3);
+        object-fit    : cover;
+
+        }
+
+      &-yellow-square {
+        position         : absolute;
+        bottom           : -1px;
+        right            : 0;
+        width            : 19rem;
+        height           : 18.8rem;
+        background-color : var(--color-Secondary);
+        border-radius    : var(--bdrs-3);
+
+        }
+      }
+
+    .book-review {
+      @include center;
+      display     : flex;
+      grid-row    : 4/6;
+      grid-column : 5/7;
+      width       : 61rem;
+      height      : 26rem;
+      padding     : var(--space-4);
+      text-align  : center;
+      }
+    }
+  }
+
+.mahname {
+  overflow    : hidden;
+  grid-column : 1/-1;
+  height      : 66rem;
+  position    : relative;
+  display     : flex;
+  align-items : center;
+  margin      : var(--space-4) 0 var(--space-8);
+
+  &-text-box {
+    display        : flex;
+    flex-direction : column;
+    padding        : var(--space-8);
+    width          : 30%;
+
+    @media only screen and (max-width : 37rem) {
+      width : 40%;
+      }
+
+    h3 {
+      z-index     : 2;
+      padding-top : var(--space-1-2);
+      }
+
+    p {
+
+      z-index : 2;
+      color   : var(--color-Primary-dark);
+
+      @media only screen and (max-width : 37rem) {
+        }
+
+      }
+
+    }
+
+  &-content-box {
+    position              : relative;
+    z-index               : 5;
+    display               : grid;
+    grid-template-columns : repeat(auto-fit, minmax(34rem, 1fr));
+    grid-row-gap          : var(--space-4);
+    width                 : 70%;
+    justify-content       : space-between;
+
+    }
+
+  &-card {
+    display         : grid;
+    padding         : var(--space-2-4);
+    border          : var(--bdr);
+    position        : relative;
+    width           : 40rem;
+    height          : 23.3rem;
+    background      : var(--color-Primary-light-gradient);
+    border-radius   : var(--bdrs-3);
+    grid-gap        : var(--space-1-6);
+    justify-content : start;
+    align-content   : start;
+    @include glassBox;
+
+    &-text-box {
+      grid-column     : 2/3;
+      grid-row        : 1/2;
+      display         : grid;
+      justify-content : center;
+      justify-items   : center;
+      text-align      : center;
+      align-items     : center;
+
+      h4 {
+        font-size     : var(--size-1-4);
+        font-family   : IRANYekanWebBold, Arial, serif;
+        margin-bottom : var(--space-1-2);
+        }
+
+      p {
+        padding     : var(--space-1-2) 0;
+        font-size   : var(--size-1);
+        color       : var(--color-Grey);
+        font-family : IRANYekanWebLigth, Arial, serif;
+        }
+      }
+
+    img {
+      width         : 16.7rem;
+      height        : 18rem;
+      object-fit    : cover;
+      border-radius : var(--bdrs-1);
+      grid-column   : 1/2;
+      grid-row      : 1/2;
+
+      }
+
+    &-dates {
+      font-size   : var(--size-1);
+      font-family : BTitrBold, Arial, serif;
+
+      display     : flex;
+      color       : var(--color-Grey);
+
+      img {
+        margin-left : var(--space-1-2);
+        width       : 2.4rem;
+        height      : 2.4rem;
+        }
+      }
+
+    &-info {
+      justify-self: end;
+      display         : flex;
+      justify-content : center;
+      height          : 1rem;
+      align-items : center;
+      a {
+        font-family    : IRANYekanWebBold, Arial, serif;
+        font-size      : var(--size-1);
+        color          : var(--color-Grey-dark-1);
+        border-bottom  : .1rem solid var(--color-Grey-dark-1);
+        }
+
+      .arrow-left {
+        margin : var(--space-0-4)  var(--space-1-2) 0 0;
+        width        : 1.8rem;
+        height       : 1.8rem;
+        }
+      }
+
+    }
+
+  &-curve {
+    width    : 100%;
+    height   : 100%;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    }
+
+  }

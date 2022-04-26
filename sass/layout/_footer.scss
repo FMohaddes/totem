@@ -1,0 +1,188 @@
+.footer {
+  display               : grid;
+  height                : 70vh;
+  grid-template-columns : 3fr 1.5fr;
+  position              : relative;
+  overflow              : hidden;
+  grid-column           : 1/-1;
+
+  &-content {
+    padding               : var(--space-1-6) var(--space-6-4) 0;
+    position              : relative;
+    z-index               : 1;
+    justify-content       : space-between;
+    align-items           : center;
+    align-content         : end;
+    display               : grid;
+    grid-auto-rows        : 38.4rem;
+    grid-template-columns : 33.4rem 1fr 45.3rem;
+
+    .communicate {
+      grid-column : 1/2;
+      grid-row    : 1/2;
+
+      .address, .email, .call {
+        margin-top  : var(--space-2-4);
+        display     : flex;
+        align-items : center;
+
+        img {
+          padding-left : var(--space-1-6);
+          }
+
+        p {
+          font-family : IRANYekanWebRegular, Arial, serif;
+          font-size   : var(--size-1-4);
+          color       : var(--color-Grey-light-1);
+          }
+        }
+
+      h5 {
+        font-family   : IRANYekanWebExtraBold, Arial, serif;
+        color         : var(--color-white);
+        font-size     : var(--size-1-8);
+        margin-bottom : var(--space-2-4);
+        }
+
+      .social-media {
+        margin  : var(--space-2-4) 0;
+        display : flex;
+
+        div {
+          margin-left     : var(--space-1-6);
+          display         : flex;
+          justify-content : center;
+          align-content   : center;
+          align-items     : center;
+
+          background      : var(--color-Primary-light-gradient);
+          width           : 3.6rem;
+          height          : 3.9rem;
+          border-radius   : var(--bdrs-3);
+          @include glassBox;
+
+          img {
+            width  : 1.8rem;
+            height : 1.8rem;
+            }
+          }
+        }
+      }
+
+    .aboutus {
+      display        : flex;
+      flex-direction : column;
+      width          : 50rem;
+      align-items    : center;
+      align-content  : start;
+      text-align     : center;
+      grid-column    : 2/3;
+      grid-row       : 1/2;
+      margin-bottom  : var(--space-8);
+
+      img {
+        width  : 24rem;
+        height : 17rem;
+        }
+
+      p {
+        width         : 70%;
+        font-family   : IRANYekanWebLigth, Arial, serif;
+        font-size     : var(--size-1-4);
+        color         : var(--color-white);
+        margin-bottom : var(--space-8);
+        }
+      }
+
+    .access {
+      grid-column     : 3/4;
+      grid-row        : 1/2;
+      display         : grid;
+      grid-auto-flow  : column;
+      margin-bottom : var(--space-8);
+
+      h6 {
+        font-family   : IRANYekanWebExtraBold, Arial, serif;
+        color         : var(--color-white);
+        font-size     : var(--size-1-8);
+        margin-bottom : var(--space-2-4);
+        }
+
+      .column {
+        div {
+          margin  : var(--space-2-4) 0 var(--space-2-4);
+          display     : grid;
+          grid-template-columns: min-content min-content;
+          }
+
+        .access-link{
+          justify-self    : end;
+          display         : flex;
+          height          : 1rem;
+          align-items     : center;
+          margin-top : var(--space-3-2);
+
+          a {
+            font-family   : IRANYekanWebLigth, Arial, serif;
+            font-size     : var(--size-1-4);
+            color         : var(--color-Grey-light-1);
+            border-bottom : .1rem solid var(--color-Grey-light-1);
+            }
+
+          .arrow-left {
+            margin : 0 0 0 var(--space-1-2);
+            width  : 2.4rem;
+            height : 2.4rem;
+            }
+          }
+        }
+
+      }
+
+    }
+
+  &-curve {
+    transform : scale(1, -1);
+    width     : 105%;
+    height    : 90%;
+    position  : absolute;
+    bottom    : 0;
+    z-index   : -1;
+    left      : 0;
+    }
+
+  .copyright {
+    align-content    : center;
+    align-items      : center;
+    justify-content  : center;
+    color            : var(--color-white);
+    display          : flex;
+    background-color : var(--color-Primary-dark);
+    height           : 4.3rem;
+    width            : 100%;
+    z-index          : 10;
+    position         : absolute;
+    bottom           : 0;
+    left             : 0;
+
+    &-arrow {
+      height          : 4.3rem;
+      position        : absolute;
+      bottom          : 0;
+      right           : 0;
+      justify-content : center;
+      align-content   : center;
+      align-items     : center;
+      padding         : 0 var(--space-1-6);
+      display         : flex;
+      }
+
+    img {
+
+      width     : 2.4rem;
+      height    : 2.4rem;
+      transform : rotate(90deg);
+      }
+    }
+
+  }

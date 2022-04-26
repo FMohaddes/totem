@@ -1,0 +1,197 @@
+:root {
+  // RESPONSIVE Sizes
+
+  --base-font-size               : 1.9px;
+  --fluid-typography-ratio       : 0.6;
+  --rem-lg                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --rem-md                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.2vw);
+  --rem-sm                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
+  --rem-xsm                      : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
+  --rem-xxsm                     : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
+
+  // BREAK POINTS
+  //--mobileS                      : (max-width: 32em);
+  //--mobileM                      : (max-width: 37em);
+  //--mobileL                      : (max-width: 57em);
+  //--tablet                       : (max-width: 76em);
+
+  // COLOR VARIABLES
+
+  --color-Primary                : #E4F0FB;
+  --color-Primary-light          : #F9FCFF;
+  --color-Primary-dark           : #234361;
+
+  --color-Primary-Faded          : radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);;
+  --color-Primary-dark-gradient  : linear-gradient(78deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 77.31%);
+  --color-Primary-dark-gradient-overlay  :
+    linear-gradient(78deg, rgba(72, 113, 152, 0.5925) 0%, rgba(25, 56, 92, 0.735) 70.31%);
+  --color-Primary-light-gradient :
+    radial-gradient(84.65% 84.65% at 50% 50%, #FFF 0%, #FFF 51%, rgba(255, 255, 255, 0) 81.78%);
+  --color-Primary-gradient       :
+    radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Primary-gradient-o       :
+    radial-gradient(66.7% 66.7% at 50% 33.3%, rgba(228, 240, 251, 0.77) 0%, rgba(228, 240, 251, 0.77) 35.94%, rgba(228, 240, 251, 0.519579) 78.13%, rgba(228, 240, 251, 0) 100%);
+
+  --color-Secondary              : #FBD862;
+  --color-Secondary-o            : rgb(250, 210, 100, .7);
+
+  --color-Tertiary               : #47C3CD;
+
+  --color-Grey-light-1           : #C6C6C6;
+  --color-Grey                   : #929292;
+  --color-Grey-dark-1            : #393939;
+  --color-white                  : #FFF;
+  --shadow-dark                  : 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light                 : 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
+  --line                         : 1px solid var(--color-Grey-light-2);
+  --bdr                          : 0.5px solid rgba(186, 185, 185, 0.17);
+
+  --bdrs-3                       : 3rem;
+  --bdrs-1                       : 1rem;
+
+  //spaces
+  --space-0-4                    : .4rem;
+  --space-0-8                    : .8rem;
+  --space-1-2                    : 1.2rem;
+  --space-1-6                    : 1.6rem;
+  --space-2-4                    : 2.4rem;
+  --space-3-2                    : 3.2rem;
+  --space-4                      : 4.0rem;
+  --space-4-8                    : 4.8rem;
+  --space-6-4                    : 6.4rem;
+  --space-8                      : 8.0rem;
+
+  //font-size
+  --size-1                       : 1rem;
+  --size-1-4                     : 1.4rem;
+  --size-1-8                     : 1.8rem;
+  --size-2                       : 2rem;
+  --size-3-6                     : 3.6rem;
+
+  }
+
+*,
+*::after,
+::before {
+  padding         : 0;
+  margin          : 0;
+  box-sizing      : inherit;
+  text-decoration : none;
+  }
+
+html {
+  direction       : rtl;
+  text-decoration : none;
+  font-size       : var(--rem-lg);
+  @media only screen and (max-width : 76rem) {
+    font-size : var(--rem-md);
+    }
+  @media only screen and (max-width : 57rem) {
+    font-size : var(--rem-sm);
+
+    }
+  @media only screen and (max-width : 37rem) {
+    font-size : var(--rem-xsm);
+    }
+  @media only screen and (max-width : 32rem) {
+    font-size : var(--rem-xxsm);
+
+    }
+  }
+
+body {
+  box-sizing       : border-box;
+  min-height       : 100vh;
+  font-size        : 1.4rem;
+  font-family      : IRANYekanWebRegula, serif;
+  background-color : #F9FCFF;
+  color : var(--color-Grey-dark-1);
+  line-height      : 155%;
+
+  }
+
+
+.pattern {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 100%;
+  z-index  : -5;
+  }
+
+::selection {
+  background-color : var(--color-Primary);
+  color            : var(--color-Grey-dark-1);
+  }
+
+a:hover, a:active, a:visited, a:link {
+  color : var(--color-Grey-light-1);
+  }
+
+@font-face {
+  font-family  : BTitrBold;
+  src          : url(/fonts/BTitr/BTitrBold.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+@font-face {
+  font-family  : IRANYekanWebBold;
+  src          : url(/fonts/IRANYekan/IRANYekanWebBold.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+@font-face {
+  font-family  : IRANYekanWebLigth;
+  src          : url(/fonts/IRANYekan/IRANYekanWebLight.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+@font-face {
+  font-family  : IRANYekanWebRegular;
+  src          : url(/fonts/IRANYekan/IRANYekanWebRegular.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+@font-face {
+  font-family  : IRANYekanWebBold;
+  src          : url(/fonts/IRANYekan/IRANYekanWebBold.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+@font-face {
+  font-family  : IRANYekanWebExtraBold;
+  src          : url(/fonts/IRANYekan/IRANYekanWebExtraBold.ttf);
+  font-style   : normal;
+  font-display : swap;
+  }
+
+/* The emerging W3C standard */
+* {
+  scrollbar-width : thin;
+  scrollbar-color : var(--color-Secondary) transparent;
+  }
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width : 12px;
+  }
+
+*::-webkit-scrollbar-track {
+  background : var(--color-Primary-light);
+  }
+
+*::-webkit-scrollbar-thumb {
+  background-color : var(--color-Secondary);
+  border-radius    : .5rem;
+  border           : var(--color-Secondary-o);
+  }
+
+::-webkit-scrollbar-thumb:hover {
+  background : var(--color-Secondary-o);
+  }
