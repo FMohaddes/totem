@@ -4,6 +4,11 @@ header {
   grid-template-columns : 3fr 1.5fr;
   overflow              : hidden;
 
+  @media only screen and (max-width : 57rem) {
+    height                : 50vh;
+
+    }
+
   .slider {
     grid-row    : 1/-1;
     grid-column : 1/2;
@@ -31,6 +36,12 @@ header {
       z-index : 2;
       width   : 48rem;
       height  : 33rem;
+      object-fit: cover;
+      @media only screen and (max-width : 37rem) {
+        width   : 35rem;
+        height  : 22rem;
+
+        }
       }
 
     p {
@@ -39,7 +50,9 @@ header {
       z-index      : 2;
       color        : var(--color-Grey);
       font-family  : IRANYekanWebLigth, serif;
-
+      @media only screen and (max-width : 37rem) {
+        font-size : var(--size-1);
+        }
       }
 
     .intro-curve {

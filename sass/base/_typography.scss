@@ -1,17 +1,26 @@
 .heading{
-  font-size       : var(--size-3-6);
+  font-size       : var(--size-2-8);
   text-shadow     : 0 .5rem 1rem rgba(38, 38, 38, 0.25);
   padding-bottom  : var(--space-2-4);
   color : var(--color-white);
 
   font-family     : IRANYekanWebExtraBold ,Arial, serif;
+
+  @media only screen and (max-width : 37rem) {
+    font-size       : var(--size-2);
+
+    }
+
   }
 
 .sub-heading{
   font-family : IRANYekanWebLigth, Arial, serif;
   font-size       : var(--size-1-4);
   color : var(--color-Grey-light-1);
+  @media only screen and (max-width : 37rem) {
+    font-size       : var(--size-1);
 
+    }
   }
 
 .blue-heading{

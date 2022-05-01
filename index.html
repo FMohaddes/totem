@@ -16,9 +16,16 @@
     <link rel = "apple-touch-icon" href = "icon.png" >
     <!-- Place favicon.ico in the root directory -->
 
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel = "stylesheet" href = "css/normalize.css" >
     <link rel = "stylesheet" href = "css/style.css" >
     <link rel = "stylesheet" href = "css/main.css" >
+
+
 
     <meta name = "theme-color" content = "#fafafa" >
   </head >
@@ -39,17 +46,35 @@
       </div >
     </header >
     <main >
+      <!--  menu ********************************************* -->
+
       <nav >
-        <div class = "menu" >
-          <div class = "item" ><a href = "index.html" >خانه</a ></div >
-          <div class = "item" ><a href = "" >دوره ها</a ></div >
-          <div class = "item" ><a href = "" > درباره ما</a ></div >
-          <div class = "item" ><a href = "" >تماس باما </a ></div >
-        </div >
-        <div class = "login-cart" >
-          <div class = "login" ><a href = "" > ورود / ثبت نام</a ></div >
-          <div class = "cart" ><a href = "" >سبد خرید</a ></div >
-        </div >
+        <section class="top-nav">
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
+            <li class = "item"><a href = "index.html" >خانه</a ></li>
+            <li class = "item"><a href = "" >دوره ها</a ></li>
+            <li class = "item"><a href = "" > درباره ما</a ></li>
+            <li class = "item"><a href = "" >تماس باما </a ></li>
+          </ul>
+          <div class = "login-cart" >
+            <div class = "login" ><a href = "" > ورود / ثبت نام</a ></div >
+            <div class = "cart" ><a href = "" >سبد خرید</a ></div >
+          </div >
+        </section>
+        <!--<div class = "menu1" >-->
+        <!--  <div class = "item" ><a href = "index.html" >خانه</a ></div >-->
+        <!--  <div class = "item" ><a href = "" >دوره ها</a ></div >-->
+        <!--  <div class = "item" ><a href = "" > درباره ما</a ></div >-->
+        <!--  <div class = "item" ><a href = "" >تماس باما </a ></div >-->
+        <!--</div >-->
+        <!--<div class = "login-cart" >-->
+        <!--  <div class = "login" ><a href = "" > ورود / ثبت نام</a ></div >-->
+        <!--  <div class = "cart" ><a href = "" >سبد خرید</a ></div >-->
+        <!--</div >-->
         <img src = "/img/shapes/curve-dark-blue.svg" alt = "curve" class = "nav-curve" >
 
       </nav >
@@ -99,140 +124,165 @@
           </p >
         </div >
         <div class = "academey-honary-content-box" >
-          <div class = "course-card" >
-            <div class = "course-card-text-box" >
-              <h2 >
-                آموزش آزاد هنری
-              </h2 >
-              <p >
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class = "course-card" >
+                    <div class = "course-card-text-box" >
+                      <h2 >
+                        آموزش آزاد هنری
+                      </h2 >
+                      <p >
 
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-              </p >
-            </div >
-            <div class = "course-card-price" >
-              <p >
-                قیمت :
-              </p >
-              <div >
-                <h6 >
-                  1.9678
-                </h6 >
-                <span >تومان</span >
-              </div >
+                        طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      </p >
+                    </div >
+                    <div class = "course-card-price" >
+                      <p >
+                        قیمت :
+                      </p >
+                      <div >
+                        <h6 >
+                          2000000
+                        </h6 >
+                        <span >تومان</span >
+                      </div >
 
-            </div >
-            <div class = "course-card-image" >
-              <img src = "/img/ravancavi.png" alt = "ravancavi" >
-            </div >
+                    </div >
+                    <div class = "course-card-image" >
+                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
 
-            <div class = "course-card-info" >
-              <a href = "" >خرید </a >
-              <div class = "course-card-info-icons" >
-                <div >
-                  <img src = "/img/icons/eye.svg" alt = "eye" >
-                  <span >109</span >
-                </div >
-                <div >
-                  <img src = "/img/icons/favorite.svg" alt = "eye" >
-                  <span >11</span >
-                </div >
+                    </div >
 
-              </div >
-            </div >
+                    <div class = "course-card-info" >
+                      <a href = "" >خرید </a >
+                      <div class = "course-card-info-icons" >
+                        <div >
+                          <img src = "/img/icons/eye.svg" alt = "eye" >
+                          <span >109</span >
+                        </div >
+                        <div >
+                          <img src = "/img/icons/favorite.svg" alt = "eye" >
+                          <span >11</span >
+                        </div >
 
-          </div >
-          <div class = "course-card" >
-            <div class = "course-card-text-box" >
-              <h2 >
-                آموزش آزاد هنری
-              </h2 >
-              <p >
+                      </div >
+                    </div >
 
-                طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
-            <div class = "course-card-price" >
-              <p >
-                قیمت :
-              </p >
-              <div >
-                <h6 >
-                  2000000
-                </h6 >
-                <span >تومان</span >
-              </div >
+                  </div >
 
-            </div >
-            <div class = "course-card-image" >
-              <img src = "/img/ravancavi.png" alt = "ravancavi" >
+                </div>
+                <div class="swiper-slide">
+                  <div class = "course-card" >
+                    <div class = "course-card-text-box" >
+                      <h2 >
+                        آموزش آزاد هنری
+                      </h2 >
+                      <p >
 
-            </div >
+                        طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      </p >
+                    </div >
+                    <div class = "course-card-price" >
+                      <p >
+                        قیمت :
+                      </p >
+                      <div >
+                        <h6 >
+                          2000000
+                        </h6 >
+                        <span >تومان</span >
+                      </div >
 
-            <div class = "course-card-info" >
-              <a href = "" >خرید </a >
-              <div class = "course-card-info-icons" >
-                <div >
-                  <img src = "/img/icons/eye.svg" alt = "eye" >
-                  <span >109</span >
-                </div >
-                <div >
-                  <img src = "/img/icons/favorite.svg" alt = "eye" >
-                  <span >11</span >
-                </div >
+                    </div >
+                    <div class = "course-card-image" >
+                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
 
-              </div >
-            </div >
+                    </div >
 
-          </div >
-          <div class = "course-card" >
-            <div class = "course-card-text-box" >
-              <h2 >
-                آموزش آزاد هنری
-              </h2 >
-              <p >
+                    <div class = "course-card-info" >
+                      <a href = "" >خرید </a >
+                      <div class = "course-card-info-icons" >
+                        <div >
+                          <img src = "/img/icons/eye.svg" alt = "eye" >
+                          <span >109</span >
+                        </div >
+                        <div >
+                          <img src = "/img/icons/favorite.svg" alt = "eye" >
+                          <span >11</span >
+                        </div >
 
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. و
-              </p >
-            </div >
-            <div class = "course-card-price" >
-              <p >
-                قیمت :
-              </p >
-              <div >
-                <h6 class = "sale" >
-                  50000
-                </h6 >
-                <h6 class = "sale-price" >
-                  1.900
-                </h6 >
-                <span >تومان</span >
-              </div >
+                      </div >
+                    </div >
 
-            </div >
-            <div class = "course-card-image" >
-              <img src = "/img/ravancavi.png" alt = "ravancavi" >
+                  </div >
 
-            </div >
+                </div>
+                <div class="swiper-slide">
+                  <div class = "course-card" >
+                    <div class = "course-card-text-box" >
+                      <h2 >
+                        آموزش آزاد هنری
+                      </h2 >
+                      <p >
 
-            <div class = "course-card-info" >
-              <div class = "sale-percent" >
-                <a href = "" >خرید </a >
-                <span >20%</span >
-              </div >
-              <div class = "course-card-info-icons" >
-                <div >
-                  <img src = "/img/icons/eye.svg" alt = "eye" >
-                  <span >109</span >
-                </div >
-                <div >
-                  <img src = "/img/icons/favorite.svg" alt = "eye" >
-                  <span >11</span >
-                </div >
+                        ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. و
+                      </p >
+                    </div >
+                    <div class = "course-card-price" >
+                      <p >
+                        قیمت :
+                      </p >
+                      <div >
+                        <h6 class = "sale" >
+                          50000
+                        </h6 >
+                        <h6 class = "sale-price" >
+                          1.900
+                        </h6 >
+                        <span >تومان</span >
+                      </div >
 
-              </div >
-            </div >
+                    </div >
+                    <div class = "course-card-image" >
+                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
 
-          </div >
+                    </div >
+
+                    <div class = "course-card-info" >
+                      <div class = "sale-percent" >
+                        <a href = "" >خرید </a >
+                        <span >20%</span >
+                      </div >
+                      <div class = "course-card-info-icons" >
+                        <div >
+                          <img src = "/img/icons/eye.svg" alt = "eye" >
+                          <span >109</span >
+                        </div >
+                        <div >
+                          <img src = "/img/icons/favorite.svg" alt = "eye" >
+                          <span >11</span >
+                        </div >
+
+                      </div >
+                    </div >
+
+                  </div >
+
+                </div>
+
+
+              </div>
+              <div class="swiper-button-next">
+                <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
+              </div>
+              <div class="swiper-button-prev">
+                <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
 
         </div >
 
@@ -251,30 +301,57 @@
             </p >
           </div >
           <div class = "academey-cinemae-content-box" >
-            <div class = "cinema-card" >
-              <img src = "/img/icons/movie.svg" alt = "movie" >
-              <h2 >آموزش آزاد هنری</h2 >
-              <p class = "sub-heading" >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
-            <div class = "cinema-card" >
-              <img src = "/img/icons/movie.svg" alt = "movie" >
-              <h2 >آموزش آزاد هنری</h2 >
-              <p class = "sub-heading" >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
-            <div class = "cinema-card" >
-              <img src = "/img/icons/movie.svg" alt = "movie" >
-              <h2 >آموزش آزاد هنری</h2 >
-              <p class = "sub-heading" >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
+            <div class="swiper mySwiperBullet">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class = "cinema-card" >
+                    <img src = "/img/icons/movie.svg" alt = "movie" >
+                    <h2 >آموزش آزاد هنری</h2 >
+                    <p class = "sub-heading" >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+
+                </div>
+                <div class="swiper-slide">
+                  <div class = "cinema-card" >
+                    <img src = "/img/icons/movie.svg" alt = "movie" >
+                    <h2 >آموزش آزاد هنری</h2 >
+                    <p class = "sub-heading" >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+
+                </div>
+
+                <div class="swiper-slide">
+                  <div class = "cinema-card" >
+                    <img src = "/img/icons/movie.svg" alt = "movie" >
+                    <h2 >آموزش آزاد هنری</h2 >
+                    <p class = "sub-heading" >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+
+                </div>
+                <div class="swiper-slide">
+                  <div class = "cinema-card" >
+                    <img src = "/img/icons/movie.svg" alt = "movie" >
+                    <h2 >آموزش آزاد هنری</h2 >
+                    <p class = "sub-heading" >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div >
           <div class = "cinema-curve" >
             <svg preserveAspectRatio = "none" width = "1393" height = "623" viewBox = "0 0 1393 623" fill = "none"
@@ -301,89 +378,157 @@
           </p >
         </div >
         <div class = "nashr-content-box" >
-          <div class = "ketab-card" >
-            <div class = "ketab-card-text-box" >
-              <h2 >
-                رازه های زندگی
-              </h2 >
-              <p >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
-            <div class = "ketab-card-price" >
-              <p >
-                قیمت :
-              </p >
-              <div >
-                <h6 >
-                  1.9678
-                </h6 >
-                <span >تومان</span >
-              </div >
+          <div class="swiper mySwiperNashr">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class = "ketab-card" >
+                  <div class = "ketab-card-text-box" >
+                    <h2 >
+                      رازه های زندگی
+                    </h2 >
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+                  <div class = "ketab-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 >
+                        1.9678
+                      </h6 >
+                      <span >تومان</span >
+                    </div >
 
-            </div >
-            <div class = "ketab-card-image" >
-              <img src = "/img/ketab.png" alt = "ravancavi" >
-            </div >
+                  </div >
+                  <div class = "ketab-card-image" >
+                    <img src = "/img/ketab.png" alt = "ravancavi" >
+                  </div >
 
-            <div class = "ketab-card-info" >
-              <a href = "" >خرید </a >
-            </div >
-            <div class = "ketab-card-info-icons" >
-              <div >
-                <img src = "/img/icons/eye.svg" alt = "eye" >
-                <span >109</span >
-              </div >
-              <div >
-                <img src = "/img/icons/favorite.svg" alt = "eye" >
-                <span >11</span >
-              </div >
+                  <div class = "ketab-card-info" >
+                    <a href = "" >خرید </a >
+                  </div >
+                  <div class = "ketab-card-info-icons" >
+                    <div >
+                      <img src = "/img/icons/eye.svg" alt = "eye" >
+                      <span >109</span >
+                    </div >
+                    <div >
+                      <img src = "/img/icons/favorite.svg" alt = "eye" >
+                      <span >11</span >
+                    </div >
 
-            </div >
-          </div >
-          <div class = "ketab-card" >
-            <div class = "ketab-card-text-box" >
-              <h2 >
-                رازه های زندگی
-              </h2 >
-              <p >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-            </div >
-            <div class = "ketab-card-price" >
-              <p >
-                قیمت :
-              </p >
-              <div >
-                <h6 class = "sale" >
-                  50000
-                </h6 >
-                <h6 class = "sale-price" >
-                  1.900
-                </h6 >
-                <span >تومان</span >
-              </div >
+                  </div >
+                </div >
 
-            </div >
-            <div class = "ketab-card-image" >
-              <img src = "/img/ketab.png" alt = "ravancavi" >
-            </div >
 
-            <div class = "ketab-card-info" >
-              <a href = "" >خرید </a >
-            </div >
-            <div class = "ketab-card-info-icons" >
-              <div >
-                <img src = "/img/icons/eye.svg" alt = "eye" >
-                <span >109</span >
-              </div >
-              <div >
-                <img src = "/img/icons/favorite.svg" alt = "eye" >
-                <span >11</span >
-              </div >
+              </div>
+              <div class="swiper-slide">
+                <div class = "ketab-card" >
+                  <div class = "ketab-card-text-box" >
+                    <h2 >
+                      رازه های زندگی
+                    </h2 >
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+                  <div class = "ketab-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 class = "sale" >
+                        50000
+                      </h6 >
+                      <h6 class = "sale-price" >
+                        1.900
+                      </h6 >
+                      <span >تومان</span >
+                    </div >
 
-            </div >
-          </div >
+                  </div >
+                  <div class = "ketab-card-image" >
+                    <img src = "/img/ketab.png" alt = "ravancavi" >
+                  </div >
+
+                  <div class = "ketab-card-info" >
+                    <a href = "" >خرید </a >
+                  </div >
+                  <div class = "ketab-card-info-icons" >
+                    <div >
+                      <img src = "/img/icons/eye.svg" alt = "eye" >
+                      <span >109</span >
+                    </div >
+                    <div >
+                      <img src = "/img/icons/favorite.svg" alt = "eye" >
+                      <span >11</span >
+                    </div >
+
+                  </div >
+                </div >
+
+              </div>
+              <div class="swiper-slide">
+
+                <div class = "ketab-card" >
+                  <div class = "ketab-card-text-box" >
+                    <h2 >
+                      رازه های زندگی
+                    </h2 >
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                  </div >
+                  <div class = "ketab-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 class = "sale" >
+                        50000
+                      </h6 >
+                      <h6 class = "sale-price" >
+                        1.900
+                      </h6 >
+                      <span >تومان</span >
+                    </div >
+
+                  </div >
+                  <div class = "ketab-card-image" >
+                    <img src = "/img/ketab.png" alt = "ravancavi" >
+                  </div >
+
+                  <div class = "ketab-card-info" >
+                    <a href = "" >خرید </a >
+                  </div >
+                  <div class = "ketab-card-info-icons" >
+                    <div >
+                      <img src = "/img/icons/eye.svg" alt = "eye" >
+                      <span >109</span >
+                    </div >
+                    <div >
+                      <img src = "/img/icons/favorite.svg" alt = "eye" >
+                      <span >11</span >
+                    </div >
+
+                  </div >
+                </div >
+
+              </div>
+
+            </div>
+            <div class="swiper-button-next">
+              <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
+            </div>
+            <div class="swiper-button-prev">
+              <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
 
         </div >
         </div>
@@ -501,61 +646,109 @@
           </p >
         </div >
         <div class = "mahname-content-box" >
-          <div class = "mahname-card" >
-            <div class = "mahname-card-text-box" >
-              <h4 >
-                مشاوره های فردی
-              </h4 >
-              <div class="mahname-card-dates">
-                <img src = "/img/icons/date.svg" alt = "date-mahname" >
-                <span>
+          <div class="swiper mySwiperNashr">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class = "mahname-card" >
+                  <div class = "mahname-card-text-box" >
+                    <h4 >
+                      مشاوره های فردی
+                    </h4 >
+                    <div class="mahname-card-dates">
+                      <img src = "/img/icons/date.svg" alt = "date-mahname" >
+                      <span>
                   شنبه 23 خرداد 1400
                 </span>
+                    </div>
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                    <div class = "mahname-card-info" >
+
+                      <a href = "" >مشاهده </a >
+                      <img src = "/img/icons/arrow-left.svg"
+                        class = "arrow-left"
+                        alt = "arrow" >
+                    </div >
+                  </div >
+                  <div class = "mahname-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "mahname" >
+                  </div >
+
+                </div >
+
               </div>
-              <p >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-              <div class = "mahname-card-info" >
-
-                <a href = "" >مشاهده </a >
-                <img src = "/img/icons/arrow-left.svg"
-                  class = "arrow-left"
-                  alt = "arrow" >
-              </div >
-            </div >
-            <div class = "mahname-card-image" >
-              <img src = "/img/ravancavi.png" alt = "mahname" >
-            </div >
-
-          </div >
-
-          <div class = "mahname-card" >
-            <div class = "mahname-card-text-box" >
-              <h4 >
-                مشاوره های فردی
-              </h4 >
-              <div class="mahname-card-dates">
-                <img src = "/img/icons/date.svg" alt = "date-mahname" >
-                <span>
+              <div class="swiper-slide">
+                <div class = "mahname-card" >
+                  <div class = "mahname-card-text-box" >
+                    <h4 >
+                      مشاوره های فردی
+                    </h4 >
+                    <div class="mahname-card-dates">
+                      <img src = "/img/icons/date.svg" alt = "date-mahname" >
+                      <span>
                   شنبه 23 خرداد 1400
                 </span>
+                    </div>
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                    <div class = "mahname-card-info" >
+
+                      <a href = "" >مشاهده </a >
+                      <img src = "/img/icons/arrow-left.svg"
+                        class = "arrow-left"
+                        alt = "arrow" >
+                    </div >
+                  </div >
+                  <div class = "mahname-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "mahname" >
+                  </div >
+
+                </div >
+
               </div>
-              <p >
-                ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p >
-              <div class = "mahname-card-info" >
+              <div class="swiper-slide">
+                <div class = "mahname-card" >
+                  <div class = "mahname-card-text-box" >
+                    <h4 >
+                      مشاوره های فردی
+                    </h4 >
+                    <div class="mahname-card-dates">
+                      <img src = "/img/icons/date.svg" alt = "date-mahname" >
+                      <span>
+                  شنبه 23 خرداد 1400
+                </span>
+                    </div>
+                    <p >
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    </p >
+                    <div class = "mahname-card-info" >
 
-                <a href = "" >مشاهده </a >
-                <img src = "/img/icons/arrow-left.svg"
-                  class = "arrow-left"
-                  alt = "arrow" >
-              </div >
-            </div >
-            <div class = "mahname-card-image" >
-              <img src = "/img/ravancavi.png" alt = "mahname" >
-            </div >
+                      <a href = "" >مشاهده </a >
+                      <img src = "/img/icons/arrow-left.svg"
+                        class = "arrow-left"
+                        alt = "arrow" >
+                    </div >
+                  </div >
+                  <div class = "mahname-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "mahname" >
+                  </div >
 
-          </div >
+                </div >
+
+              </div>
+
+            </div>
+            <div class="swiper-button-next">
+              <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
+            </div>
+            <div class="swiper-button-prev">
+              <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
 
         </div>
 
@@ -563,6 +756,18 @@
           class = "mahname-curve" >
 
       </section >
+   <!--   &lt;!&ndash; Swiper &ndash;&gt;
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>-->
 
       <!--pattern background *********************************************-->
       <div class = "pattern" >
@@ -640,6 +845,7 @@
         </svg >
 
       </div >
+
       <footer class="footer">
         <div class="footer-content">
           <div class="communicate">
@@ -758,20 +964,7 @@
                 <a href = "" >دسترسی سریع</a >
 
               </div>
-              <div class="access-link">
-                <img src = "/img/icons/arrow-left.svg"
-                  class = "arrow-left"
-                  alt = "arrow" >
-                <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
-                <img src = "/img/icons/arrow-left.svg"
-                  class = "arrow-left"
-                  alt = "arrow" >
-                <a href = "" >دسترسی سریع</a >
-
-              </div>
             </div>
 
           </div>
@@ -792,13 +985,14 @@
         </div>
         <img src = "/img/shapes/curve-dark-blue.svg" alt = "curve" class = "footer-curve" >
       </footer>
+
     </main >
 
     <!-- Add your site or application content here -->
     <script src = "js/vendor/modernizr-3.11.2.min.js" ></script >
     <script src = "js/plugins.js" ></script >
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script >
-    <script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js" ></script >
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src = "js/main.js" ></script >
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

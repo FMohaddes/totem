@@ -1,62 +1,53 @@
+
 nav {
-  position    : relative;
-  grid-column : 1/-1;
-  padding : var(--space-4-8) var(--space-6-4) 0;
-  display : flex;
-  height : 15rem;
-  justify-content :space-between;
-  align-content : center;
-  align-items: center;
+  position        : relative;
+  grid-column     : 1/-1;
+  padding         : var(--space-4) var(--space-6-4) 0;
+  display         : flex;
+  height          : 15rem;
+  justify-content : space-between;
+  align-content   : start;
+  align-items     : start;
 
-  .menu {
-    position        : relative;
-    z-index         : 1;
-    grid-column     : 2/3;
-    display         : flex;
-    width           : 60%;
-    justify-content : start;
-    }
-  .item{
-    font-size : var(--size-1-4);
+  @media only screen and (max-width : 700px) {
+    padding :var(--space-4) var(--space-3-2) 0;
 
-    font-family : IRANYekanWebBold, serif;
-    color : var(--color-Grey-light-1);
-    padding-left : var(--space-6-4);
 
     }
+  .login-cart {
+    display        : flex;
+    position       : relative;
+    z-index        : 1;
+    font-family    : IRANYekanWebBold, serif;
+    font-size      : var(--size-1-4);
 
-
-  .login-cart{
-    padding-bottom : var(--space-1-2);
-    display : flex;
-    position : relative;
-    z-index : 1;
-    font-family      : IRANYekanWebBold, serif;
-    font-size : var(--size-1-4);
-   .login{
-     @include center;
-     box-shadow       : var(--shadow-light);
-     width            : 14rem;
-     height           : 4rem;
-     background-color : var(--color-Secondary);
-     border-radius    : 3rem;
-     a{
-       color : var(--color-Grey-dark-1);
-
-       }
-     }
-    .cart{
+    .login {
       @include center;
-      margin-right :var(--space-2-4);
+      box-shadow       : var(--shadow-light);
+      width            : 14rem;
+      height           : 4rem;
+      background-color : var(--color-Secondary);
+      border-radius    : 3rem;
 
-      box-shadow: var(--shadow-light);
-      width : 14rem;
-      height : 4rem;
-      background-color :transparent;
-      border: 3px solid #FBD862;
-      border-radius: 3rem;
+      a {
+        color : var(--color-Grey-dark-1);
+
+        }
       }
-    a{
+
+    .cart {
+      @include center;
+      margin-right     : var(--space-2-4);
+
+      box-shadow       : var(--shadow-light);
+      width            : 14rem;
+      height           : 4rem;
+      background-color : transparent;
+      border           : 3px solid #FBD862;
+      border-radius    : 3rem;
+      }
+
+    a {
       color : var(--color-white);
 
       }
@@ -71,4 +62,139 @@ nav {
 
     }
 
+  }
+
+.top-nav {
+  position        : relative;
+  z-index         : 1;
+  display         : flex;
+  flex-direction  : row;
+  align-items     : center;
+  grid-column     : 1/-1;
+  width : 100%;
+  justify-content : space-between;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color           : #FFF;
+  padding         : 1em;
+  }
+
+.menu {
+  display         : flex;
+  flex-direction  : row;
+  list-style-type : none;
+  margin          : 0;
+  padding         : 0;
+  }
+
+.item {
+  font-size    : var(--size-1-4);
+  font-family  : IRANYekanWebBold, serif;
+  color        : var(--color-Grey-light-1);
+  padding-left : var(--space-6-4);
+  }
+
+.menu > li {
+  margin : 0 1rem;
+  }
+
+.menu-button-container {
+  display         : none;
+  height          : 100%;
+  width           : 3rem;
+  cursor          : pointer;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  }
+
+#menu-toggle {
+  display : none;
+  }
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display          : block;
+  background-color : var(--color-white);
+  position         : absolute;
+  height           : 4px;
+  width            : 30px;
+  transition       : transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius    : 2px;
+  }
+
+.menu-button::before {
+  content    : '';
+  margin-top : -8px;
+  }
+
+.menu-button::after {
+  content    : '';
+  margin-top : 8px;
+  }
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top : 0px;
+  transform  : rotate(405deg);
+  }
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background : rgba(255, 255, 255, 0);
+  }
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top : 0px;
+  transform  : rotate(-405deg);
+  }
+
+@media (max-width : 700px) {
+  .menu-button-container {
+    display : flex;
+    }
+  .menu {
+    position        : absolute;
+    top             : 0;
+    margin-top      : 50px;
+    left            : 0;
+    flex-direction  : column;
+    width           : 100%;
+    justify-content : center;
+    align-items     : center;
+    }
+  #menu-toggle ~ .menu li {
+    height     : 0;
+    margin     : 0;
+    padding    : 0;
+    border     : 0;
+
+    transition : height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  #menu-toggle ~ .menu li a {
+    visibility : hidden;
+    }
+  #menu-toggle:checked ~ .menu li {
+    height     : 2.5em;
+    @include glassBox;
+    background            : rgba(255, 255, 255, 0.05);
+    z-index : 5;
+    padding    :var(--space-3-2);
+    transition : height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  #menu-toggle:checked ~ .login-cart {
+    display : none;
+    }
+  #menu-toggle:checked ~ .menu li a {
+    visibility : visible;
+    }
+  .menu > li {
+    display         : flex;
+    justify-content : center;
+    margin          : 0;
+    padding         : 0.5em 0;
+    width           : 100%;
+    color           : white;
+
+    }
+  .menu > li:not(:last-child) {
+    }
   }

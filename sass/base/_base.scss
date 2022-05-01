@@ -7,7 +7,7 @@
   --rem-md                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.2vw);
   --rem-sm                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
   --rem-xsm                      : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
-  --rem-xxsm                     : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
+  --rem-xxsm                     : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
 
   // BREAK POINTS
   //--mobileS                      : (max-width: 32em);
@@ -66,7 +66,7 @@
   --size-1-4                     : 1.4rem;
   --size-1-8                     : 1.8rem;
   --size-2                       : 2rem;
-  --size-3-6                     : 3.6rem;
+  --size-2-8                     : 2.8rem;
 
   }
 
@@ -107,7 +107,11 @@ body {
   background-color : #F9FCFF;
   color : var(--color-Grey-dark-1);
   line-height      : 155%;
+  position : relative;
 
+  }
+a:visited ,a:focus , a:link, a:hover{
+  color : var(--color-Grey-dark-1);
   }
 
 

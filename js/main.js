@@ -1,17 +1,96 @@
 let swiper = new Swiper(".mySwiper", {
-  spaceBetween: 50,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    "@1.00": {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    "@1.50": {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
+});
+
+let swiperB = new Swiper(".mySwiperBullet", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    "@1.00": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    "@1.50": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
 });
 
+let swiperN = new Swiper(".mySwiperNashr", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
 
-let swiper2 = new Swiper(".mySwiper2", {
-  direction: "vertical",
-  spaceBetween: 50,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
   },
 });
