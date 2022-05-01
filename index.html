@@ -16,16 +16,13 @@
     <link rel = "apple-touch-icon" href = "icon.png" >
     <!-- Place favicon.ico in the root directory -->
 
-
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      rel = "stylesheet"
+      href = "https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel = "stylesheet" href = "css/normalize.css" >
     <link rel = "stylesheet" href = "css/style.css" >
     <link rel = "stylesheet" href = "css/main.css" >
-
-
 
     <meta name = "theme-color" content = "#fafafa" >
   </head >
@@ -49,22 +46,132 @@
       <!--  menu ********************************************* -->
 
       <nav >
-        <section class="top-nav">
-          <input id="menu-toggle" type="checkbox" />
-          <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-          <ul class="menu">
-            <li class = "item"><a href = "index.html" >خانه</a ></li>
-            <li class = "item"><a href = "" >دوره ها</a ></li>
-            <li class = "item"><a href = "" > درباره ما</a ></li>
-            <li class = "item"><a href = "" >تماس باما </a ></li>
-          </ul>
-          <div class = "login-cart" >
-            <div class = "login" ><a href = "" > ورود / ثبت نام</a ></div >
-            <div class = "cart" ><a href = "" >سبد خرید</a ></div >
+        <div class = "navbar" >
+          <div class = "navbar-container container" >
+            <input type = "checkbox" name = "" id = "" >
+            <div class = "hamburger-lines" >
+              <span class = "line line1" ></span >
+              <span class = "line line2" ></span >
+              <span class = "line line3" ></span >
+            </div >
+            <ul class = "menu-items" >
+              <li class = "item level-1" ><a href = "index.html" >خانه</a ></li >
+              <li class = "item level-1" ><a href = "" >دوره ها</a ></li >
+              <li class = "mega-drop-down level-1" ><a href = "#" >
+                <i class = "fa fa-list " ></i > منو مگا</a >
+                <div class = "animated fadeIn mega-menu" >
+                  <div class = "mega-menu-wrap" >
+                    <div class = "row" >
+                      <div class = "col-1" >
+                        <div class="bc-text">
+                          <h4 class = "row mega-title" >
+                            بخش تازه های بلاگ
+                          </h4 >
+                        </div>
+
+                        <ul >
+                          <li class = "item" ><a href = "" > درباره ما</a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+                          <li class = "item" ><a href = "" > درباره ما</a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+
+                        </ul >
+                      </div >
+                      <div class = "col-2" >
+                        <div class="bc-text">
+                          <h4 class = "row mega-title" >
+                            بخش تازه های بلاگ
+                          </h4 >
+                        </div>
+                        <ul >
+                          <li class = "item" ><a href = "" > درباره ما</a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+                          <li class = "item" ><a href = "" > درباره ما</a ></li >
+                          <li class = "item" ><a href = "" >تماس باما </a ></li >
+
+                        </ul >
+                      </div >
+                      <div class = "col-3 special-content" >
+
+                        <div class="bc-text">
+                          <h4 class = "row mega-title" >
+                            بخش محتوا ویژه
+                          </h4 >
+                        </div>
+                        <ul >
+                          <li class = "item" >
+                            <div class="special-content-icon">
+                              <img src = "/img/icons/book.svg" alt = "book" >
+                            </div>
+                            <div class="special-content-text">
+                              <a href = "" > درباره ما</a >
+                              <span>     از طراحان گرافیک است. چاپگرها و</span>
+
+                            </div>
+                       </li >
+                          <li class = "item" >
+                            <div class="special-content-icon">
+                              <img src = "/img/icons/book.svg" alt = "book" >
+                            </div>
+                            <div class="special-content-text">
+                              <a href = "" > درباره ما</a >
+                              <span>     از طراحان گرافیک است. چاپگرها و</span>
+
+                            </div>
+                          </li >
+                          <li class = "item" >
+                            <div class="special-content-icon">
+                              <img src = "/img/icons/book.svg" alt = "book" >
+                            </div>
+                            <div class="special-content-text">
+                              <a href = "" > درباره ما</a >
+                              <span>     از طراحان گرافیک است. چاپگرها و</span>
+
+                            </div>
+                          </li >
+
+                        </ul >
+                      </div >
+
+                    </div >
+                  </div >
+                </div >
+              </li >
+              <li class = "item level-1" ><a href = "" > درباره ما</a ></li >
+              <li class = "item level-1" ><a href = "" >تماس باما </a ></li >
+              <div class = "res-login" >
+                <img src = "/img/icons/account.svg" alt = "account" >
+                <img src = "/img/icons/cart.svg" alt = "cart" >
+              </div >
+            </ul >
+
+            <div class = "login-cart" >
+              <div class = "login" ><a href = "" >
+                ورود / ثبت نام</a ></div >
+              <div class = "cart" ><a href = "" >سبد خرید
+              </a ></div >
+            </div >
           </div >
-        </section>
+        </div >
+        <!--   <section class="top-nav">
+             <input id="menu-toggle" type="checkbox" />
+             <label class='menu-button-container' for="menu-toggle">
+               <div class='menu-button'></div>
+             </label>
+             <ul class="menu">
+               <li class = "item"><a href = "index.html" >خانه</a ></li>
+               <li class = "item"><a href = "" >دوره ها</a ></li>
+               <li class = "item"><a href = "" > درباره ما</a ></li>
+               <li class = "item"><a href = "" >تماس باما </a ></li>
+             </ul>
+             <div class = "login-cart" >
+               <div class = "login" ><a href = "" > ورود / ثبت نام</a ></div >
+               <div class = "cart" ><a href = "" >سبد خرید</a ></div >
+             </div >
+           </section>-->
         <!--<div class = "menu1" >-->
         <!--  <div class = "item" ><a href = "index.html" >خانه</a ></div >-->
         <!--  <div class = "item" ><a href = "" >دوره ها</a ></div >-->
@@ -124,165 +231,165 @@
           </p >
         </div >
         <div class = "academey-honary-content-box" >
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class = "course-card" >
-                    <div class = "course-card-text-box" >
-                      <h2 >
-                        آموزش آزاد هنری
-                      </h2 >
-                      <p >
+          <div class = "swiper mySwiper" >
+            <div class = "swiper-wrapper" >
+              <div class = "swiper-slide" >
+                <div class = "course-card" >
+                  <div class = "course-card-text-box" >
+                    <h2 >
+                      آموزش آزاد هنری
+                    </h2 >
+                    <p >
 
-                        طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                      </p >
+                      طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                      چاپگرها و
+                    </p >
+                  </div >
+                  <div class = "course-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 >
+                        2000000
+                      </h6 >
+                      <span >تومان</span >
                     </div >
-                    <div class = "course-card-price" >
-                      <p >
-                        قیمت :
-                      </p >
+
+                  </div >
+                  <div class = "course-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "ravancavi" >
+
+                  </div >
+
+                  <div class = "course-card-info" >
+                    <a href = "" >خرید </a >
+                    <div class = "course-card-info-icons" >
                       <div >
-                        <h6 >
-                          2000000
-                        </h6 >
-                        <span >تومان</span >
+                        <img src = "/img/icons/eye.svg" alt = "eye" >
+                        <span >109</span >
+                      </div >
+                      <div >
+                        <img src = "/img/icons/favorite.svg" alt = "eye" >
+                        <span >11</span >
                       </div >
 
                     </div >
-                    <div class = "course-card-image" >
-                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
+                  </div >
 
+                </div >
+
+              </div >
+              <div class = "swiper-slide" >
+                <div class = "course-card" >
+                  <div class = "course-card-text-box" >
+                    <h2 >
+                      آموزش آزاد هنری
+                    </h2 >
+                    <p >
+
+                      طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                      چاپگرها و
+                    </p >
+                  </div >
+                  <div class = "course-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 >
+                        2000000
+                      </h6 >
+                      <span >تومان</span >
                     </div >
 
-                    <div class = "course-card-info" >
+                  </div >
+                  <div class = "course-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "ravancavi" >
+
+                  </div >
+
+                  <div class = "course-card-info" >
+                    <a href = "" >خرید </a >
+                    <div class = "course-card-info-icons" >
+                      <div >
+                        <img src = "/img/icons/eye.svg" alt = "eye" >
+                        <span >109</span >
+                      </div >
+                      <div >
+                        <img src = "/img/icons/favorite.svg" alt = "eye" >
+                        <span >11</span >
+                      </div >
+
+                    </div >
+                  </div >
+
+                </div >
+
+              </div >
+              <div class = "swiper-slide" >
+                <div class = "course-card" >
+                  <div class = "course-card-text-box" >
+                    <h2 >
+                      آموزش آزاد هنری
+                    </h2 >
+                    <p >
+
+                      ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. و
+                    </p >
+                  </div >
+                  <div class = "course-card-price" >
+                    <p >
+                      قیمت :
+                    </p >
+                    <div >
+                      <h6 class = "sale" >
+                        50000
+                      </h6 >
+                      <h6 class = "sale-price" >
+                        1.900
+                      </h6 >
+                      <span >تومان</span >
+                    </div >
+
+                  </div >
+                  <div class = "course-card-image" >
+                    <img src = "/img/ravancavi.png" alt = "ravancavi" >
+
+                  </div >
+
+                  <div class = "course-card-info" >
+                    <div class = "sale-percent" >
                       <a href = "" >خرید </a >
-                      <div class = "course-card-info-icons" >
-                        <div >
-                          <img src = "/img/icons/eye.svg" alt = "eye" >
-                          <span >109</span >
-                        </div >
-                        <div >
-                          <img src = "/img/icons/favorite.svg" alt = "eye" >
-                          <span >11</span >
-                        </div >
-
-                      </div >
+                      <span >20%</span >
                     </div >
-
-                  </div >
-
-                </div>
-                <div class="swiper-slide">
-                  <div class = "course-card" >
-                    <div class = "course-card-text-box" >
-                      <h2 >
-                        آموزش آزاد هنری
-                      </h2 >
-                      <p >
-
-                        طراحان گرافیک ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                      </p >
-                    </div >
-                    <div class = "course-card-price" >
-                      <p >
-                        قیمت :
-                      </p >
+                    <div class = "course-card-info-icons" >
                       <div >
-                        <h6 >
-                          2000000
-                        </h6 >
-                        <span >تومان</span >
+                        <img src = "/img/icons/eye.svg" alt = "eye" >
+                        <span >109</span >
                       </div >
-
-                    </div >
-                    <div class = "course-card-image" >
-                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
-
-                    </div >
-
-                    <div class = "course-card-info" >
-                      <a href = "" >خرید </a >
-                      <div class = "course-card-info-icons" >
-                        <div >
-                          <img src = "/img/icons/eye.svg" alt = "eye" >
-                          <span >109</span >
-                        </div >
-                        <div >
-                          <img src = "/img/icons/favorite.svg" alt = "eye" >
-                          <span >11</span >
-                        </div >
-
-                      </div >
-                    </div >
-
-                  </div >
-
-                </div>
-                <div class="swiper-slide">
-                  <div class = "course-card" >
-                    <div class = "course-card-text-box" >
-                      <h2 >
-                        آموزش آزاد هنری
-                      </h2 >
-                      <p >
-
-                        ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. و
-                      </p >
-                    </div >
-                    <div class = "course-card-price" >
-                      <p >
-                        قیمت :
-                      </p >
                       <div >
-                        <h6 class = "sale" >
-                          50000
-                        </h6 >
-                        <h6 class = "sale-price" >
-                          1.900
-                        </h6 >
-                        <span >تومان</span >
+                        <img src = "/img/icons/favorite.svg" alt = "eye" >
+                        <span >11</span >
                       </div >
 
                     </div >
-                    <div class = "course-card-image" >
-                      <img src = "/img/ravancavi.png" alt = "ravancavi" >
-
-                    </div >
-
-                    <div class = "course-card-info" >
-                      <div class = "sale-percent" >
-                        <a href = "" >خرید </a >
-                        <span >20%</span >
-                      </div >
-                      <div class = "course-card-info-icons" >
-                        <div >
-                          <img src = "/img/icons/eye.svg" alt = "eye" >
-                          <span >109</span >
-                        </div >
-                        <div >
-                          <img src = "/img/icons/favorite.svg" alt = "eye" >
-                          <span >11</span >
-                        </div >
-
-                      </div >
-                    </div >
-
                   </div >
 
-                </div>
+                </div >
 
+              </div >
 
-              </div>
-              <div class="swiper-button-next">
-                <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
-              </div>
-              <div class="swiper-button-prev">
-                <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
+            </div >
+            <div class = "swiper-button-next" >
+              <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
+            </div >
+            <div class = "swiper-button-prev" >
+              <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
 
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
+            </div >
+            <div class = "swiper-pagination" ></div >
+          </div >
 
         </div >
 
@@ -301,9 +408,9 @@
             </p >
           </div >
           <div class = "academey-cinemae-content-box" >
-            <div class="swiper mySwiperBullet">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <div class = "swiper mySwiperBullet" >
+              <div class = "swiper-wrapper" >
+                <div class = "swiper-slide" >
                   <div class = "cinema-card" >
                     <img src = "/img/icons/movie.svg" alt = "movie" >
                     <h2 >آموزش آزاد هنری</h2 >
@@ -313,8 +420,8 @@
                     </p >
                   </div >
 
-                </div>
-                <div class="swiper-slide">
+                </div >
+                <div class = "swiper-slide" >
                   <div class = "cinema-card" >
                     <img src = "/img/icons/movie.svg" alt = "movie" >
                     <h2 >آموزش آزاد هنری</h2 >
@@ -324,9 +431,9 @@
                     </p >
                   </div >
 
-                </div>
+                </div >
 
-                <div class="swiper-slide">
+                <div class = "swiper-slide" >
                   <div class = "cinema-card" >
                     <img src = "/img/icons/movie.svg" alt = "movie" >
                     <h2 >آموزش آزاد هنری</h2 >
@@ -336,8 +443,8 @@
                     </p >
                   </div >
 
-                </div>
-                <div class="swiper-slide">
+                </div >
+                <div class = "swiper-slide" >
                   <div class = "cinema-card" >
                     <img src = "/img/icons/movie.svg" alt = "movie" >
                     <h2 >آموزش آزاد هنری</h2 >
@@ -347,11 +454,11 @@
                     </p >
                   </div >
 
-                </div>
+                </div >
 
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+              </div >
+              <div class = "swiper-pagination" ></div >
+            </div >
           </div >
           <div class = "cinema-curve" >
             <svg preserveAspectRatio = "none" width = "1393" height = "623" viewBox = "0 0 1393 623" fill = "none"
@@ -378,9 +485,9 @@
           </p >
         </div >
         <div class = "nashr-content-box" >
-          <div class="swiper mySwiperNashr">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+          <div class = "swiper mySwiperNashr" >
+            <div class = "swiper-wrapper" >
+              <div class = "swiper-slide" >
                 <div class = "ketab-card" >
                   <div class = "ketab-card-text-box" >
                     <h2 >
@@ -422,9 +529,8 @@
                   </div >
                 </div >
 
-
-              </div>
-              <div class="swiper-slide">
+              </div >
+              <div class = "swiper-slide" >
                 <div class = "ketab-card" >
                   <div class = "ketab-card-text-box" >
                     <h2 >
@@ -469,8 +575,8 @@
                   </div >
                 </div >
 
-              </div>
-              <div class="swiper-slide">
+              </div >
+              <div class = "swiper-slide" >
 
                 <div class = "ketab-card" >
                   <div class = "ketab-card-text-box" >
@@ -516,19 +622,19 @@
                   </div >
                 </div >
 
-              </div>
+              </div >
 
-            </div>
-            <div class="swiper-button-next">
+            </div >
+            <div class = "swiper-button-next" >
               <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
-            </div>
-            <div class="swiper-button-prev">
+            </div >
+            <div class = "swiper-button-prev" >
               <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
 
-            </div>
+            </div >
 
-            <div class="swiper-pagination"></div>
-          </div>
+            <div class = "swiper-pagination" ></div >
+          </div >
 
         </div >
         </div>
@@ -592,49 +698,52 @@
 
         </div >
         <div class = "cafe-ketab-content-box" >
-          <div class="cafe-ketab-box freudian-wednesdays">
-           <div class="freudian-wednesdays-context ">
-             <h4>چهارشنبه های فرویدی</h4>
-             <p>
-               ستون با تولید ستون با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک چاپگرها و سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+          <div class = "cafe-ketab-box freudian-wednesdays" >
+            <div class = "freudian-wednesdays-context " >
+              <h4 >چهارشنبه های فرویدی</h4 >
+              <p >
+                ستون با تولید ستون با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک چاپگرها و سادگی
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
 
-             </p>
-           </div>
-          </div>
-          <div class="cafe-ketab-box book-journal">
+              </p >
+            </div >
+          </div >
+          <div class = "cafe-ketab-box book-journal" >
             <img src = "/img/cafe-ketab.png" alt = "ketab" >
-            <div class="book-journal-context">
-              <h4>ژورنال کتاب</h4>
-              <p>
-                ستون با تولید ستون با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک چاپگرها و سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+            <div class = "book-journal-context" >
+              <h4 >ژورنال کتاب</h4 >
+              <p >
+                ستون با تولید ستون با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک چاپگرها و سادگی
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
                 و
 
-              </p>
-            </div>
-            <div class="book-journal-yellow-square"></div>
-          </div>
-          <div class="cafe-ketab-box movie-review">
+              </p >
+            </div >
+            <div class = "book-journal-yellow-square" ></div >
+          </div >
+          <div class = "cafe-ketab-box movie-review" >
             <img src = "/img/movie.png" alt = "ketab" >
-            <div class="movie-review-context">
-              <h4>بررسی و نقد فیلم</h4>
-              <p>
+            <div class = "movie-review-context" >
+              <h4 >بررسی و نقد فیلم</h4 >
+              <p >
                 ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p>
-            </div>
-            <div class="movie-review-yellow-square">
+              </p >
+            </div >
+            <div class = "movie-review-yellow-square" >
 
-
-            </div>
-          </div>
-          <div class="cafe-ketab-box book-review">
-            <div class="book-review-context ">
-              <h4>نقد و بررسی کتاب</h4>
-              <p>
-                ستونبا تولید ستونبا تولید ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              </p>
-            </div>
-          </div>
-        </div>
+            </div >
+          </div >
+          <div class = "cafe-ketab-box book-review" >
+            <div class = "book-review-context " >
+              <h4 >نقد و بررسی کتاب</h4 >
+              <p >
+                ستونبا تولید ستونبا تولید ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                چاپگرها و سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و سادگی نامفهوم از
+                صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+              </p >
+            </div >
+          </div >
+        </div >
       </section >
 
       <!--  mahname ********************************************* -->
@@ -646,20 +755,20 @@
           </p >
         </div >
         <div class = "mahname-content-box" >
-          <div class="swiper mySwiperNashr">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+          <div class = "swiper mySwiperNashr" >
+            <div class = "swiper-wrapper" >
+              <div class = "swiper-slide" >
                 <div class = "mahname-card" >
                   <div class = "mahname-card-text-box" >
                     <h4 >
                       مشاوره های فردی
                     </h4 >
-                    <div class="mahname-card-dates">
+                    <div class = "mahname-card-dates" >
                       <img src = "/img/icons/date.svg" alt = "date-mahname" >
-                      <span>
+                      <span >
                   شنبه 23 خرداد 1400
-                </span>
-                    </div>
+                </span >
+                    </div >
                     <p >
                       ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
                     </p >
@@ -677,19 +786,19 @@
 
                 </div >
 
-              </div>
-              <div class="swiper-slide">
+              </div >
+              <div class = "swiper-slide" >
                 <div class = "mahname-card" >
                   <div class = "mahname-card-text-box" >
                     <h4 >
                       مشاوره های فردی
                     </h4 >
-                    <div class="mahname-card-dates">
+                    <div class = "mahname-card-dates" >
                       <img src = "/img/icons/date.svg" alt = "date-mahname" >
-                      <span>
+                      <span >
                   شنبه 23 خرداد 1400
-                </span>
-                    </div>
+                </span >
+                    </div >
                     <p >
                       ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
                     </p >
@@ -707,19 +816,19 @@
 
                 </div >
 
-              </div>
-              <div class="swiper-slide">
+              </div >
+              <div class = "swiper-slide" >
                 <div class = "mahname-card" >
                   <div class = "mahname-card-text-box" >
                     <h4 >
                       مشاوره های فردی
                     </h4 >
-                    <div class="mahname-card-dates">
+                    <div class = "mahname-card-dates" >
                       <img src = "/img/icons/date.svg" alt = "date-mahname" >
-                      <span>
+                      <span >
                   شنبه 23 خرداد 1400
-                </span>
-                    </div>
+                </span >
+                    </div >
                     <p >
                       ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
                     </p >
@@ -737,37 +846,37 @@
 
                 </div >
 
-              </div>
+              </div >
 
-            </div>
-            <div class="swiper-button-next">
+            </div >
+            <div class = "swiper-button-next" >
               <img src = "/img/icons/left-arrow-slider.svg" alt = "left-arrow" >
-            </div>
-            <div class="swiper-button-prev">
+            </div >
+            <div class = "swiper-button-prev" >
               <img src = "/img/icons/right-arrow-slider.svg" alt = "right-arrow" >
 
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+            </div >
+            <div class = "swiper-pagination" ></div >
+          </div >
 
-        </div>
+        </div >
 
         <img src = "/img/shapes/curve-main.svg" alt = "curve"
           class = "mahname-curve" >
 
       </section >
-   <!--   &lt;!&ndash; Swiper &ndash;&gt;
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
+      <!--   &lt;!&ndash; Swiper &ndash;&gt;
+         <div class="slider">
+           <div class="swiper mySwiper">
+             <div class="swiper-wrapper">
+               <div class="swiper-slide">Slide 1</div>
+             </div>
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-pagination"></div>
+           </div>
 
-      </div>-->
+         </div>-->
 
       <!--pattern background *********************************************-->
       <div class = "pattern" >
@@ -846,145 +955,144 @@
 
       </div >
 
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="communicate">
-            <h5>راه های ارتباطی</h5>
-               <div class="address">
-                 <img src = "/img/icons/addess.svg" alt = "address" >
-                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
-               </div>
-            <div class="email">
+      <footer class = "footer" >
+        <div class = "footer-content" >
+          <div class = "communicate" >
+            <h5 >راه های ارتباطی</h5 >
+            <div class = "address" >
+              <img src = "/img/icons/addess.svg" alt = "address" >
+              <p >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p >
+            </div >
+            <div class = "email" >
               <img src = "/img/icons/email.svg" alt = "email" >
-              <p>
+              <p >
                 alma.lawson@example.com
-              </p>
-            </div>
-            <div class="call">
+              </p >
+            </div >
+            <div class = "call" >
               <img src = "/img/icons/call.svg" alt = "call" >
-              <p>
+              <p >
                 (808) 555-0111
-              </p>
-            </div>
-            <div class="social-media">
-              <div>
+              </p >
+            </div >
+            <div class = "social-media" >
+              <div >
                 <img src = "/img/icons/twitter.svg" alt = "twitter" >
-              </div>
-              <div>
+              </div >
+              <div >
                 <img src = "/img/icons/telegram.svg" alt = "telegram" >
-              </div>
-              <div>
+              </div >
+              <div >
                 <img src = "/img/icons/insta.svg" alt = "insta" >
-              </div>
-              <div>
+              </div >
+              <div >
                 <img src = "/img/icons/whatsapp.svg" alt = "whatsapp" >
-              </div>
-            </div>
-          </div>
-          <div class="aboutus">
+              </div >
+            </div >
+          </div >
+          <div class = "aboutus" >
             <img src = "/img/logo.png" alt = "logo" >
 
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-              ختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی</p>
+            <p >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
+              تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+              چاپ و با استفاده
+              ختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی</p >
 
-          </div>
-          <div class="access">
-            <div class="column">
-              <h6>دسترسی سریع</h6>
-              <div class="access-link">
+          </div >
+          <div class = "access" >
+            <div class = "column" >
+              <h6 >دسترسی سریع</h6 >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-            </div>
-            <div class="column">
-              <h6>دسترسی سریع</h6>
-              <div class="access-link">
+              </div >
+            </div >
+            <div class = "column" >
+              <h6 >دسترسی سریع</h6 >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع </a >
 
-              </div>
-              <div class="access-link">
+              </div >
+              <div class = "access-link" >
                 <img src = "/img/icons/arrow-left.svg"
                   class = "arrow-left"
                   alt = "arrow" >
                 <a href = "" >دسترسی سریع</a >
 
-              </div>
+              </div >
 
-            </div>
+            </div >
 
-          </div>
-   </div>
+          </div >
+        </div >
 
-
-
-
-        <div class="copyright">
-          <div class="copyright-arrow">
+        <div class = "copyright" >
+          <div class = "copyright-arrow" >
             <img src = "/img/icons/arrow-left.svg" alt = "arrow" >
-          </div>
-          <p>
+          </div >
+          <p >
             Copyright © 2021 All rights reserved
 
-          </p>
+          </p >
 
-        </div>
+        </div >
         <img src = "/img/shapes/curve-dark-blue.svg" alt = "curve" class = "footer-curve" >
-      </footer>
+      </footer >
 
     </main >
 
@@ -992,7 +1100,7 @@
     <script src = "js/vendor/modernizr-3.11.2.min.js" ></script >
     <script src = "js/plugins.js" ></script >
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script >
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js" ></script >
     <script src = "js/main.js" ></script >
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

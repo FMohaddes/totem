@@ -10,7 +10,6 @@ main {
   }
 
 .academy-ravancavi {
-  z-index        : 2;
   position       : relative;
   grid-column    : 2/3;
   @include center;
@@ -31,7 +30,7 @@ main {
     margin-top            : var(--space-3-2);
     max-width             : 100rem;
     min-height            : 46rem;
-    background            : rgba(255, 255, 255, 0.05);
+    background            : rgba(255, 255, 255, 0.11);
     display               : grid;
     grid-template-columns : 10% 55% 35%;
     justify-content       : center;
@@ -126,7 +125,8 @@ main {
   align-items : center;
 
   &-text-box {
-    position       : relative;
+    z-index : 1;
+
     margin-top     : -15rem;
     display        : flex;
     flex-direction : column;
@@ -138,14 +138,12 @@ main {
       }
 
     h3 {
-      z-index     : 2;
       padding-top : var(--space-1-2);
 
       }
 
     p {
 
-      z-index : 2;
       color   : var(--color-Primary-dark);
 
       @media only screen and (max-width : 37rem) {
@@ -299,7 +297,7 @@ main {
         width           : 31.1rem;
         height          : 5.2rem;
         margin-top      : var(--space-0-8);
-        border-top      : .1rem solid var(--color-Primary);
+        //border-top      : .1rem solid var(--color-Primary);
         display         : flex;
         justify-content : space-between;
         align-items     : center;
