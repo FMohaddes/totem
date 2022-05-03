@@ -91,7 +91,7 @@ body {
   font-family: IRANYekanWebRegula, serif;
   background-color: #F9FCFF;
   color: var(--color-Grey-dark-1);
-  line-height: 155%;
+  line-height: 160%;
   position: relative;
 }
 
@@ -1178,7 +1178,7 @@ main {
   grid-template-columns: var(--space-8) 1fr var(--space-8);
   min-height: 100vh;
   fill-opacity: 0.3;
-  grid-row-gap: var(--space-8);
+  grid-row-gap: var(--space-4);
   position: relative;
   overflow: hidden;
 }
@@ -1323,7 +1323,7 @@ main {
   width: 36rem;
   height: 28rem;
   background: var(--color-Primary-light-gradient);
-  border-radius: 2rem 6rem 2rem 2rem;
+  border-radius: var(--bdrs-3);
   justify-content: start;
   align-content: start;
   box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
@@ -2001,7 +2001,6 @@ main {
   width: 61rem;
   height: 26rem;
   padding: var(--space-4);
-  text-align: center;
 }
 @media only screen and (max-width: 60rem) {
   .cafe-ketab-content-box .book-review {
@@ -2016,6 +2015,21 @@ main {
     grid-row: 3/6;
     grid-column: 1/7;
     margin: 0;
+  }
+}
+.cafe-ketab-content-box .book-review-context {
+  background-color: var(--color-white);
+  border-radius: var(--bdrs-3);
+  width: 48rem;
+  height: 19.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+}
+@media only screen and (max-width: 60rem) {
+  .cafe-ketab-content-box .book-review-context {
+    width: 44rem;
+    height: 17rem;
   }
 }
 
@@ -2135,6 +2149,379 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.post-container {
+  position: relative;
+  grid-column: 1/-1;
+  min-height: 100vh;
+  margin: var(--space-4) 0 var(--space-8);
+  display: grid;
+  grid-template-columns: 38rem 1fr;
+  padding: 0 var(--space-6-4);
+  grid-column-gap: var(--space-3-2);
+  grid-row-gap: var(--space-6-4);
+}
+
+.cover {
+  display: grid;
+  justify-content: end;
+  grid-auto-rows: 60rem;
+  grid-column: 1/-1;
+}
+.cover-title {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 1;
+  border: var(--bdr);
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  border-radius: var(--bdrs-3);
+  margin-bottom: var(--space-3-2);
+  margin-left: var(--space-3-2);
+  width: 92rem;
+  height: 56rem;
+  background: rgba(255, 255, 255, 0.11);
+  padding-right: var(--space-6-4);
+  padding-top: var(--space-4-8);
+}
+.cover-title h1 {
+  font-size: var(--size-2-8);
+  font-family: IRANYekanWebBold, Arial, serif;
+  color: var(--color-white);
+}
+.cover img {
+  align-self: end;
+  z-index: 22;
+  justify-self: end;
+  border-radius: var(--bdrs-3);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 85rem;
+  height: 46rem;
+  display: inline-block;
+}
+
+aside {
+  z-index: 111;
+  position: relative;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2/3;
+  width: 100%;
+}
+aside .post-info {
+  width: 100%;
+  height: 22rem;
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  padding: var(--space-2-4) var(--space-3-2);
+  min-height: 30vh;
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-1);
+  margin-bottom: var(--space-3-2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+aside .post-info-time {
+  justify-self: end;
+  align-self: end;
+  font-size: var(--size-1);
+  font-family: BTitrBold, Arial, serif;
+  display: flex;
+  color: var(--color-Grey);
+}
+aside .post-info-time img {
+  margin-left: var(--space-0-8);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+aside .post-info-writer {
+  display: flex;
+}
+aside .post-info-writer img {
+  width: 7rem;
+  height: 7rem;
+  margin-left: var(--space-2-4);
+  border-radius: 55%;
+}
+aside .post-info-writer h6 {
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+}
+aside .post-info-writer p {
+  line-height: 160%;
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+aside .post-info-share-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .post-info-share-date .post-date {
+  font-size: var(--size-1-4);
+  font-family: BTitrBold, Arial, serif;
+  display: flex;
+  align-items: center;
+  color: var(--color-Grey);
+}
+aside .post-info-share-date .post-date img {
+  margin-left: var(--space-0-8);
+  width: 2.8rem;
+  height: 2.8rem;
+}
+aside .post-info-share-date .share-post {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 12.8rem;
+  height: 4.5rem;
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
+}
+aside .new-posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+aside .new-posts .new-post-content {
+  display: flex;
+  justify-content: space-between;
+  height: 17rem;
+  width: 100%;
+  border: var(--bdr);
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  padding: var(--space-2-4) var(--space-3-2);
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-1);
+  margin-bottom: var(--space-3-2);
+}
+aside .new-posts .new-post-content img {
+  margin-left: var(--space-2-4);
+  width: 13.5rem;
+  object-fit: cover;
+  border-radius: var(--bdrs-1);
+}
+aside .new-posts .new-post-content .new-post-text {
+  padding: var(--space-0-4) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+aside .new-posts .new-post-content .new-post-text h4 {
+  height: 30%;
+  font-size: var(--size-1);
+  font-family: IRANYekanWebBold, Arial, serif;
+}
+aside .new-posts .new-post-content .new-post-text p {
+  height: 60%;
+  line-height: 160%;
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+aside .new-posts .new-post-content .new-post-text .new-post-date {
+  height: 10%;
+  font-size: var(--size-1);
+  font-family: BTitrBold, Arial, serif;
+  display: flex;
+  align-items: center;
+  color: var(--color-Grey);
+}
+aside .new-posts .new-post-content .new-post-text .new-post-date img {
+  margin-left: var(--space-0-8);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.post-context {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 111;
+  position: relative;
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  border: var(--bdr);
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-3);
+  padding: var(--space-3-2) var(--space-3-2);
+}
+.post-context p {
+  text-align: justify;
+  font-size: var(--size-1-4);
+  line-height: 175%;
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+
+.post-comments {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  width: 100%;
+  position: relative;
+  z-index: 77;
+}
+.post-comments .post-comment {
+  display: flex;
+  flex-direction: column;
+  margin: var(--space-4) 0;
+}
+.post-comments .comment {
+  width: 100%;
+  height: 14rem;
+  border: var(--bdr);
+  padding: var(--space-2-4) var(--space-3-2);
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-1);
+  display: flex;
+  flex-direction: column;
+}
+.post-comments .comment .comment-date {
+  height: 10%;
+  justify-content: end;
+  font-size: var(--size-1);
+  font-family: BTitrBold, Arial, serif;
+  display: flex;
+  color: var(--color-Grey);
+}
+.post-comments .comment .comment-date img {
+  margin-left: var(--space-1-2);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.post-comments .comment .comment-content {
+  height: 90%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.post-comments .comment .comment-content img {
+  margin-left: var(--space-3-2);
+  border-radius: 55%;
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+}
+.post-comments .comment .comment-content .comment-context h6 {
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+}
+.post-comments .comment .comment-content .comment-context p {
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+  font-family: IRANYekanWebLigth, Arial, serif;
+}
+.post-comments .reply {
+  margin-top: var(--space-3-2);
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.post-comments .reply .reply-arrow {
+  width: 10%;
+  height: 5.5rem;
+}
+.post-comments .reply div {
+  width: 90%;
+}
+.post-comments .comment-info a {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  border-bottom: 0.1rem solid var(--color-Grey-dark-1);
+}
+.post-comments .comment-info .arrow-left {
+  margin: var(--space-0-4) var(--space-1-2) 0 0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.post-curve {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.comment-submit {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  width: 100%;
+  border-radius: var(--bdrs-3);
+  border: var(--bdr);
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  padding: var(--space-4-8);
+  background: var(--color-Primary-gradient-o);
+}
+.comment-submit h5 {
+  margin-bottom: var(--space-1-6);
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+}
+.comment-submit input {
+  font-family: inherit;
+  color: inherit;
+  box-shadow: var(--shadow-light);
+  padding: var(--space-1-6);
+  border: none;
+  width: 100%;
+  border-radius: var(--bdrs-1);
+  height: 5.5rem;
+  border-bottom: 3px solid transparent;
+  display: block;
+  margin-bottom: var(--space-3-2);
+}
+.comment-submit input:focus {
+  outline: none;
+}
+.comment-submit input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+.comment-submit input::-webkit-input-placeholder {
+  color: var(--color-Grey);
+}
+.comment-submit textarea {
+  box-shadow: var(--shadow-light);
+  padding: var(--space-1-6);
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: var(--bdrs-1);
+  transition: all 0.2s;
+  border: none;
+  resize: none;
+}
+.comment-submit textarea:focus {
+  outline: none;
+}
+.comment-submit button {
+  margin-top: var(--space-3-2);
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebBold, Arial, serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  grid-column-gap: 1.5rem;
+  border: none;
+  width: 12.8rem;
+  height: 4.5rem;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
 }
 
 /*# sourceMappingURL=style.css.map */

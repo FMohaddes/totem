@@ -4,7 +4,7 @@ main {
   grid-template-columns : var(--space-8) 1fr var(--space-8);
   min-height            : 100vh;
   fill-opacity          : .3;
-  grid-row-gap          : var(--space-8);
+  grid-row-gap          : var(--space-4);
   position              : relative;
   overflow              : hidden;
   }
@@ -168,7 +168,7 @@ main {
       width                 : 36rem;
       height                : 28rem;
       background            : var(--color-Primary-light-gradient);
-      border-radius         : 2rem 6rem 2rem 2rem;
+      border-radius         : var(--bdrs-3);
       justify-content       : start;
       align-content         : start;
       @include glassBox;
@@ -923,7 +923,7 @@ main {
       width       : 61rem;
       height      : 26rem;
       padding     : var(--space-4);
-      text-align  : center;
+
       @media only screen and (max-width : 60rem) {
         width        : 45rem;
         height       : 22rem;
@@ -936,6 +936,19 @@ main {
         grid-column : 1/7;
         margin      : 0;
 
+        }
+      &-context{
+        background-color : var(--color-white);
+        border-radius    : var(--bdrs-3);
+        width            : 48rem;
+        height           : 19.5rem;
+        display : flex;
+        flex-direction   : column;
+        padding          : var(--space-4);
+        @media only screen and (max-width : 60rem) {
+          width  : 44rem;
+          height : 17rem;
+          }
         }
       }
     }

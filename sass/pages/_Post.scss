@@ -1,0 +1,421 @@
+.post-container {
+  position              : relative;
+  grid-column           : 1/-1;
+  min-height            : 100vh;
+  margin                : var(--space-4) 0 var(--space-8);
+  display               : grid;
+  grid-template-columns : 38rem 1fr;
+  padding               : 0 var(--space-6-4);
+  grid-column-gap       : var(--space-3-2);
+  grid-row-gap          : var(--space-6-4);
+  }
+
+.cover {
+  display         : grid;
+  justify-content : end;
+  grid-auto-rows  : 60rem;
+  grid-column     : 1/-1;
+
+  &-title {
+    grid-column   : 1/-1;
+    grid-row      : 1/2;
+    z-index       : 1;
+    border        : var(--bdr);
+    @include glassBox;
+    border-radius : var(--bdrs-3);
+    margin-bottom : var(--space-3-2);
+    margin-left   : var(--space-3-2);
+    width         : 92rem;
+    height        : 56rem;
+    background    : rgba(255, 255, 255, 0.11);
+    padding-right : var(--space-6-4);
+    padding-top   : var(--space-4-8);
+
+    h1 {
+      font-size   : var(--size-2-8);
+      font-family : IRANYekanWebBold, Arial, serif;
+      color       : var(--color-white);
+
+      }
+    }
+
+  img {
+    align-self    : end;
+    z-index       : 22;
+    justify-self  : end;
+    border-radius : var(--bdrs-3);
+    grid-column   : 1/2;
+    grid-row      : 1/2;
+    width         : 85rem;
+    height        : 46rem;
+    display       : inline-block;
+    }
+  }
+
+aside {
+  z-index        : 111;
+  position       : relative;
+  grid-column    : 1/2;
+  display        : flex;
+  flex-direction : column;
+  grid-row       : 2/3;
+  width          : 100%;
+
+  .post-info {
+    width           : 100%;
+    height          : 22rem;
+    @include glassBox;
+    padding         : var(--space-2-4) var(--space-3-2);
+    min-height      : 30vh;
+    background      : var(--color-Primary-light-gradient);
+    border-radius   : var(--bdrs-1);
+    margin-bottom   : var(--space-3-2);
+    display         : flex;
+    justify-content : space-between;
+    flex-direction  : column;
+
+    &-time {
+      justify-self : end;
+      align-self   : end;
+      font-size    : var(--size-1);
+      font-family  : BTitrBold, Arial, serif;
+      display      : flex;
+      color        : var(--color-Grey);
+
+      img {
+        margin-left : var(--space-0-8);
+
+        width       : 2.4rem;
+        height      : 2.4rem;
+        }
+      }
+
+    &-writer {
+      display : flex;
+
+      img {
+        width         : 7rem;
+        height        : 7rem;
+        margin-left   : var(--space-2-4);
+
+        border-radius : 55%;
+        }
+
+      h6 {
+        font-size   : var(--size-1-4);
+        font-family : IRANYekanWebBold, Arial, serif;
+        }
+
+      p {
+        line-height : 160%;
+        font-size   : var(--size-1);
+        color       : var(--color-Grey);
+        font-family : IRANYekanWebLigth, Arial, serif;
+        }
+      }
+
+    &-share-date {
+      display         : flex;
+      justify-content : space-between;
+      align-items: center;
+
+      .post-date {
+        font-size   : var(--size-1-4);
+        font-family : BTitrBold, Arial, serif;
+        display     : flex;
+        align-items: center;
+
+        color       : var(--color-Grey);
+
+        img {
+          margin-left : var(--space-0-8);
+          width       : 2.8rem;
+          height      : 2.8rem;
+          }
+        }
+       .share-post{
+         @include center;
+         width            : 12.8rem;
+         height           : 4.5rem;
+         font-size   : var(--size-1-4);
+         font-family : IRANYekanWebBold, Arial, serif;
+         border-radius    : var(--bdrs-3);
+         background-color : var(--color-Secondary);
+         }
+
+      }
+    }
+
+  .new-posts {
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
+
+    .new-post-content {
+      display : flex;
+      justify-content : space-between;
+      height        : 17rem;
+      width         : 100%;
+      border        : var(--bdr);
+      @include glassBox;
+      padding : var(--space-2-4) var(--space-3-2);
+      background    : var(--color-Primary-light-gradient);
+      border-radius : var(--bdrs-1);
+      margin-bottom : var(--space-3-2);
+     img{
+       margin-left   : var(--space-2-4);
+       width : 13.5rem;
+       object-fit: cover;
+       border-radius : var(--bdrs-1);
+       }
+      .new-post-text{
+        padding : var(--space-0-4) 0;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-between;
+        height : 100%;
+        h4 {
+          height : 30%;
+          font-size   : var(--size-1);
+          font-family : IRANYekanWebBold, Arial, serif;
+          }
+
+        p {
+
+          height : 60%;
+          line-height : 160%;
+          font-size   : var(--size-1);
+          color       : var(--color-Grey);
+          font-family : IRANYekanWebLigth, Arial, serif;
+          }
+        .new-post-date {
+          height : 10%;
+          font-size   : var(--size-1);
+          font-family : BTitrBold, Arial, serif;
+          display     : flex;
+          align-items: center;
+
+          color       : var(--color-Grey);
+
+          img {
+            margin-left : var(--space-0-8);
+            width       : 1.8rem;
+            height      : 1.8rem;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+.post-context {
+  width         : 100%;
+  grid-column   : 2/3;
+  grid-row      : 2/3;
+  z-index       : 111;
+  position      : relative;
+  @include glassBox;
+  border        : var(--bdr);
+  background    : var(--color-Primary-light-gradient);
+  border-radius : var(--bdrs-3);
+  padding       : var(--space-3-2) var(--space-3-2);
+
+  p {
+    text-align  : justify;
+    font-size   : var(--size-1-4);
+    line-height : 175%;
+    font-family : IRANYekanWebLigth, Arial, serif;
+    }
+  }
+
+.post-comments {
+  grid-row    : 3/4;
+  grid-column : 2/3;
+  width       : 100%;
+  position    : relative;
+  z-index     : 77;
+
+  .post-comment {
+    display        : flex;
+    flex-direction : column;
+    margin         : var(--space-4) 0;
+    }
+
+  .comment {
+    width          : 100%;
+    height         : 14rem;
+    border         : var(--bdr);
+    padding        : var(--space-2-4) var(--space-3-2);
+    @include glassBox;
+    background     : var(--color-Primary-light-gradient);
+    border-radius  : var(--bdrs-1);
+    display        : flex;
+    flex-direction : column;
+
+    .comment-date {
+      height          : 10%;
+      justify-content : end;
+      font-size       : var(--size-1);
+      font-family     : BTitrBold, Arial, serif;
+      display         : flex;
+      color           : var(--color-Grey);
+
+      img {
+        margin-left : var(--space-1-2);
+        width       : 2.4rem;
+        height      : 2.4rem;
+        }
+      }
+
+    .comment-content {
+      height        : 90%;
+      display       : flex;
+      align-content : center;
+      align-items   : center;
+
+      img {
+        margin-left   : var(--space-3-2);
+
+        border-radius : 55%;
+        width         : 7rem;
+        height        : 7rem;
+        object-fit    : cover;
+        }
+
+      .comment-context {
+        h6 {
+          font-size   : var(--size-1-4);
+          font-family : IRANYekanWebBold, Arial, serif;
+          }
+
+        p {
+          font-size   : var(--size-1);
+          color       : var(--color-Grey);
+          font-family : IRANYekanWebLigth, Arial, serif;
+          }
+        }
+      }
+    }
+
+  .reply {
+    margin-top      : var(--space-3-2);
+    width           : 100%;
+    display         : flex;
+    justify-content : start;
+
+    .reply-arrow {
+      width  : 10%;
+      height : 5.5rem;
+      }
+
+    div {
+      width : 90%;
+      }
+
+    //margin :var(--space-2-4) var(--space-8) 0 0;
+    }
+
+  .comment-info {
+    a {
+      font-family   : IRANYekanWebBold, Arial, serif;
+      font-size     : var(--size-1);
+      color         : var(--color-Grey-dark-1);
+      border-bottom : .1rem solid var(--color-Grey-dark-1);
+      }
+
+    .arrow-left {
+      margin : var(--space-0-4) var(--space-1-2) 0 0;
+      width  : 1.8rem;
+      height : 1.8rem;
+      }
+    }
+
+  }
+
+.post-curve {
+  width    : 100%;
+  height   : 30%;
+  position : absolute;
+  top      : 50%;
+  left     : 0;
+  }
+
+.comment-submit {
+  grid-row      : 4/5;
+  grid-column   : 2/3;
+  width         : 100%;
+  border-radius : var(--bdrs-3);
+  border        : var(--bdr);
+  @include glassBox;
+  padding       : var(--space-4-8);
+  background    : var(--color-Primary-gradient-o);
+
+  h5 {
+    margin-bottom : var(--space-1-6);
+    font-size     : var(--size-1-4);
+    font-family   : IRANYekanWebBold, Arial, serif;
+
+    }
+
+  input {
+    font-family   : inherit;
+    color         : inherit;
+    box-shadow    : var(--shadow-light);
+    padding       : var(--space-1-6);
+    border        : none;
+    width         : 100%;
+    border-radius : var(--bdrs-1);
+    height        : 5.5rem;
+    border-bottom : 3px solid transparent;
+    display       : block;
+    margin-bottom : var(--space-3-2);
+
+    &:focus {
+      outline : none;
+      //border-bottom : 3px solid var(--c-green);
+
+      }
+
+    &:focus:invalid {
+      border-bottom : 3px solid red;
+      }
+
+    &::-webkit-input-placeholder {
+      color : var(--color-Grey);
+      }
+    }
+
+  textarea {
+    box-shadow    : var(--shadow-light);
+    padding       : var(--space-1-6);
+
+    width         : 100%;
+    font-size     : 1.4rem;
+    line-height   : 2rem;
+    border-radius : var(--bdrs-1);
+    transition    : all .2s;
+    border        : none;
+    resize        : none;
+
+    &:focus {
+      outline : none;
+      }
+    }
+
+  button {
+    margin-top       : var(--space-3-2);
+    font-size        : var(--size-1-4);
+    font-family      : IRANYekanWebBold, Arial, serif;
+    @include center;
+    cursor           : pointer;
+    grid-column-gap  : 1.5rem;
+    border           : none;
+    width            : 12.8rem;
+    height           : 4.5rem;
+    border-radius    : var(--bdrs-3);
+    background-color : var(--color-Secondary);
+    }
+
+  }
