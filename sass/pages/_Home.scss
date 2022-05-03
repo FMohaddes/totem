@@ -194,8 +194,10 @@ main {
           }
 
         p {
+          font-family   : IRANYekanWebLigth, Arial, serif;
+
           font-size   : var(--size-1);
-          color       : var(--color-Grey);
+          color       : var(--color-Grey-dark-1);
           line-height : 155%;
 
           }
@@ -462,7 +464,7 @@ main {
 
       p {
         font-size   : var(--size-1-4);
-        color       : var(--color-Grey);
+        color       : var(--color-Grey-dark-1);
         line-height : 155%;
 
         }
@@ -544,7 +546,7 @@ main {
           font-family : IRANYekanWebLigth, Arial, serif;
 
           font-size   : var(--size-1);
-          color       : var(--color-Grey);
+          color       : var(--color-Grey-dark-1);
           line-height : 155%;
 
           }
@@ -768,7 +770,7 @@ main {
 
     p {
       font-size   : var(--size-1);
-      color       : var(--color-Grey);
+      color       : var(--color-Grey-dark-1);
       font-family : IRANYekanWebLigth, Arial, serif;
       }
     }
@@ -1042,9 +1044,9 @@ main {
         }
 
       p {
-        padding     : var(--space-1-2) 0;
+        padding     : var(--space-0-8) 0;
         font-size   : var(--size-1);
-        color       : var(--color-Grey);
+        color       : var(--color-Grey-dark-1);
         font-family : IRANYekanWebLigth, Arial, serif;
         }
       }

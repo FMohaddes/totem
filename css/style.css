@@ -5,7 +5,7 @@
   --rem-md: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.1vw);
   --rem-sm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.2vw);
   --rem-xsm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
-  --rem-xxsm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.2vw);
+  --rem-xxsm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.4vw);
   --color-Primary: #E4F0FB;
   --color-Primary-light: #F9FCFF;
   --color-Primary-dark: #234361;
@@ -22,8 +22,8 @@
   --color-Secondary: #FBD862;
   --color-Secondary-o: rgb(250, 210, 100, .7);
   --color-Tertiary: #47C3CD;
-  --color-Grey-light-1: #C6C6C6;
-  --color-Grey: #929292;
+  --color-Grey-light-1: #AEAEAE;
+  --color-Grey: #878787;
   --color-Grey-dark-1: #393939;
   --color-white: #FFF;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
@@ -204,7 +204,6 @@ a:hover, a:active, a:visited, a:link {
   position: static;
   width: 100%;
   height: 100%;
-  padding: 2rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -1352,8 +1351,9 @@ main {
   margin-bottom: var(--space-0-8);
 }
 .academey-honary-content-box .course-card-text-box p {
+  font-family: IRANYekanWebLigth, Arial, serif;
   font-size: var(--size-1);
-  color: var(--color-Grey);
+  color: var(--color-Grey-dark-1);
   line-height: 155%;
 }
 .academey-honary-content-box .course-card-image {
@@ -1582,7 +1582,7 @@ main {
 }
 .academey-cinemae-content-box .cinema-card p {
   font-size: var(--size-1-4);
-  color: var(--color-Grey);
+  color: var(--color-Grey-dark-1);
   line-height: 155%;
 }
 
@@ -1649,7 +1649,7 @@ main {
 .nashr-content-box .ketab-card-text-box p {
   font-family: IRANYekanWebLigth, Arial, serif;
   font-size: var(--size-1);
-  color: var(--color-Grey);
+  color: var(--color-Grey-dark-1);
   line-height: 155%;
 }
 .nashr-content-box .ketab-card-image {
@@ -1845,7 +1845,7 @@ main {
 }
 .cafe-ketab-box p {
   font-size: var(--size-1);
-  color: var(--color-Grey);
+  color: var(--color-Grey-dark-1);
   font-family: IRANYekanWebLigth, Arial, serif;
 }
 .cafe-ketab-content-box {
@@ -2121,9 +2121,9 @@ main {
   margin-bottom: var(--space-1-2);
 }
 .mahname-card-text-box p {
-  padding: var(--space-1-2) 0;
+  padding: var(--space-0-8) 0;
   font-size: var(--size-1);
-  color: var(--color-Grey);
+  color: var(--color-Grey-dark-1);
   font-family: IRANYekanWebLigth, Arial, serif;
 }
 .mahname-card img {
