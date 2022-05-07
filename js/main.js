@@ -1,3 +1,13 @@
+$(function () {
+  $('.toggle-menu').click(function(){
+    $('.exo-menu').toggleClass('display');
+
+  });
+
+});
+
+
+
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 10,
@@ -44,9 +54,10 @@ let swiperB = new Swiper(".mySwiperBullet", {
   },
   breakpoints: {
     "@0.00": {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
+
     "@0.75": {
       slidesPerView: 2,
       spaceBetween: 20,

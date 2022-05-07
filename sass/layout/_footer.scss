@@ -6,8 +6,6 @@
   grid-column           : 1/-1;
   @media only screen and (max-width : 32rem) {
     height                : 55vh;
-
-
     }
 
   &-content {
@@ -29,7 +27,10 @@
       grid-row-gap: var(--space-6-4);
       grid-column-gap: var(--space-1-2);
       align-items: end;
+      @media only screen and (max-width : 37rem) {
+        padding               : var(--space-0-4) var(--space-3-2) 0;
 
+        }
 
       }
 

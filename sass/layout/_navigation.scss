@@ -85,7 +85,7 @@ nav {
   }
 
 .menu-items {
-  display : flex;
+  display        : flex;
   padding-bottom : 4rem;
   }
 
@@ -98,7 +98,6 @@ nav {
 
 .menu-items a {
   text-decoration : none;
-  color           : var(--color-Grey-light-1);
   font-weight     : 500;
   transition      : color 0.3s ease-in-out;
   padding-left    : var(--space-6-4);
@@ -209,7 +208,7 @@ nav {
     transform      : translate(150%);
     flex-direction : column;
     margin-right   : -55px;
-    padding  :15rem var(--space-6-4) 0;
+    padding        : 15rem var(--space-6-4) 0 var(--space-3-2);
 
     transition     : transform 0.5s ease-in-out;
     }
@@ -220,18 +219,16 @@ nav {
     font-size     : var(--size-1-8);
     border-bottom : 1px solid linear-gradient(251.6deg, rgba(141, 174, 198, 0.31) 4%, rgba(141, 174, 198, 0.1829) 33.42%, rgba(141, 174, 198, 0.1674) 62.46%, rgba(255, 255, 255, 0.31) 90.03%);
 
-
     a {
       color       : var(--color-Grey-dark-1);
       font-family : IRANYekanWebBold, Arial, serif;
 
       }
     }
-  .level-1{
-    box-shadow    : 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
+  .level-1 {
+    box-shadow : 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
 
     }
-
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform : translateX(0);
@@ -289,9 +286,7 @@ a, a:hover, a.active, a:active, a:visited, a:focus {
 .exo-menu > li > a.active,
 .exo-menu > li > a:hover,
 li.drop-down ul > li > a:hover {
-  background : #009FE1;
-  color      : var(--color-Grey-dark-1);
-
+  //background-color : red;
   }
 
 .exo-menu i {
@@ -303,53 +298,168 @@ li.drop-down ul > li > a:hover {
 
 li.drop-down,
 .flyout-right,
-.flyout-left {position : relative;}
+.flyout-left {
+  position : relative;
+  z-index  : 33;
+  @media (max-width : 767px) {
+    padding-left  : 0 !important;
+    padding-right : 0 !important;
+
+    }
+  .parent-item{
+    padding-right : var(--space-4);
+    }
+  }
 
 li.drop-down:before {
-  content     : "\f103";
-  color       : #FFF;
-  font-family : FontAwesome;
-  font-style  : normal;
-  display     : inline;
-  position    : absolute;
-  right       : 6px;
-  top         : 20px;
-  font-size   : 14px;
+  //content     : url("/img/icons/arrow-left.svg");
+  color              : #FFF;
+  content            : '';
+  background-color   : var(--color-Primary-light);
+  -webkit-mask-image : url("/img/icons/arrow-left.svg");
+  -webkit-mask-size  : cover;
+  font-family        : FontAwesome, serif;
+  font-style         : normal;
+  display            : inline;
+  position           : absolute;
+  width              : 1rem;
+  height             : 1rem;
+  transform          : rotate(270deg);
+  right              : 5rem;
+  top                : .5rem;
+  @media (max-width : 767px) {
+    right              : 10rem;
+    top                : 4.8rem;
+    background-color   : var(--color-Primary-dark);
+
+
+    }
+
   }
 
 li.drop-down > ul {
-  left      : 0px;
-  min-width : 230px;
+  top : 2.1rem;
+  right         : -.2rem;
+  min-width     : 23rem;
+  background    : rgba(255, 255, 255, 0.77);
+  @include glassBox;
+  border-radius : var(--bdrs-1);
 
+  > li {
+    border-bottom : .1rem solid var(--color-Primary-dark);
+    margin-left   : 0;
+    @media (max-width : 767px) {
+      padding            :var(--space-0-8) var(--space-2-4) !important;
+      }
+    }
+
+  li:last-child {
+    border-bottom : none !important;
+    }
+  @media (max-width : 767px) {
+    background    :transparent;
+    box-shadow       : none ;
+    backdrop-filter:none;
+    border           : none;
+    padding            : 0 !important;
+    }
   }
 
-.drop-down-ul {display : none;}
+//.drop-down-ul {display : none;}
 
 .flyout-right > ul,
 .flyout-left > ul {
-  top       : 0;
-  min-width : 230px;
-  display   : none;
+  border        : var(--bdr);
+  @include glassBox;
+  background    :#d3dae2;
+  border-radius : var(--bdrs-1);
+  top           : 50%;
+  min-width     : 23rem;
+  margin-right  : .1rem;
+  display       : none;
+
+  > li {
+    border-bottom : .1rem solid var(--color-Primary-dark);
+    margin-left   : 0;
+    @media (max-width : 767px) {
+      padding            :var(--space-0-8) var(--space-2-4) !important;
+      }
+    }
+
+  li:last-child {
+    border-bottom : none !important;
+    }
+  @media (max-width : 767px) {
+    background    :transparent;
+    box-shadow       : none ;
+    border           : none;
+    padding            : 0 !important;
+    }
   }
 
 li.drop-down > ul > li > a,
 .flyout-right ul > li > a,
 .flyout-left ul > li > a {
   color              : var(--color-Grey-dark-1);
-
   display            : block;
-  padding            : 20px 22px;
+  font-family        : IRANYekanWebBold, Arial, serif;
+  font-size          : 1.2rem;
+  //background-color : red;
   text-decoration    : none;
-  border-bottom      : 1px dotted #547787;
+  padding            : var(--space-2-4);
+
   -webkit-transition : color 0.2s linear, background 0.2s linear;
   -moz-transition    : color 0.2s linear, background 0.2s linear;
   -o-transition      : color 0.2s linear, background 0.2s linear;
   transition         : color 0.2s linear, background 0.2s linear;
+  &:hover {
+    font-family : IRANYekanWebExtraBold, Arial, serif;
+    color       : var(--color-Grey-dark-1);
+    }
   }
 
 .flyout-right ul > li > a,
 .flyout-left ul > li > a {
-  border-bottom : 1px dotted #B8C7BC;
+  //border-bottom : 1px dotted #B8C7BC;
+  }
+
+/*Flyout Mega*/
+.flyout-mega-wrap {
+
+  top       : 0;
+  right     : 0;
+  left      : 100%;
+  width     : 100%;
+  //display:none;
+  height    : 100%;
+  padding   : 15px;
+  min-width : 742px;
+
+  }
+
+h4.row.mega-title {
+  margin-top     : 0;
+  margin-bottom  : 1rem;
+  font-size      : 14px;
+  padding-left   : 15px;
+  padding-bottom : 13px;
+  text-transform : uppercase;
+  //border-bottom: .1rem solid var(--color-Grey-light-1);
+  }
+
+.flyout-mega ul > li > a {
+  font-size   : 90%;
+  line-height : 25px;
+  color       : #FFF;
+  font-family : inherit;
+  }
+
+.flyout-mega ul > li > a:hover,
+.flyout-mega ul > li > a:active,
+.flyout-mega ul > li > a:focus {
+  text-decoration  : none;
+  background-color : transparent !important;
+  color            : #CCC !important
   }
 
 /*mega menu*/
@@ -358,7 +468,9 @@ li.drop-down > ul > li > a,
   left          : 0;
   z-index       : 33;
   right         : 0;
-  display:none;
+  top : 2.1rem;
+
+  display       : none;
   //margin-top   : var(--space--4);
   min-height    : 100%;
   border        : var(--bdr);
@@ -405,15 +517,20 @@ li.drop-down > ul > li > a,
 
   .special-content {
     @include glassBox;
-    background-color : var(--color-Primary-gradient);
-    justify-self     : end;
-    width            : 50%;
-    display          : flex;
-    padding          : var(--space-4) var(--space-6-4) var(--space-6-4) var(--space-6-4);
-    border-radius    : var(--bdrs-3) 0 0 var(--bdrs-3);
-    flex-direction   : column;
+    background     : var(--color-Primary-gradient);
+    justify-self   : end;
+    width          : 50%;
+    display        : flex;
+    padding        : var(--space-4) var(--space-6-4) var(--space-6-4) var(--space-6-4);
+    border-radius  : var(--bdrs-3) 0 0 var(--bdrs-3);
+    flex-direction : column;
+
+    .item {
+
+      }
 
     h4 {
+
       display         : flex;
       justify-content : start;
       }
@@ -421,10 +538,10 @@ li.drop-down > ul > li > a,
     li {
       padding-bottom : var(--space-2-4);
       display        : flex;
-      align-content  : center;
 
       .special-content-icon {
         @include center;
+
         width            : 6.5rem;
         height           : 6rem;
         background-color : var(--color-white);
@@ -441,6 +558,10 @@ li.drop-down > ul > li > a,
       .special-content-text {
         display        : flex;
         flex-direction : column;
+
+        a {
+          padding : var(--space-0-4) 0;
+          }
 
         span {
           font-family : IRANYekanWebLigth, Arial, serif;
@@ -570,24 +691,24 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
     .mega-title {
       color      : var(--color-white);
       margin-top : 0 !important;
-      padding : var(--space-3-2) !important;
+      padding    : var(--space-3-2) !important;
       font-size  : var(--size-1-8);
       }
 
-
-
-    .col-1 ,.col-2 , .col-3{
+    .col-1, .col-2, .col-3 {
       padding       : 0 !important;
       padding-right : var(--space-3-2);
       width         : 100% !important;
       }
-    .bc-text{
+
+    .bc-text {
       background-color : var(--color-Primary-dark);
-      margin-bottom : var(--space-3-2);
-      text-align : center;
-      h4{
+      margin-bottom    : var(--space-3-2);
+      text-align       : center;
+
+      h4 {
         font-size : 1.6rem !important;
-        color : var(--color-white) !important;
+        color     : var(--color-white) !important;
         }
       }
     }
@@ -596,14 +717,15 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
     border-radius    : 0;
     box-shadow       : none;
     border           : none;
- li{
-   padding : var(--space-1-2) var(--space-4) !important;
-   }
+
+    li {
+      padding : var(--space-1-2) var(--space-4) !important;
+      }
     }
-.special-content{
-  border-radius : 0;
-  box-shadow      : none !important;
-  backdrop-filter : none;
-  }
+  .special-content {
+    border-radius   : 0;
+    box-shadow      : none !important;
+    backdrop-filter : none;
+    }
   }
 

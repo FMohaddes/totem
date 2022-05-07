@@ -37,29 +37,28 @@
     height        : 56rem;
     background    : rgba(255, 255, 255, 0.11);
     padding       : var(--space-0-8) var(--space-6-4) 0;
-    @media only screen and (max-width : 45rem) {
-      width  : 86rem;
-      height : 50rem;
+    @media only screen and (max-width : 57rem) {
+      width  : 85rem;
+      height : 56rem;
 
       }
-    @media only screen and (max-width : 38rem) {
+    @media only screen and (max-width : 42rem) {
       width         : 80rem;
-      height        : 48rem;
-      margin-top    : var(--space-4-8);
+      padding-top :var(--space-3-2) ;
       padding-right : var(--space-4-8);
       }
 
-    @media only screen and (max-width : 32rem) {
+    @media only screen and (max-width : 37rem) {
       width      : 70rem;
       padding    : var(--space-1-6) var(--space-6-4) 0;
-      height     : 45rem;
+      height     : 50rem;
       margin-top : var(--space-8);
 
       }
 
-    @media only screen and (max-width : 28rem) {
-      padding : var(--space-1-6) var(--space-4) 0;
-      width   : 65rem;
+    @media only screen and (max-width : 32rem) {
+      padding    : var(--space-2-4) var(--space-3-2) 0;
+      width   : 55rem;
       height  : 45rem;
       }
 
@@ -91,19 +90,23 @@
     object-fit    : cover;
     display       : inline-block;
 
-    @media only screen and (max-width : 45rem) {
-      width  : 83rem;
-      height : 44rem;
+    @media only screen and (max-width : 57rem) {
+      width  : 80rem;
+      height : 45rem;
 
       }
-    @media only screen and (max-width : 38rem) {
-      width  : 80rem;
-      height : 40rem;
+    @media only screen and (max-width : 42rem) {
+      width  : 76rem;
+      height : 42rem;
+
+      }
+    @media only screen and (max-width : 37rem) {
+      width  : 70rem;
+      height : 38rem;
 
       }
     @media only screen and (max-width : 32rem) {
-      width  : 63rem;
-      height : 37rem;
+      width  : 52rem;
 
       }
     }

@@ -56,8 +56,24 @@
             </div >
             <ul class = "menu-items" >
               <li class = "item level-1" ><a href = "index.html" >خانه</a ></li >
-              <li class = "item level-1" ><a href = "post.html" >دوره ها</a ></li >
-              <li class = "mega-drop-down level-1" ><a href = "#" >
+              <li class="drop-down level-1"><a href="" class="parent-item"><i class="fa fa-cogs"></i> دوره ها</a>
+                <!--Drop Down-->
+                <ul class="drop-down-ul animated fadeIn">
+                  <li class="flyout-left"><a href="#">منو</a><!--Flyout Left-->
+                    <ul class="animated fadeIn">
+                      <li><a href="#">منو 1</a></li>
+                      <li><a href="#">منو 2</a></li>
+                      <li><a href="#">منو 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">منو</a></li>
+
+                </ul>
+                <!--//End drop down-->
+
+              </li>
+              <li class = "mega-drop-down level-1" ><a>
                 <i class = "fa fa-list " ></i > منو مگا</a >
                 <div class = "animated fadeIn mega-menu" >
                   <div class = "mega-menu-wrap" >
@@ -140,7 +156,7 @@
                   </div >
                 </div >
               </li >
-              <li class = "item level-1" ><a href = "" > درباره ما</a ></li >
+              <li class = "item level-1" ><a href = "post.html" > درباره ما</a ></li >
               <li class = "item level-1" ><a href = "" >تماس باما </a ></li >
               <div class = "res-login" >
                 <img src = "/img/icons/account.svg" alt = "account" >

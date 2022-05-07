@@ -90,11 +90,12 @@
       right : 8vh;
       }
     @media only screen and (max-width : 37rem) {
-      right : 7vh;
+      right : 12vh;
+      top      : 33%;
+
       }
     @media only screen and (max-width : 32rem) {
-      right : 6vh;
-      top : 57%;
+      right : 3vh;
 
       }
 
@@ -111,11 +112,13 @@
       right : 15vh;
       }
     @media only screen and (max-width : 37rem) {
-      right : 14vh;
+      right : 15vh;
+      top      : 33%;
+
+
       }
     @media only screen and (max-width : 32rem) {
-      right : 11vh;
-      top : 57%;
+      right : 8vh;
       }
 
     }
@@ -133,7 +136,7 @@
     }
   .swiper-pagination{
     position: absolute;
-    bottom : -20%;
+    bottom : -15%;
     }
 
   }

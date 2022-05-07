@@ -123,6 +123,11 @@ main {
   display     : flex;
   margin      : var(--space-4) 0 var(--space-8);
   align-items : center;
+  @media only screen and (max-width : 37rem) {
+     flex-direction: column;
+    align-items : start;
+    justify-content : center;
+    }
 
   &-text-box {
     z-index : 1;
@@ -137,9 +142,8 @@ main {
       width : 50%;
       }
     @media only screen and (max-width : 37rem) {
-      padding        : var(--space-6-4)  var(--space-6-4) var(--space-8)
+      padding        : 12rem  var(--space-4) var(--space-8)
       var(--space-4);
-
       }
 
     h3 {
@@ -164,7 +168,11 @@ main {
     display      : grid;
     grid-row-gap : var(--space-4);
     width        : 70%;
-
+    @media only screen and (max-width : 37rem) {
+      justify-self: center;
+      align-self: end;
+      margin-top : var(--space-3-2);
+      }
     .course-card {
       display               : grid;
       grid-template-columns : var(--space-2-4) 1fr 1fr var(--space-2-4);
@@ -178,6 +186,7 @@ main {
       justify-content       : start;
       align-content         : start;
       @include glassBox;
+
 
       &-text-box {
         grid-column   : 2/3;
@@ -305,7 +314,7 @@ main {
         width           : 31.1rem;
         height          : 5.2rem;
         margin-top      : var(--space-0-8);
-        //border-top      : .1rem solid var(--color-Primary);
+        border-top      : .1rem solid var(--color-Primary);
         display         : flex;
         justify-content : space-between;
         align-items     : center;
@@ -337,7 +346,7 @@ main {
             span {
               font-family : BTitrBold, Arial, serif;
               font-size   : var(--size-1);
-              color       : var(--color-Grey-light-1);
+              color       : var(--color-Grey);
               }
 
             img {
@@ -382,19 +391,20 @@ main {
   display        : flex;
   flex-direction : column;
   margin         : var(--space-4) 0 var(--space-8);
-  @media only screen and (max-width : 57rem) {
-    height : 97vh;
+  @media only screen and (max-width : 62rem) {
+    height : 90vh;
     }
   @media only screen and (max-width : 48rem) {
-    height : 87vh;
-    }
-
-  @media only screen and (max-width : 40rem) {
     height : 78vh;
     }
 
+  @media only screen and (max-width : 40rem) {
+    height : 73vh;
+    }
+
   @media only screen and (max-width : 32rem) {
-    height : 58vh;
+    height : 75vh;
+
     }
 
   @include glassBox;
@@ -417,7 +427,7 @@ main {
     .cinema-curve {
       width    : 100%;
       position : absolute;
-      top      : 23rem;
+      bottom      : 0;
       left     : 0;
       height   : 55rem;
 
@@ -489,6 +499,11 @@ main {
   display     : flex;
   align-items : center;
   margin      : var(--space-4) 0 var(--space-8);
+  @media only screen and (max-width : 37rem) {
+    flex-direction: column;
+    align-items : start;
+    justify-content : center;
+    }
 
   &-text-box {
     position       : relative;
@@ -502,9 +517,8 @@ main {
       width : 50%;
       }
     @media only screen and (max-width : 37rem) {
-      padding        : var(--space-6-4)  var(--space-6-4) var(--space-8)
+      padding        : 12rem  var(--space-4) var(--space-8)
       var(--space-4);
-
       }
 
     h3 {
@@ -529,6 +543,11 @@ main {
     display      : grid;
     grid-row-gap : var(--space-4);
     width        : 65%;
+    @media only screen and (max-width : 37rem) {
+      justify-self: center;
+      align-self: end;
+      margin-top : var(--space-3-2);
+      }
 
     .ketab-card {
       display               : grid;
@@ -802,14 +821,15 @@ main {
       margin-top : -5rem;
       padding : 0 var(--space-4);
       grid-template-columns : 30rem 25rem 8.3rem 5.6rem 5.1rem ;
-
       grid-template-rows    : 15rem 17rem 17rem 17rem;
 
       }
 
     @media only screen and (max-width : 37rem) {
       margin-top : -25rem;
-      grid-template-columns : 20rem 25rem 8.3rem 5.6rem 5.1rem 50rem 6rem;
+      padding : 0 var(--space-1-6);
+
+      grid-template-columns : 12rem 20rem 7rem 5.6rem 5.1rem 50rem 6rem;
 
       }
     @media only screen and (max-width : 32rem) {
@@ -993,6 +1013,12 @@ main {
   align-items : center;
   margin      : var(--space-4) 0 var(--space-8);
 
+  @media only screen and (max-width : 37rem) {
+    flex-direction: column;
+    align-items : start;
+    justify-content : center;
+    }
+
   &-text-box {
     position       : relative;
     margin-top     : -15rem;
@@ -1004,24 +1030,20 @@ main {
     @media only screen and (max-width : 57rem) {
       width : 50%;
       }
-    @media only screen and (max-width : 37rem) {
-      padding        : var(--space-6-4)  var(--space-6-4) var(--space-8)
-      var(--space-4);
 
+    @media only screen and (max-width : 37rem) {
+      padding        : 4rem  var(--space-4) var(--space-8)
+      var(--space-4);
       }
+
     h3 {
       z-index     : 2;
       padding-top : var(--space-1-2);
       }
 
     p {
-
       z-index : 2;
       color   : var(--color-Primary-dark);
-
-      @media only screen and (max-width : 37rem) {
-        }
-
       }
 
     }
@@ -1033,7 +1055,11 @@ main {
     grid-row-gap          : var(--space-4);
     width                 : 70%;
     justify-content       : space-between;
-
+    @media only screen and (max-width : 37rem) {
+      justify-self: center;
+      align-self: end;
+      margin-top : var(--space-3-2);
+      }
     }
 
   &-card {

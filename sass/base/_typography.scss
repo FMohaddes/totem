@@ -6,13 +6,23 @@
 
   font-family     : IRANYekanWebExtraBold ,Arial, serif;
 
+  @media only screen and (max-width : 37rem) {
+    font-size       : var(--size-2);
 
+
+    }
   }
 
 .sub-heading{
   font-family : IRANYekanWebLigth, Arial, serif;
   font-size       : var(--size-1-4);
   color : var(--color-Grey-light-1);
+
+  @media only screen and (max-width : 37rem) {
+    font-size       : var(--size-1);
+
+
+    }
   }
 
 .blue-heading{
