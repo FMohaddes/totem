@@ -970,6 +970,10 @@ li.drop-down > ul li:last-child {
   }
 }
 
+.drop-down-ul {
+  display: none;
+}
+
 .flyout-right > ul,
 .flyout-left > ul {
   border: var(--bdr);
