@@ -1,4 +1,3 @@
-
 @import "base/base";
 @import "base/animation";
 @import "base/typography";
@@ -6,6 +5,13 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+
+@import "components/home/academy-ranvankavi-slider";
+@import "components/home/academy-honari-slider";
+@import "components/home/academy-cinemae-slider";
+@import "components/home/cafe-ketab";
+@import "components/home/mahname-slider";
+@import "components/home/nashr-totem-slider";
 
 @import "pages/Home";
 @import "pages/Post";

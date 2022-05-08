@@ -1,0 +1,17 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 71 |     @include glassBox;
+ *    |     ^^^^^^^^^^^^^^^^^
+ *    '
+ *   mahname-slider.scss 71:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 71 \2502      @include glassBox;\d\a    \2502      ^^^^^^^^^^^^^^^^^\a    \2575 \a   mahname-slider.scss 71:5  root stylesheet";
+}

@@ -106,3 +106,19 @@ let swiperN = new Swiper(".mySwiperNashr", {
     },
   },
 });
+var swiperR = new Swiper('.ravankavi-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: '.ravankavi-slider__pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  }
+});
