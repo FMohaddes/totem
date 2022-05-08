@@ -42,6 +42,7 @@ let swiper = new Swiper(".mySwiper", {
 
 let swiperB = new Swiper(".mySwiperBullet", {
   slidesPerView: 3,
+  slidesPerGroup: 3,
   spaceBetween: 10,
   autoplay: {
     delay: 5500,

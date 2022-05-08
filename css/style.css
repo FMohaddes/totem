@@ -218,6 +218,7 @@ a:hover, a:active, a:visited, a:link {
 
 .swiper-pagination-bullet-active {
   background-color: var(--color-Tertiary) !important;
+  height: 30px;
 }
 
 .swiper-pagination-bullet {
@@ -1642,6 +1643,11 @@ main {
   box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
   backdrop-filter: blur(100px);
 }
+@media only screen and (min-width: 1100rem) {
+  .academey-cinemae {
+    height: 80vh;
+  }
+}
 @media only screen and (max-width: 62rem) {
   .academey-cinemae {
     height: 90vh;
@@ -1654,12 +1660,17 @@ main {
 }
 @media only screen and (max-width: 40rem) {
   .academey-cinemae {
+    height: 75vh;
+  }
+}
+@media only screen and (max-width: 37rem) {
+  .academey-cinemae {
     height: 73vh;
   }
 }
 @media only screen and (max-width: 32rem) {
   .academey-cinemae {
-    height: 75vh;
+    height: 60vh;
   }
 }
 .academey-cinemae-wrapper {

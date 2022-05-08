@@ -391,6 +391,9 @@ main {
   display        : flex;
   flex-direction : column;
   margin         : var(--space-4) 0 var(--space-8);
+  @media only screen and (min-width : 1100rem) {
+    height : 80vh;
+    }
   @media only screen and (max-width : 62rem) {
     height : 90vh;
     }
@@ -399,11 +402,14 @@ main {
     }
 
   @media only screen and (max-width : 40rem) {
+    height : 75vh;
+    }
+  @media only screen and (max-width : 37rem) {
     height : 73vh;
     }
 
   @media only screen and (max-width : 32rem) {
-    height : 75vh;
+    height : 60vh;
 
     }
 
