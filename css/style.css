@@ -571,6 +571,11 @@ header .intro .intro-curve {
   z-index: -1;
   left: 0;
 }
+@media only screen and (max-width: 140rem) {
+  .footer-curve {
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 57rem) {
   .footer-curve {
     height: 80%;
