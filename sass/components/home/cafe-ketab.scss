@@ -75,7 +75,7 @@
       padding : 0 var(--space-2-4);
       }
     @media only screen and (max-width : 50rem) {
-      margin-top : -5rem;
+      margin-top : -10rem;
       padding : 0 var(--space-4);
       grid-template-columns : 30rem 25rem 8.3rem 5.6rem 5.1rem ;
       grid-template-rows    : 15rem 17rem 17rem 17rem;
@@ -83,18 +83,18 @@
       }
 
     @media only screen and (max-width : 37rem) {
-      margin-top : -25rem;
+      margin-top : -22rem;
       padding : 0 var(--space-1-6);
 
       grid-template-columns : 12rem 20rem 7rem 5.6rem 5.1rem 50rem 6rem;
 
       }
     @media only screen and (max-width : 32rem) {
-      margin-top : -35rem;
+      margin-top : -15rem;
 
       }
     @media only screen and (max-width : 27rem) {
-      margin-top : -40rem;
+      margin-top : -22rem;
 
       }
 

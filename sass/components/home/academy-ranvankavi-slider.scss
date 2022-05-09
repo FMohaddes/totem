@@ -7,6 +7,15 @@
   @media only screen and (max-width : 37rem) {
     grid-column    : 1/-1;
     }
+  &-text-box {
+    @include center;
+    align-items    : center;
+    flex-direction : column;
+    color          : var(--color-white);
+    width          : 50%;
+    text-align     : center;
+
+    }
 
   }
 

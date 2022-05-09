@@ -12,7 +12,7 @@
   --color-Primary-Faded: radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
   --color-Primary-dark-gradient: linear-gradient(78deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 77.31%);
   --color-Primary-dark-gradient-overlay:
-    linear-gradient(78deg, rgba(72, 113, 152, 0.5925) 0%, rgba(25, 56, 92, 0.735) 70.31%);
+    linear-gradient(78deg, rgba(72, 113, 152, 0.8) 0%, rgba(25, 56, 92, 0.9) 50.31%);
   --color-Primary-light-gradient:
     radial-gradient(84.65% 84.65% at 50% 50%, #FFF 0%, #FFF 51%, rgba(255, 255, 255, 0) 81.78%);
   --color-Primary-gradient:
@@ -22,7 +22,7 @@
   --color-Secondary: #FBD862;
   --color-Secondary-o: rgb(250, 210, 100, .7);
   --color-Tertiary: #47C3CD;
-  --color-Grey-light-1: #AEAEAE;
+  --color-Grey-light-1: #D5D5D5;
   --color-Grey: #989898;
   --color-Grey-dark-1: #393939;
   --color-white: #FFF;
@@ -1316,6 +1316,17 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
     grid-column: 1/-1;
   }
 }
+.academy-ravancavi-text-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-white);
+  width: 50%;
+  text-align: center;
+}
 
 .ravankavi-slider {
   position: relative;
@@ -1623,7 +1634,8 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   grid-column: 3/4;
   grid-row: 1/3;
   width: 16rem;
-  height: 16rem;
+  height: 19rem;
+  object-fit: cover;
   overflow: hidden;
   border-radius: var(--bdrs-1);
 }
@@ -1787,29 +1799,33 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
     height: 60vh;
   }
 }
-.academey-cinemae-wrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: var(--color-Primary-dark-gradient);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  border-radius: var(--bdrs-3);
-}
 .academey-cinemae-wrapper > * {
   fill-opacity: 1;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 .academey-cinemae-wrapper .cinema-curve {
+  z-index: 3;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 55rem;
+  height: 100%;
+}
+.academey-cinemae-wrapper .cinema-image-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 10% 40%;
+  background-image: var(--color-Primary-dark-gradient-overlay), url("/img/cinema.jpg");
+  clip-path: url(#svgClip);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
 }
 .academey-cinemae-text-box {
   padding: var(--space-8);
+  position: relative;
+  z-index: 444;
 }
 .academey-cinemae-text-box p {
   color: var(--color-Primary);
@@ -1941,7 +1957,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 @media only screen and (max-width: 50rem) {
   .cafe-ketab-content-box {
-    margin-top: -5rem;
+    margin-top: -10rem;
     padding: 0 var(--space-4);
     grid-template-columns: 30rem 25rem 8.3rem 5.6rem 5.1rem;
     grid-template-rows: 15rem 17rem 17rem 17rem;
@@ -1949,19 +1965,19 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 @media only screen and (max-width: 37rem) {
   .cafe-ketab-content-box {
-    margin-top: -25rem;
+    margin-top: -22rem;
     padding: 0 var(--space-1-6);
     grid-template-columns: 12rem 20rem 7rem 5.6rem 5.1rem 50rem 6rem;
   }
 }
 @media only screen and (max-width: 32rem) {
   .cafe-ketab-content-box {
-    margin-top: -35rem;
+    margin-top: -15rem;
   }
 }
 @media only screen and (max-width: 27rem) {
   .cafe-ketab-content-box {
-    margin-top: -40rem;
+    margin-top: -22rem;
   }
 }
 .cafe-ketab-content-box .freudian-wednesdays {
@@ -2140,10 +2156,11 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   position: relative;
   display: flex;
   align-items: center;
-  margin: var(--space-4) 0 var(--space-8);
+  margin: var(--space-8) 0 var(--space-8);
 }
 @media only screen and (max-width: 37rem) {
   .mahname {
+    margin: 22rem 0 var(--space-8);
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -2491,7 +2508,7 @@ main {
   grid-template-columns: var(--space-8) 1fr var(--space-8);
   min-height: 100vh;
   fill-opacity: 0.3;
-  grid-row-gap: var(--space-4);
+  grid-row-gap: var(--space-8);
   position: relative;
   overflow: hidden;
 }
