@@ -4,25 +4,25 @@
   height         : 100vh;
   position       : relative;
   display        : flex;
+  background    : var(--color-Primary-dark-gradient-overlay);
+
   flex-direction : column;
   margin         : var(--space-4) 0 var(--space-8);
   @include glassBox;
-  @media only screen and (min-width : 1100rem) {
-    height : 80vh;
-    }
-  @media only screen and (max-width : 62rem) {
+
+  @media only screen and (max-width : 67rem) {
     height : 90vh;
     }
   @media only screen and (max-width : 48rem) {
-    height : 78vh;
-    }
-
-  @media only screen and (max-width : 40rem) {
     height : 75vh;
     }
 
+  @media only screen and (max-width : 40rem) {
+    height : 70vh;
+    }
+
   @media only screen and (max-width : 28rem) {
-    height : 60vh;
+    height : 65vh;
 
     }
 
@@ -30,7 +30,6 @@
 
 
   &-wrapper {
-
 
     & > * {
       fill-opacity      : 1;
@@ -41,9 +40,13 @@
       z-index : 3;
       width    : 100%;
       position : absolute;
-      bottom      : 0;
+      bottom      : -40rem;
       left     : 0;
       height   : 100%;
+      @media only screen and (max-width : 140rem) {
+        bottom      : -30rem;
+        }
+
       }
 
     .cinema-image-curve{
@@ -77,6 +80,7 @@
     z-index      : 5;
     display      : grid;
     grid-row-gap : var(--space-4);
+    margin-top : -4rem;
 
     .cinema-card {
       display         : grid;
