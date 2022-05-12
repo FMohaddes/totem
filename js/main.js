@@ -110,9 +110,6 @@ var swiperR = new Swiper('.ravankavi-slider', {
   spaceBetween: 30,
   effect: 'fade',
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   // autoHeight: true,
   pagination: {
     el: '.ravankavi-slider__pagination',

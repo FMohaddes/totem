@@ -15,6 +15,8 @@
     <link rel = "manifest" href = "site.webmanifest" >
     <link rel = "apple-touch-icon" href = "icon.png" >
     <!-- Place favicon.ico in the root directory -->
+
+
     <link rel = "stylesheet" href = "css/normalize.css" >
     <link rel = "stylesheet" href = "css/style.css" >
     <link rel = "stylesheet" href = "css/main.css" >
@@ -144,9 +146,9 @@
             </ul >
 
             <div class = "login-cart" >
-              <div class = "login" ><a href = "login.html" >
+              <div class = "login" ><a href = "" >
                 ورود / ثبت نام</a ></div >
-              <div class = "cart" ><a href = "cart.html" >سبد خرید
+              <div class = "cart" ><a href = "" >سبد خرید
               </a ></div >
             </div >
           </div >
@@ -154,244 +156,76 @@
         <img src = "/img/shapes/curve-dark-blue.svg" alt = "curve" class = "nav-curve" >
 
       </nav >
+      <!--  login container ********************************************* -->
 
-      <!--  post image ********************************************* -->
-      <section class = "post-container" >
+      <section class = "login-container" >
+        <div class="login-content">
+          <h3 class = "heading blue-heading" >ورود</h3 >
+          <a href = "" class="singup-link">برای ساخت اکانت اینجا کنید</a >
+          <!--<p> قبلا اکانت ساخته اید؟ <span><a href = "" >ورود</a ></span></p>-->
+          <div class = "login-submit" >
+            <form action = "" >
+              <div class="input-icon-wrapper">
+                <input type = "email"
+                  name = "" autoComplete = "off"
+                  placeholder="ایمیل"
+                />
+                <img src = "/img/icons/email-login.svg" alt = "email" >
+              </div >
+              <div class="input-icon-wrapper">
+                <input type = "password"
+                  name = "" autoComplete = "off"
+                  placeholder="رمزعبور"
+                />
+                <img src = "/img/icons/pass.svg" alt = "email" >
+              </div >
 
-        <div class = "cover" >
-          <img src = "/img/s.png" alt = "cover" >
-          <div class = "cover-title" >
-            <h1 >چگونه از استرس رها شویم چگونه از استرس رها شوی؟ راهکارهای مقابله با آن</h1 >
-          </div >
-        </div >
-
-        <aside >
-          <div class = "post-info" >
-            <div class="post-info-time">
-              <img class="time-image" src="/img/icons/timer.svg"
-                alt="time"/>
-              15 دقیقه
-            </div>
-            <div class="post-info-writer">
-              <img class="writer-image" src="/img/writter.png"
-                alt="writer"/>
-              <div>
-                <h6>نازنین شکری</h6>
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                </p>
-              </div>
-            </div >
-            <div class="post-info-share-date">
-              <div class="post-date">
-                <img src = "/img/icons/date.svg" alt = "date" >
-                <p>
-                  شنبه 23 خرداد , 1400
-
-                </p>
-              </div>
-              <div class="share-post">
-                اشتراک گذاری
-              </div>
-            </div>
+              <button type="submit">
+                ثبت
+              </button >
+            </form >
 
           </div >
-          <div class = "new-posts" >
-            <div class = "new-post-content" >
-                <img src = "/img/s.png" alt = "newPost" >
-                <div class="new-post-text">
-                  <h4 >
-                    چگونه از استرس رها شویم ؟
-                  </h4 >
-                  <p >
-                    ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                  </p >
-                  <div class = "new-post-date" >
-                    <img src = "/img/icons/date.svg" alt = "new-post-date" >
-                    <span >
-                  شنبه 23 خرداد , 1400
-                </span >
-                  </div >
+          <p >  ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از <a href = "" > طراحان گرافیک است.
+            چاپگرها</a ></p>
 
-                </div >
+        </div>
+         <div class="login-logo">
+           <img src = "/img/logo.png" alt = "logo" >
+         </div>
+        <svg class="login-curve" width="782" height="814" viewBox="0 0 782 814" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_bdd_385_138)">
+            <path d="M16 28C16 16.9543 24.9543 8.00001 36 8.00001L643.51 8C659.975 8 671.055 27.9447 664.562 43.0752C639.003 102.641 607.015 236.201 705.346 429.34C826.204 666.724 732.999 766.514 710.092 786.24C707.057 788.853 703.206 790 699.201 790H36C24.9543 790 16 781.046 16 770V28Z" fill="white" fill-opacity="0.8" shape-rendering="crispEdges"/>
+            <path d="M36 8.25001L643.51 8.25C651.634 8.25 658.446 13.1704 662.429 19.9897C666.412 26.8101 667.543 35.4955 664.333 42.9767C638.747 102.606 606.756 236.243 705.124 429.453C765.534 548.11 772.43 632.346 761.386 689.364C750.341 746.382 721.351 776.214 709.929 786.05C706.948 788.617 703.158 789.75 699.201 789.75H36C25.0924 789.75 16.25 780.908 16.25 770V28C16.25 17.0924 25.0924 8.25001 36 8.25001Z" stroke="white" stroke-opacity="0.3" stroke-width="0.5" shape-rendering="crispEdges"/>
+          </g>
+          <defs>
+            <filter id="filter0_bdd_385_138" x="-84" y="-92" width="950" height="982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feGaussianBlur in="BackgroundImage" stdDeviation="50"/>
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_385_138"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="8"/>
+              <feGaussianBlur stdDeviation="8"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.090196 0 0 0 0 0.0588235 0 0 0 0 0.286275 0 0 0 0.03 0"/>
+              <feBlend mode="normal" in2="effect1_backgroundBlur_385_138" result="effect2_dropShadow_385_138"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="10"/>
+              <feGaussianBlur stdDeviation="7"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.290196 0 0 0 0 0.227451 0 0 0 0 1 0 0 0 0.01 0"/>
+              <feBlend mode="normal" in2="effect2_dropShadow_385_138" result="effect3_dropShadow_385_138"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_385_138" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
 
-            </div >
-            <div class = "new-posts" >
-              <div class = "new-post-content" >
-                <img src = "/img/s.png" alt = "newPost" >
-                <div class="new-post-text">
-                  <h4 >
-                    چگونه از استرس رها شویم ؟
-                  </h4 >
-                  <p >
-                    ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                  </p >
-                  <div class = "new-post-date" >
-                    <img src = "/img/icons/date.svg" alt = "new-post-date" >
-                    <span >
-                  شنبه 23 خرداد , 1400
-                </span >
-                  </div >
 
-                </div >
 
-              </div >
-            </div >
-            <div class = "new-posts" >
-              <div class = "new-post-content" >
-                <img src = "/img/s.png" alt = "newPost" >
-                <div class="new-post-text">
-                  <h4 >
-                    چگونه از استرس رها شویم ؟
-                  </h4 >
-                  <p >
-                    ستونبا تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                  </p >
-                  <div class = "new-post-date" >
-                    <img src = "/img/icons/date.svg" alt = "new-post-date" >
-                    <span >
-                  شنبه 23 خرداد , 1400
-                </span >
-                  </div >
 
-                </div >
-
-              </div >
-            </div >
-
-          </div >
-        </aside >
-        <div class = "post-context" >
-          <p >
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
-            تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید س
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
-            تولید سادگی نامفهوم
-            ادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-            از صنعت چاپ و با ا
-            ستفاده لورم ایپسوم متن ساختگی
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
-            تولید سادگی نامفهوم
-            با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
-            تولید سادگی نامفهوم       نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
-            نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
-            تولید سادگی نامفهوم
-          </p >
-
-        </div >
-
-        <div class = "post-comments" >
-          <div class = "post-comment" >
-            <div class = "comment original" >
-              <div class="comment-date">
-                <img src = "/img/icons/date.svg" alt = "date" >
-                <p>12 بهمن , 1400</p>
-              </div>
-              <div class="comment-content">
-                <img class="comment-image" src="/img/profile.png"
-                  alt="profile"/>
-                <div class="comment-context">
-                  <h6>نام کاربر</h6>
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                  </p>
-                </div>
-            </div >
-            </div >
-            <div class = "reply" >
-              <img class="reply-arrow" src = "/img/icons/reply-arrow.svg" alt = "date" >
-              <div class = "comment" >
-                <div class="comment-date">
-                  <img src = "/img/icons/date.svg" alt = "date" >
-                  <p>12 بهمن , 1400</p>
-                </div>
-                <div class="comment-content">
-                  <img class="comment-image" src="/img/profile.png"
-                    alt="profile"/>
-                  <div class="comment-context">
-                    <h6>نام کاربر</h6>
-                    <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                    </p>
-                  </div>
-                </div >
-              </div >
-            </div >
-          </div>
-            <div class = "post-comment" >
-              <div class = "comment original" >
-                <div class="comment-date">
-                  <img src = "/img/icons/date.svg" alt = "date" >
-                  <p>12 بهمن , 1400</p>
-                </div>
-                <div class="comment-content">
-                  <img class="comment-image" src="/img/profile.png"
-                    alt="profile"/>
-                  <div class="comment-context">
-                    <h6>نام کاربر</h6>
-                    <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                    </p>
-                  </div>
-                </div >
-              </div >
-            </div >
-              <div class = "comment-info" >
-                <a href = "" >مشاهده بیشتر</a >
-                <img src = "/img/icons/arrow-left.svg"
-                  class = "arrow-left"
-                  alt = "arrow" >
-        </div >
-          </div>
-
-        <img src = "/img/shapes/curve-main.svg" alt = "curve"
-          class = "post-curve" >
-        <div class = "comment-submit" >
-          <form action = "" >
-            <h5 >ایمیل :</h5 >
-            <label >
-              <input type = "email"
-                name = "" autoComplete = "off"
-              />
-            </label >
-
-            <h5 >متن :</h5 >
-            <label >
-              <textarea rows = "15" name = "" ></textarea >
-            </label >
-            <button type="submit">
-                 ثبت نظر
-            </button >
-          </form >
-
-        </div >
       </section >
+
 
       <!--pattern background *********************************************-->
       <div class = "pattern" >

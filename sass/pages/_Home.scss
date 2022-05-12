@@ -1,7 +1,6 @@
-
 main {
   display               : grid;
-  grid-template-columns : var(--space-8) 1fr var(--space-8);
+  grid-template-columns : var(--space-4-8) 1fr var(--space-4-8);
   min-height            : 100vh;
   fill-opacity          : .3;
   grid-row-gap          : var(--space-8);

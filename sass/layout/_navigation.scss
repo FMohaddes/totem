@@ -307,7 +307,11 @@ li.drop-down,
 
     }
   .parent-item{
-    padding-right : var(--space-4);
+    @media (max-width : 767px) {
+      padding-right : var(--space-4);
+
+
+      }
     }
   }
 

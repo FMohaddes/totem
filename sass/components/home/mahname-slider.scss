@@ -19,7 +19,7 @@
     margin-top     : -15rem;
     display        : flex;
     flex-direction : column;
-    padding        : var(--space-8);
+    padding        : var(--space-8) var(--space-4-8);
     width          : 30%;
 
     @media only screen and (max-width : 57rem) {

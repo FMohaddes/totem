@@ -1,13 +1,13 @@
 :root {
   // RESPONSIVE Sizes
 
-  --base-font-size               : 1.9px;
-  --fluid-typography-ratio       : 0.6;
-  --rem-lg                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
-  --rem-md                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.1vw);
-  --rem-sm                       : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
-  --rem-xsm                      : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.5vw);
-  --rem-xxsm                     : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.8vw);
+  --base-font-size                      : 1.9px;
+  --fluid-typography-ratio              : 0.6;
+  --rem-lg                              : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --rem-md                              : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.1vw);
+  --rem-sm                              : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
+  --rem-xsm                             : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.5vw);
+  --rem-xxsm                            : calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.8vw);
 
   // BREAK POINTS
   //--mobileS                      : (max-width: 32em);
@@ -17,56 +17,52 @@
 
   // COLOR VARIABLES
 
-  --color-Primary                : #E4F0FB;
-  --color-Primary-light          : #F9FCFF;
-  --color-Primary-dark           : #234361;
+  --color-Primary                       : #E4F0FB;
+  --color-Primary-light                 : #F9FCFF;
+  --color-Primary-dark                  : #234361;
 
-  --color-Primary-Faded          : radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);;
-  --color-Primary-dark-gradient  : linear-gradient(78deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 77.31%);
-  --color-Primary-dark-gradient-overlay  :
-    linear-gradient(78deg, rgba(72, 113, 152, 0.8) 0%, rgba(25, 56, 92, 0.9) 50.31%);
-  --color-Primary-light-gradient :
-    radial-gradient(84.65% 84.65% at 50% 50%, #FFF 0%, #FFF 51%, rgba(255, 255, 255, 0) 81.78%);
-  --color-Primary-gradient       :
-    radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
-  --color-Primary-gradient-o       :
-    radial-gradient(66.7% 66.7% at 50% 33.3%, rgba(228, 240, 251, 0.77) 0%, rgba(228, 240, 251, 0.77) 35.94%, rgba(228, 240, 251, 0.519579) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Primary-Faded                 : radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);;
+  --color-Primary-dark-gradient         : linear-gradient(78deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 77.31%);
+  --color-Primary-dark-gradient-overlay : linear-gradient(78deg, rgba(72, 113, 152, 0.8) 0%, rgba(25, 56, 92, 0.9) 50.31%);
+  --color-Primary-light-gradient        : radial-gradient(84.65% 84.65% at 50% 50%, #FFF 0%, #FFF 51%, rgba(255, 255, 255, 0) 81.78%);
+  --color-Primary-gradient              : radial-gradient(66.7% 66.7% at 50% 33.3%, #E4F0FB 0%, #E4F0FB 35.94%, rgba(228, 240, 251, 0.674778) 78.13%, rgba(228, 240, 251, 0) 100%);
+  --color-Primary-gradient-o            :
+    radial-gradient(84.65% 84.65% at 50% 50%, rgba(228, 240, 251, 0.55) 0%, rgba(230, 242, 252, 0.55) 38.93%, rgba(230, 242, 252, 0.11) 77.99%, rgba(230, 242, 252, 0) 100%);
+  --color-Secondary                     : #FBD862;
+  --color-Secondary-o                   : rgb(250, 210, 100, .7);
 
-  --color-Secondary              : #FBD862;
-  --color-Secondary-o            : rgb(250, 210, 100, .7);
+  --color-Tertiary                      : #47C3CD;
 
-  --color-Tertiary               : #47C3CD;
+  --color-Grey-light-1                  : #C0C0C0;
+  --color-Grey                          : #8C8C8C;
+  --color-Grey-dark-1                   : #393939;
+  --color-white                         : #FFF;
+  --shadow-dark                         : 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light                        : 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
+  --line                                : 1px solid var(--color-Grey-light-2);
+  --bdr                                 : 0.5px solid rgba(186, 185, 185, 0.17);
 
-  --color-Grey-light-1           : #D5D5D5;
-  --color-Grey                   : #989898;
-  --color-Grey-dark-1            : #393939;
-  --color-white                  : #FFF;
-  --shadow-dark                  : 0 2rem 6rem rgba(0, 0, 0, .3);
-  --shadow-light                 : 0px 10px 14px rgba(74, 58, 255, 0.01), 0px 8px 16px rgba(23, 15, 73, 0.03);
-  --line                         : 1px solid var(--color-Grey-light-2);
-  --bdr                          : 0.5px solid rgba(186, 185, 185, 0.17);
-
-  --bdrs-3                       : 3rem;
-  --bdrs-1                       : 1rem;
+  --bdrs-3                              : 3rem;
+  --bdrs-1                              : 1rem;
 
   //spaces
-  --space-0-4                    : .4rem;
-  --space-0-8                    : .8rem;
-  --space-1-2                    : 1.2rem;
-  --space-1-6                    : 1.6rem;
-  --space-2-4                    : 2.4rem;
-  --space-3-2                    : 3.2rem;
-  --space-4                      : 4.0rem;
-  --space-4-8                    : 4.8rem;
-  --space-6-4                    : 6.4rem;
-  --space-8                      : 8.0rem;
+  --space-0-4                           : .4rem;
+  --space-0-8                           : .8rem;
+  --space-1-2                           : 1.2rem;
+  --space-1-6                           : 1.6rem;
+  --space-2-4                           : 2.4rem;
+  --space-3-2                           : 3.2rem;
+  --space-4                             : 4.0rem;
+  --space-4-8                           : 4.8rem;
+  --space-6-4                           : 6.4rem;
+  --space-8                             : 8.0rem;
 
   //font-size
-  --size-1                       : 1rem;
-  --size-1-4                     : 1.4rem;
-  --size-1-8                     : 1.8rem;
-  --size-2                       : 2rem;
-  --size-2-8                     : 2.8rem;
+  --size-1                              : 1rem;
+  --size-1-4                            : 1.4rem;
+  --size-1-8                            : 1.8rem;
+  --size-2                              : 2rem;
+  --size-2-8                            : 2.8rem;
 
   }
 
@@ -82,6 +78,7 @@
 html {
   direction       : rtl;
   text-decoration : none;
+  scroll-behavior : smooth;
   font-size       : var(--rem-lg);
   @media only screen and (max-width : 76rem) {
     font-size : var(--rem-md);
@@ -105,15 +102,15 @@ body {
   font-size        : 1.4rem;
   font-family      : IRANYekanWebRegula, serif;
   background-color : #F9FCFF;
-  color : var(--color-Grey-dark-1);
+  color            : var(--color-Grey-dark-1);
   line-height      : 160%;
-  position : relative;
+  position         : relative;
 
   }
-a:visited ,a:focus , a:link, a:hover{
+
+a:visited, a:focus, a:link, a:hover {
   color : var(--color-Grey-dark-1);
   }
-
 
 .pattern {
   position : absolute;
@@ -187,13 +184,13 @@ a:hover, a:active, a:visited, a:link {
   }
 
 *::-webkit-scrollbar-track {
-  background : var(--color-Primary-light);
+  background : var(--color-Primary);
   }
 
 *::-webkit-scrollbar-thumb {
   background-color : var(--color-Secondary);
   border-radius    : .5rem;
-  border           : var(--color-Secondary-o);
+
   }
 
 ::-webkit-scrollbar-thumb:hover {

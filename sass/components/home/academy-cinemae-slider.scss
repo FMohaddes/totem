@@ -1,7 +1,7 @@
 .academey-cinemae {
   overflow       : hidden;
   grid-column    : 1/-1;
-  height         : 100vh;
+  height         : 105vh;
   position       : relative;
   display        : flex;
   background    : var(--color-Primary-dark-gradient-overlay);
@@ -9,6 +9,7 @@
   flex-direction : column;
   margin         : var(--space-4) 0 var(--space-8);
   @include glassBox;
+
 
   @media only screen and (max-width : 67rem) {
     height : 90vh;
@@ -54,7 +55,8 @@
       top                 : 0;
       left                : 0;
       background-position : 10% 40%;
-      background-image    : var(--color-Primary-dark-gradient-overlay),
+      background-image    :
+        var(--color-Primary-dark-gradient-overlay),
       url('/img/cinema.jpg');
       clip-path           : url(#svgClip);
       background-repeat   : no-repeat;
@@ -65,13 +67,14 @@
     }
 
   &-text-box {
-    padding : var(--space-8);
+    padding        : var(--space-8) var(--space-4-8);
     position : relative;
+    margin-top : var(--space-4);
     z-index : 444;
     p {
       color : var(--color-Primary);
 
-      width : 50%;
+      width : 30%;
       }
     }
 
@@ -83,6 +86,7 @@
     margin-top : -4rem;
 
     .cinema-card {
+      cursor: pointer;
       display         : grid;
       border          : var(--bdr);
       position        : relative;
