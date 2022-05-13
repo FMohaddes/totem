@@ -1341,7 +1341,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   margin-top: var(--space-3-2);
   max-width: 90rem;
   min-height: 46rem;
-  background: linear-gradient(180deg, rgba(246, 251, 255, 0) -1.51%, rgba(230, 242, 252, 0.35) 5.54%, #E6F2FC 23.58%, #E6F2FC 43.49%, #E6F2FC 60.19%, #E6F2FC 88.37%, rgba(230, 242, 252, 0) 99.95%);
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
 }
 @media only screen and (max-width: 57rem) {
   .ravankavi-slider {
@@ -3142,9 +3142,7 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
 .login-container {
   border-radius: var(--bdrs-3);
   position: relative;
-  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
-  backdrop-filter: blur(20px);
-  background: var(--color-Primary-gradient-o);
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
   grid-column: 2/3;
   justify-self: center;
   width: 110rem;
@@ -3570,9 +3568,7 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   grid-row-gap: var(--space-1-6);
   grid-auto-rows: 11rem;
   overflow-x: auto;
-  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
-  backdrop-filter: blur(20px);
-  background: var(--color-Primary-light-gradient);
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
   border-radius: var(--bdrs-3);
 }
 @media only screen and (max-width: 45rem) {
@@ -3680,11 +3676,8 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
-  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
-  backdrop-filter: blur(20px);
-  background: var(--color-Primary-light-gradient);
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 3.37%, rgba(229, 241, 251, 0.45) 17.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
   border-radius: var(--bdrs-3);
-  border: var(--bdr);
   padding: var(--space-4);
   height: 44rem;
 }
@@ -3697,11 +3690,7 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
 .cart-invoice h4 {
   font-size: var(--size-2-8);
   font-family: IRANYekanWebExtraBold, Arial, serif;
-  background: linear-gradient(-2deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 84.31%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: var(--color-Grey-dark-1);
   margin-bottom: var(--space-3-2);
   padding: var(--space-1-6) 0;
 }

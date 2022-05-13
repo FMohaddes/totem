@@ -32,8 +32,8 @@
     grid-row-gap   : var(--space-1-6);
     grid-auto-rows : 11rem;
     overflow-x     : auto;
-    @include glassBox;
-    background     : var(--color-Primary-light-gradient);
+    background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+
     border-radius  : var(--bdrs-3);
     //border         : var(--bdr);
     @media only screen and (max-width : 45rem) {
@@ -164,10 +164,10 @@
   grid-column   : 2/3;
   grid-row      : 1/2;
   width         : 100%;
-  @include glassBox;
-  background    : var(--color-Primary-light-gradient);
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 3.37%, rgba(229, 241, 251, 0.45) 17.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+
   border-radius : var(--bdrs-3);
-  border        : var(--bdr);
+  //border        : var(--bdr);
   padding       : var(--space-4);
 
   height        : 44rem;
@@ -179,11 +179,7 @@
   h4 {
     font-size               : var(--size-2-8);
     font-family             : IRANYekanWebExtraBold, Arial, serif;
-    background              : linear-gradient(-2deg, rgba(72, 113, 152, 0.79) 0%, rgba(25, 56, 92, 0.98) 84.31%);
-    -webkit-background-clip : text;
-    -webkit-text-fill-color : transparent;
-    background-clip         : text;
-    text-fill-color         : transparent;
+    color: var(--color-Grey-dark-1);
     margin-bottom           : var(--space-3-2);
     padding                 : var(--space-1-6) 0;
     }
