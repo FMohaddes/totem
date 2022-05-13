@@ -1,7 +1,7 @@
 .academey-cinemae {
   overflow       : hidden;
   grid-column    : 1/-1;
-  height         : 110vh;
+  height         : 115vh;
   position       : relative;
   display        : flex;
   //filter: hue-rotate(30deg);
@@ -41,7 +41,7 @@
       z-index : 3;
       width    : 100%;
       position : absolute;
-      top     : 0rem;
+      top     : 0;
       left     : 0;
       height   : 100%;
       img{
@@ -75,8 +75,9 @@
   &-text-box {
     padding        : var(--space-8) var(--space-4-8);
     position : relative;
-    margin-top : var(--space-4);
+    margin-top : var(--space-2-4);
     z-index : 444;
+
     p {
       color : var(--color-Primary);
 
@@ -94,7 +95,7 @@
     .cinema-card {
       cursor: pointer;
       display         : grid;
-      border          : var(--bdr);
+      //border          : var(--bdr);
       position        : relative;
       width           : 24rem;
       height          : 34rem;
