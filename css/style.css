@@ -221,7 +221,8 @@ a:hover, a:active, a:visited, a:link {
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--color-Grey);
+  opacity: 1;
+  background-color: var(--color-white);
   width: 1rem !important;
   height: 1rem !important;
 }
@@ -1772,7 +1773,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 .academey-cinemae {
   overflow: hidden;
   grid-column: 1/-1;
-  height: 115vh;
+  height: 120vh;
   position: relative;
   display: flex;
   flex-direction: column;
