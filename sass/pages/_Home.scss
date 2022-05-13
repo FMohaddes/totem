@@ -9,6 +9,33 @@ main {
   }
 
 
+/*.luminance-mask {
+  mask-mode: luminance;
+  webkit-mask-mode: luminance;
+  }
+
+.alpha-mask {
+  mask-mode: alpha;
+  webkit-mask-mode: alpha;
+  }
+
+.gradient-mask {
+  display: block;
+  width: 100%;
+  //height : 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(0deg,black, white 30%, transparent 50%,red 60%);
+  -webkit-mask-image: linear-gradient(0deg,transparent,white 20%,black 60%, white 80%, transparent);
+
+  }*/
+
+
+
+
+
+
+
+
 
 
 

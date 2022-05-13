@@ -694,7 +694,6 @@ nav .nav-curve {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-content: center;
 }
@@ -1772,14 +1771,13 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 .academey-cinemae {
   overflow: hidden;
   grid-column: 1/-1;
-  height: 105vh;
+  height: 100vh;
   position: relative;
   display: flex;
-  background: var(--color-Primary-dark-gradient-overlay);
+  background-image: var(--color-Primary-light);
+  background-repeat: no-repeat;
   flex-direction: column;
   margin: var(--space-4) 0 var(--space-8);
-  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
-  backdrop-filter: blur(100px);
 }
 @media only screen and (max-width: 67rem) {
   .academey-cinemae {
@@ -1808,9 +1806,15 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   z-index: 3;
   width: 100%;
   position: absolute;
-  bottom: -40rem;
+  top: 0rem;
   left: 0;
   height: 100%;
+}
+.academey-cinemae-wrapper .cinema-curve img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
 }
 @media only screen and (max-width: 140rem) {
   .academey-cinemae-wrapper .cinema-curve {
@@ -2523,6 +2527,25 @@ main {
   overflow: hidden;
 }
 
+/*.luminance-mask {
+  mask-mode: luminance;
+  webkit-mask-mode: luminance;
+  }
+
+.alpha-mask {
+  mask-mode: alpha;
+  webkit-mask-mode: alpha;
+  }
+
+.gradient-mask {
+  display: block;
+  width: 100%;
+  //height : 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(0deg,black, white 30%, transparent 50%,red 60%);
+  -webkit-mask-image: linear-gradient(0deg,transparent,white 20%,black 60%, white 80%, transparent);
+
+  }*/
 .post-container {
   position: relative;
   grid-column: 1/-1;
@@ -3134,7 +3157,7 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding: 9.6rem 9.6rem 0 0;
+  padding: 8rem 8rem 0 0;
 }
 @media only screen and (max-width: 68rem) {
   .login-container {
@@ -3175,7 +3198,7 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
 .login-container .login-content p {
   z-index: 12;
   position: relative;
-  padding-top: 12rem;
+  padding-top: 10rem;
   justify-self: end;
   font-family: IRANYekanWebLigth, Arial, serif;
   font-size: var(--size-1);
@@ -3195,17 +3218,17 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   color: var(--color-Primary-dark);
 }
 
-.login-submit .input-icon-wrapper {
+.login-content .input-icon-wrapper {
   position: relative;
 }
-.login-submit .input-icon-wrapper :nth-child(2) {
+.login-content .input-icon-wrapper :nth-child(2) {
   position: absolute;
   top: 1.4rem;
   right: 1rem;
   width: 2.8rem;
   height: 2.8rem;
 }
-.login-submit input {
+.login-content input {
   font-family: inherit;
   color: inherit;
   box-shadow: var(--shadow-light);
@@ -3219,26 +3242,26 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   margin: var(--space-6-4) 0 var(--space-4) var(--space-6-4);
 }
 @media only screen and (max-width: 57rem) {
-  .login-submit input {
+  .login-content input {
     width: 35rem;
   }
 }
 @media only screen and (max-width: 37rem) {
-  .login-submit input {
+  .login-content input {
     width: 100%;
   }
 }
-.login-submit input:focus {
+.login-content input:focus {
   outline: none;
 }
-.login-submit input:focus:invalid {
+.login-content input:focus:invalid {
   border-bottom: 3px solid red;
 }
-.login-submit input::-webkit-input-placeholder {
+.login-content input::-webkit-input-placeholder {
   color: var(--color-Grey);
   font-family: IRANYekanWebRegular, Arial, serif;
 }
-.login-submit button {
+.login-content button {
   margin-top: var(--space-3-2);
   font-size: var(--size-1-4);
   font-family: IRANYekanWebBold, Arial, serif;
@@ -3300,6 +3323,222 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   .login-curve {
     display: none;
   }
+}
+
+.signup-content .create-account {
+  padding: 0 !important;
+}
+.signup-content input {
+  margin: var(--space-3-2) 0 var(--space-4) var(--space-3-2) !important;
+}
+
+.account-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 5%;
+  position: relative;
+  justify-self: center;
+  min-height: 50vh;
+  grid-column: 2/3;
+  width: 100%;
+  grid-template-columns: 27% 68%;
+}
+@media only screen and (max-width: 57rem) {
+  .account-container {
+    grid-template-columns: 30% 65%;
+  }
+}
+@media only screen and (max-width: 45rem) {
+  .account-container {
+    grid-template-columns: 100%;
+    grid-row-gap: 5%;
+    grid-column-gap: 0;
+  }
+}
+.account-container .account-info {
+  min-height: 34rem;
+  width: 100%;
+  padding: var(--space-4-8) 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-3);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 45rem) {
+  .account-container .account-info {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+.account-container .account-info > * {
+  margin-bottom: var(--space-1-6);
+}
+.account-container .account-info img {
+  border: 5px solid var(--color-Secondary);
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 55%;
+}
+.account-container .account-info h3 {
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+  font-size: var(--size-2);
+  margin: 0 0 var(--space-3-2);
+}
+.account-container .account-info div {
+  width: 80%;
+  height: 10rem;
+  text-align: center;
+  border-top: 0.1rem solid var(--color-Primary);
+  font-family: IRANYekanWebRegular, Arial, serif;
+  font-size: var(--size-1-8);
+  color: var(--color-Grey);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.account-container .account-info div p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+}
+
+.account-orders-wrapper {
+  overflow: hidden;
+  min-height: 44rem;
+  width: 100%;
+  border-radius: var(--bdrs-3);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+@media only screen and (max-width: 45rem) {
+  .account-orders-wrapper {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+.account-orders-wrapper .account-orders {
+  width: 100%;
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(100px);
+  background: var(--color-Primary-gradient-o);
+  border: var(--bdr);
+  padding: var(--space-4-8);
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 37rem) {
+  .account-orders-wrapper .account-orders {
+    justify-content: start;
+  }
+}
+.account-orders-wrapper .account-order {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: var(--space-4-8);
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-1);
+  min-width: 74rem;
+  height: 21rem;
+}
+@media only screen and (max-width: 45rem) {
+  .account-orders-wrapper .account-order {
+    min-width: 55rem;
+  }
+}
+.account-orders-wrapper .account-order div {
+  display: flex;
+  justify-content: space-between;
+}
+.account-orders-wrapper .row-1 {
+  margin-bottom: var(--space-0-4);
+}
+.account-orders-wrapper .row-1 p {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey);
+}
+.account-orders-wrapper .row-1 p span {
+  font-family: IRANYekanWebExtraBold, Arial, serif;
+  font-size: var(--size-1-4);
+  text-transform: uppercase;
+  color: var(--color-Grey-dark-1);
+}
+.account-orders-wrapper .row-2 {
+  margin-bottom: var(--space-3-2);
+}
+.account-orders-wrapper .row-2 p {
+  font-family: IRANYekanWebRegular, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+}
+.account-orders-wrapper .row-2 p span {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  padding-left: var(--space-0-4);
+}
+.account-orders-wrapper .row-2-price {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1-8) !important;
+  color: var(--color-Tertiary);
+}
+.account-orders-wrapper .row-3 .products-count {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1-4);
+  padding-top: 2rem;
+  color: var(--color-Grey);
+}
+.account-orders-wrapper .row-3 .products-count img {
+  width: 2rem;
+  height: 2rem;
+}
+.account-orders-wrapper .row-3 img {
+  width: 8.9rem;
+  height: 6.3rem;
+  object-fit: cover;
+  border-radius: var(--bdrs-1);
+  margin-left: var(--space-0-8);
+}
+.account-orders-wrapper .row-3 .account-more-info {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  height: 1rem;
+  align-items: center;
+  align-self: end;
+}
+.account-orders-wrapper .row-3 .account-more-info a {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  border-bottom: 0.1rem solid var(--color-Grey-dark-1);
+}
+@media only screen and (max-width: 42rem) {
+  .account-orders-wrapper .row-3 .account-more-info a {
+    font-size: 1.2rem;
+  }
+}
+.account-orders-wrapper .row-3 .account-more-info .arrow-left {
+  margin: var(--space-0-4) var(--space-1-2) 0 0;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .cart-container {
