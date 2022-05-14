@@ -1,6 +1,7 @@
 :root {
   --base-font-size: 1.9px;
   --fluid-typography-ratio: 0.6;
+  --rem-xxlg: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 2vw);
   --rem-lg: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
   --rem-md: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.1vw);
   --rem-sm: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1.3vw);
@@ -60,7 +61,16 @@ html {
   direction: rtl;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-size: var(--rem-lg);
+}
+@media only screen and (max-width: 190rem) {
+  html {
+    font-size: var(--rem-xxlg);
+  }
+}
+@media only screen and (max-width: 120rem) {
+  html {
+    font-size: var(--rem-lg);
+  }
 }
 @media only screen and (max-width: 76rem) {
   html {
@@ -98,22 +108,13 @@ a:visited, a:focus, a:link, a:hover {
   color: var(--color-Grey-dark-1);
 }
 
-.pattern {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-
 ::selection {
   background-color: var(--color-Primary);
   color: var(--color-Grey-dark-1);
 }
 
 a:hover, a:active, a:visited, a:link {
-  color: var(--color-Grey-light-1);
+  color: var(--color-Primary);
 }
 
 @font-face {
@@ -325,6 +326,8 @@ header {
   height: 100vh;
   grid-template-columns: 3fr 1.5fr;
   overflow: hidden;
+  z-index: 33;
+  position: relative;
 }
 @media only screen and (max-width: 57rem) {
   header {
@@ -576,7 +579,12 @@ header .intro .intro-curve {
     height: 100%;
   }
 }
-@media only screen and (max-width: 57rem) {
+@media only screen and (max-width: 72rem) {
+  .footer-curve {
+    height: 85%;
+  }
+}
+@media only screen and (max-width: 65rem) {
   .footer-curve {
     height: 80%;
   }
@@ -605,6 +613,7 @@ header .intro .intro-curve {
   position: absolute;
   bottom: 0;
   left: 0;
+  cursor: pointer;
 }
 .footer .copyright-arrow {
   height: 4.3rem;
@@ -629,6 +638,7 @@ nav {
   padding: var(--space-4) var(--space-6-4) 0;
   display: flex;
   height: 15rem;
+  z-index: 100;
   justify-content: space-between;
   align-content: start;
   align-items: start;
@@ -675,13 +685,6 @@ nav .login-cart .cart {
 nav .login-cart a {
   color: var(--color-white);
 }
-nav .nav-curve {
-  width: 105%;
-  height: 50rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .navbar input[type=checkbox],
 .navbar .hamburger-lines {
@@ -694,7 +697,7 @@ nav .nav-curve {
 
 .navbar-container {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -814,7 +817,7 @@ nav .nav-curve {
     margin-top: -4rem;
     box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
     backdrop-filter: blur(20px);
-    background: rgba(228, 240, 251, 0.77);
+    background: rgba(228, 240, 255, 0.9);
     border-radius: var(--bdrs-3);
     min-height: 100vh;
     width: 70%;
@@ -986,7 +989,7 @@ li.drop-down > ul li:last-child {
   border: var(--bdr);
   box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
   backdrop-filter: blur(20px);
-  background: #d3dae2;
+  background: #D3DAE2;
   border-radius: var(--bdrs-1);
   top: 50%;
   min-width: 23rem;
@@ -1314,6 +1317,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   justify-content: center;
   align-content: center;
   align-items: center;
+  z-index: 80;
   flex-direction: column;
   margin: var(--space-4) 0 var(--space-8);
 }
@@ -1770,7 +1774,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 .academey-cinemae {
   overflow: hidden;
   grid-column: 1/-1;
-  height: 120vh;
+  height: 115vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1778,22 +1782,17 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 @media only screen and (max-width: 67rem) {
   .academey-cinemae {
-    height: 90vh;
+    height: 100vh;
   }
 }
 @media only screen and (max-width: 48rem) {
   .academey-cinemae {
-    height: 75vh;
-  }
-}
-@media only screen and (max-width: 40rem) {
-  .academey-cinemae {
-    height: 70vh;
+    height: 80vh;
   }
 }
 @media only screen and (max-width: 28rem) {
   .academey-cinemae {
-    height: 65vh;
+    height: 70vh;
   }
 }
 .academey-cinemae-wrapper > * {
@@ -1828,13 +1827,13 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .academey-cinemae-text-box {
   padding: var(--space-8) var(--space-4-8);
   position: relative;
-  margin-top: var(--space-2-4);
-  z-index: 444;
+  margin-top: var(--space-3-2);
+  z-index: 222;
 }
 .academey-cinemae-text-box p {
   color: var(--color-Primary);
@@ -1903,7 +1902,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 .cafe-ketab .cafe-curve {
   position: absolute;
-  top: 0;
+  top: -2.5rem;
   left: 0;
   background-position: 10% 40%;
   background-image: var(--color-Primary-dark-gradient-overlay), url("/img/cafe-ketab.jpg");
@@ -1911,7 +1910,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 46%;
+  height: 50%;
 }
 @media only screen and (max-width: 45rem) {
   .cafe-ketab .cafe-curve {
@@ -1933,7 +1932,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   color: var(--color-white);
   width: 50%;
   text-align: center;
-  margin: var(--space-6-4) auto;
+  margin: 10rem auto;
 }
 .cafe-ketab-box {
   border-radius: var(--bdrs-3);
@@ -2518,9 +2517,28 @@ main {
   grid-template-columns: var(--space-4-8) 1fr var(--space-4-8);
   min-height: 100vh;
   fill-opacity: 0.3;
+  z-index: 1;
   grid-row-gap: var(--space-6-4);
   position: relative;
   overflow: hidden;
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.nav-curve {
+  width: 100%;
+  height: 60rem;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  z-index: 1;
 }
 
 /*.luminance-mask {

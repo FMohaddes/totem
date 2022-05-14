@@ -4,14 +4,14 @@ nav {
   padding         : var(--space-4) var(--space-6-4) 0;
   display         : flex;
   height          : 15rem;
+  z-index         : 100;
   justify-content : space-between;
   align-content   : start;
+
   align-items     : start;
 
   @media only screen and (max-width : 700px) {
-
     padding : var(--space-4) var(--space-3-2) 0;
-
     }
 
   .login-cart {
@@ -53,14 +53,7 @@ nav {
       }
     }
 
-  .nav-curve {
-    width    : 105%;
-    height   : 50rem;
-    position : absolute;
-    top      : 0;
-    left     : 0;
 
-    }
 
   }
 
@@ -77,7 +70,7 @@ nav {
 
 .navbar-container {
   position        : relative;
-  z-index         : 1;
+  z-index         : 100;
   display         : flex;
   justify-content : space-between;
   align-content   : center;
@@ -200,7 +193,7 @@ nav {
   .navbar .menu-items {
     margin-top     : -4rem;
     @include glassBox;
-    background     : rgba(228, 240, 251, 0.77);
+    background     : rgba(228, 240, 256, 0.90);
     border-radius  : var(--bdrs-3);
     min-height     : 100vh;
     width          : 70%;
@@ -305,10 +298,10 @@ li.drop-down,
     padding-right : 0 !important;
 
     }
-  .parent-item{
+
+  .parent-item {
     @media (max-width : 767px) {
       padding-right : var(--space-4);
-
 
       }
     }
@@ -331,17 +324,16 @@ li.drop-down:before {
   right              : 5rem;
   top                : .5rem;
   @media (max-width : 767px) {
-    right              : 10rem;
-    top                : 4.8rem;
-    background-color   : var(--color-Primary-dark);
-
+    right            : 10rem;
+    top              : 4.8rem;
+    background-color : var(--color-Primary-dark);
 
     }
 
   }
 
 li.drop-down > ul {
-  top : 2.1rem;
+  top           : 2.1rem;
   right         : -.2rem;
   min-width     : 23rem;
   background    : rgba(255, 255, 255, 0.77);
@@ -352,19 +344,20 @@ li.drop-down > ul {
     border-bottom : .1rem solid var(--color-Primary-dark);
     margin-left   : 0;
     @media (max-width : 767px) {
-      padding            :var(--space-0-8) var(--space-2-4) !important;
+      padding : var(--space-0-8) var(--space-2-4) !important;
       }
     }
 
   li:last-child {
     border-bottom : none !important;
     }
+
   @media (max-width : 767px) {
-    background    :transparent;
-    box-shadow       : none ;
-    backdrop-filter:none;
-    border           : none;
-    padding            : 0 !important;
+    background      : transparent;
+    box-shadow      : none;
+    backdrop-filter : none;
+    border          : none;
+    padding         : 0 !important;
     }
   }
 
@@ -374,7 +367,7 @@ li.drop-down > ul {
 .flyout-left > ul {
   border        : var(--bdr);
   @include glassBox;
-  background    :#d3dae2;
+  background    : #D3DAE2;
   border-radius : var(--bdrs-1);
   top           : 50%;
   min-width     : 23rem;
@@ -385,18 +378,19 @@ li.drop-down > ul {
     border-bottom : .1rem solid var(--color-Primary-dark);
     margin-left   : 0;
     @media (max-width : 767px) {
-      padding            :var(--space-0-8) var(--space-2-4) !important;
+      padding : var(--space-0-8) var(--space-2-4) !important;
       }
     }
 
   li:last-child {
     border-bottom : none !important;
     }
+
   @media (max-width : 767px) {
-    background    :transparent;
-    box-shadow       : none ;
-    border           : none;
-    padding            : 0 !important;
+    background : transparent;
+    box-shadow : none;
+    border     : none;
+    padding    : 0 !important;
     }
   }
 
@@ -415,6 +409,7 @@ li.drop-down > ul > li > a,
   -moz-transition    : color 0.2s linear, background 0.2s linear;
   -o-transition      : color 0.2s linear, background 0.2s linear;
   transition         : color 0.2s linear, background 0.2s linear;
+
   &:hover {
     font-family : IRANYekanWebExtraBold, Arial, serif;
     color       : var(--color-Grey-dark-1);
@@ -471,7 +466,7 @@ h4.row.mega-title {
   left          : 0;
   z-index       : 33;
   right         : 0;
-  top : 2.1rem;
+  top           : 2.1rem;
 
   display       : none;
   //margin-top   : var(--space--4);

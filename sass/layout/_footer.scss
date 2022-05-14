@@ -207,7 +207,11 @@
 
       }
 
-    @media only screen and (max-width : 57rem) {
+    @media only screen and (max-width : 72rem) {
+      height    : 85%;
+
+      }
+    @media only screen and (max-width : 65rem) {
       height    : 80%;
 
       }
@@ -236,6 +240,7 @@
     position         : absolute;
     bottom           : 0;
     left             : 0;
+    cursor : pointer;
 
     &-arrow {
       height          : 4.3rem;

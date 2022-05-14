@@ -6,6 +6,11 @@ $(function () {
 
 });
 
+var btn = $('#button');
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '5000');
+});
 
 
 let swiper = new Swiper(".mySwiper", {

@@ -3,6 +3,8 @@ header {
   height                : 100vh;
   grid-template-columns : 3fr 1.5fr;
   overflow              : hidden;
+  z-index : 33;
+  position : relative;
 
   @media only screen and (max-width : 57rem) {
     height                : 50vh;
@@ -62,6 +64,7 @@ header {
       left     : 0;
 
       }
+
     }
   }
 

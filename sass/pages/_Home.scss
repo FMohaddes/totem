@@ -3,12 +3,30 @@ main {
   grid-template-columns : var(--space-4-8) 1fr var(--space-4-8);
   min-height            : 100vh;
   fill-opacity          : .3;
+  z-index : 1;
   grid-row-gap          : var(--space-6-4);
   position              : relative;
   overflow              : hidden;
+
+
+  }
+.pattern {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 100%;
+  z-index  : -5;
   }
 
-
+.nav-curve {
+  width    : 100%;
+  height   : 60rem;
+  position : absolute;
+  top      : -10rem;
+  left     : 0;
+  z-index  : 1;
+  }
 /*.luminance-mask {
   mask-mode: luminance;
   webkit-mask-mode: luminance;

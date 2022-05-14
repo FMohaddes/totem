@@ -2,6 +2,7 @@
   position       : relative;
   grid-column    : 2/3;
   @include center;
+  z-index        : 80;
   flex-direction : column;
   margin         : var(--space-4) 0 var(--space-8);
   @media only screen and (max-width : 37rem) {
@@ -30,7 +31,7 @@
   margin-top    : var(--space-3-2);
   max-width     : 90rem;
   min-height    : 46rem;
-  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+  background    : linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
   @media only screen and (max-width : 57rem) {
     width      : 75rem;
     min-height : 42rem;
@@ -214,10 +215,9 @@
       @include center;
       background    : transparent;
       font-family   : BTitrBold, Arial, serif;
-      color : var(--color-Grey) ;
-      opacity : 1;
+      color         : var(--color-Grey);
+      opacity       : 1;
       transition    : all .3s;
-
 
       &-active {
         width            : 3.5rem;
