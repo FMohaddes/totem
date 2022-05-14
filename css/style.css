@@ -2516,29 +2516,39 @@ main {
   display: grid;
   grid-template-columns: var(--space-4-8) 1fr var(--space-4-8);
   min-height: 100vh;
-  fill-opacity: 0.3;
-  z-index: 1;
+  z-index: 100;
   grid-row-gap: var(--space-6-4);
   position: relative;
   overflow: hidden;
 }
 
 .pattern {
+  fill-opacity: 0.3;
   position: absolute;
-  top: 0;
+  top: 100vh;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   z-index: -5;
+}
+@media only screen and (max-width: 57rem) {
+  .pattern {
+    top: 50vh;
+  }
 }
 
 .nav-curve {
   width: 100%;
   height: 60rem;
   position: absolute;
-  top: -10rem;
+  top: 90vh;
   left: 0;
-  z-index: 1;
+  z-index: 88;
+}
+@media only screen and (max-width: 57rem) {
+  .nav-curve {
+    top: 45vh;
+  }
 }
 
 /*.luminance-mask {
