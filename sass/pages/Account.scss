@@ -18,13 +18,13 @@
     grid-column-gap       : 0;
     }
 
-  .account-info {
-    min-height      : 34rem;
+  .account-sidebar {
     width           : 100%;
+    height : 46rem ;
     padding         : var(--space-4-8) 0;
     grid-column     : 1/2;
     grid-row        : 1/2;
-    @include glassBox;
+    //@include glassBox;
     background      : var(--color-Primary-light-gradient);
     border-radius   : var(--bdrs-3);
     display         : flex;
@@ -46,20 +46,24 @@
       width         : 12.5rem;
       height        : 12.5rem;
       border-radius : 55%;
+      box-shadow: var(--shadow-light);
       }
 
     h3 {
+      color : var(--color-Primary-dark);
       font-family : IRANYekanWebExtraBold, Arial, serif;
       font-size   : var(--size-2);
-      margin      : 0 0 var(--space-3-2);
+      margin      :var(--space-2-4) 0 var(--space-4);
 
       }
 
     div {
+      cursor: pointer;
       width           : 80%;
-      height          : 10rem;
+      height          : 7rem;
       text-align      : center;
-      border-top      : .1rem solid var(--color-Primary);
+      //background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 3%, rgba(229, 241, 251, 0.45) 10%, #E6F2FC 20%, #E6F2FC 42%, #E6F2FC 65%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+
       font-family     : IRANYekanWebRegular, Arial, serif;
       font-size       : var(--size-1-8);
       color           : var(--color-Grey);
@@ -68,13 +72,20 @@
       align-content   : center;
       align-items     : center;
 
+      &:hover{
+        background-color : var(--color-Secondary);
+        font-family     : IRANYekanWebBold, Arial, serif;
+        color           : var(--color-Grey-dark-1);
+        border-radius : var(--bdrs-1);
+
+        }
+
       p {
         display         : flex;
         justify-content : center;
         align-content   : center;
         align-items     : center;
 
-        height          : 6rem;
         width           : 100%;
         }
       }
@@ -82,13 +93,17 @@
 
   }
 
-.account-orders-wrapper {
-  overflow      : hidden;
+.account-content-wrapper {
+  overflow      : auto;
   min-height    : 44rem;
+  max-height    : 200vh;
   width         : 100%;
   border-radius : var(--bdrs-3);
   grid-column   : 2/3;
   grid-row      : 1/2;
+  background: linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 3%, rgba(229, 241, 251, 0.45) 10%, #E6F2FC 20%, #E6F2FC 42%, #E6F2FC 65%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+  //border          : var(--bdr);
+  padding         :var(--space-6-4) var(--space-4-8) var(--space-4-8);
   @media only screen and (max-width : 45rem) {
     grid-column : 1/3;
     grid-row    : 3/4;
@@ -96,10 +111,6 @@
 
   .account-orders {
     width           : 100%;
-    @include glassBox;
-    background      : var(--color-Primary-gradient-o);
-    border          : var(--bdr);
-    padding         : var(--space-4-8);
     height          : 100%;
     overflow-x      : auto;
     display         : flex;
@@ -183,9 +194,9 @@
 
     .products-count {
       font-family : BTitrBold, Arial, serif;
-      font-size   : var(--size-1-4);
+      font-size   : var(--size-1-8);
       padding-top : 2rem;
-      color       : var(--color-Grey);
+      color       : var(--color-Grey-dark-1);
 
       img {
         width  : 2rem;
@@ -231,4 +242,83 @@
 
     }
 
+  }
+
+.account-info{
+
+
+  h5 {
+    margin-bottom : var(--space-1-6);
+    font-size     : var(--size-1-4);
+    font-family   : IRANYekanWebBold, Arial, serif;
+    @media only screen and (max-width : 42rem) {
+      font-size : var(--size-1-8);
+
+      }
+    }
+
+  input {
+    font-family   : inherit;
+    color         : inherit;
+    box-shadow    : var(--shadow-light);
+    padding       : var(--space-1-6);
+    border        : none;
+    width         : 60%;
+    border-radius : var(--bdrs-1);
+    height        : 5.5rem;
+    border-bottom : 3px solid transparent;
+    display       : block;
+    margin-bottom : var(--space-3-2);
+
+    &:focus {
+      outline : none;
+      //border-bottom : 3px solid var(--c-green);
+
+      }
+
+    &:focus:invalid {
+      border-bottom : 3px solid red;
+      }
+
+    &::-webkit-input-placeholder {
+      color : var(--color-Grey);
+      }
+    }
+
+  textarea {
+    box-shadow    : var(--shadow-light);
+    padding       : var(--space-1-6);
+
+    width         : 100%;
+    font-size     : 1.4rem;
+    line-height   : 2rem;
+    border-radius : var(--bdrs-1);
+    transition    : all .2s;
+    border        : none;
+    resize        : none;
+
+    &:focus {
+      outline : none;
+      }
+    }
+
+  button {
+    margin-top       : var(--space-3-2);
+    font-size        : var(--size-1-4);
+    font-family      : IRANYekanWebBold, Arial, serif;
+    @include center;
+    cursor           : pointer;
+    grid-column-gap  : 1.5rem;
+    border           : none;
+    width            : 12.8rem;
+    height           : 4.5rem;
+    border-radius    : var(--bdrs-3);
+    background-color : var(--color-Secondary);
+    }
+
+  }
+
+
+.hide{
+  display : none !important;
   }

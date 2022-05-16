@@ -11,12 +11,11 @@ main {
 
 .pattern {
   fill-opacity : .3;
-
   position     : absolute;
-  top          : 100vh;
+  top          : 0;
   left         : 0;
   width        : 100%;
-  height       : 85%;
+  height       : 100%;
   z-index      : -5;
   @media only screen and (max-width : 57rem) {
     top : 53vh;

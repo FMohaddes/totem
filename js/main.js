@@ -1,29 +1,46 @@
-$(function () {
-  $('.toggle-menu').click(function(){
-    $('.exo-menu').toggleClass('display');
+$(document).ready(function(){
+  $("#account-orders").on("click" ,function(){
+    console.log("something");
+    $(".account-orders").removeClass("hide");
+    $(".account-info").addClass("hide")
+  });
+  $("#account-info").on("click",function(){
+    $(".account-orders").addClass("hide");
+    $(".account-info").removeClass("hide");
 
+  })
+
+  $(function () {
+    $('.toggle-menu').click(function(){
+      $('.exo-menu').toggleClass('display');
+
+    });
+
+  });
+
+
+  var btn = $('#button');
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '5000');
+  });
+
+
+  var  mn = $(".main-nav");
+  mns = "main-nav-scrolled";
+  hdr = $('header').height() ;
+
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > hdr ) {
+      mn.addClass(mns);
+    } else {
+      mn.removeClass(mns);
+    }
   });
 
 });
 
-var btn = $('#button');
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '5000');
-});
 
-
-var  mn = $(".main-nav");
-mns = "main-nav-scrolled";
-hdr = $('header').height() ;
-
-$(window).scroll(function() {
-  if( $(this).scrollTop() > hdr ) {
-    mn.addClass(mns);
-  } else {
-    mn.removeClass(mns);
-  }
-});
 
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
