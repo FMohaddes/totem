@@ -1,7 +1,7 @@
 .academey-cinemae {
   overflow       : hidden;
   grid-column    : 1/-1;
-  height         : 115vh;
+  height         : 113vh;
   position       : relative;
   display        : flex;
   //filter: hue-rotate(30deg);
@@ -65,9 +65,13 @@
     }
 
   &-text-box {
-    padding        : var(--space-8) var(--space-4-8);
+    padding        :11rem var(--space-4-8) var(--space-4-8);
     position : relative;
     margin-top : var(--space-3-2);
+    text-align     : center;
+    @include center;
+    align-items    : center;
+    flex-direction : column;
     z-index : 222;
 
     p {

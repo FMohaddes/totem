@@ -1,12 +1,12 @@
 nav {
   position        : relative;
   grid-column     : 1/-1;
-  padding         : var(--space-4) var(--space-6-4) 0;
+  padding         : 0 var(--space-6-4) 0;
   display         : flex;
   height          : 15rem;
   z-index         : 100;
   justify-content : space-between;
-  align-content   : start;
+  align-content   : center;
 
   align-items     : start;
 
@@ -20,6 +20,7 @@ nav {
     z-index     : 1;
     font-family : IRANYekanWebBold, serif;
     font-size   : var(--size-1);
+    align-items: center;
 
     .login {
       @include center;
@@ -53,8 +54,6 @@ nav {
       }
     }
 
-
-
   }
 
 ////
@@ -74,11 +73,14 @@ nav {
   display         : flex;
   justify-content : space-between;
   align-content   : center;
+  align-items: center;
+
   }
 
 .menu-items {
   display        : flex;
-  padding-bottom : 4rem;
+  //padding-bottom : 4rem;
+
   }
 
 .menu-items li {
@@ -172,7 +174,7 @@ nav {
     display       : block;
     height        : 4px;
     width         : 100%;
-    border-radius : 10px;
+    border-radius : 1rem;
     background    : var(--color-white);
     }
 
@@ -725,5 +727,16 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
     box-shadow      : none !important;
     backdrop-filter : none;
     }
+  }
+
+.main-nav-scrolled {
+  padding         :var(--space-3-2) var(--space-6-4) ;
+  background             : radial-gradient(100% 66.7% at 50% 33.3%, #234361 0%, #234361 35.94%, rgba(35, 67, 97, 0.674778) 78.13%, rgba(35, 67, 97, 0) 100%);
+
+
+  position : fixed;
+  top      : 0;
+  left : 0;
+
   }
 

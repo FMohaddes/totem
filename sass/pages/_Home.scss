@@ -2,40 +2,41 @@ main {
   display               : grid;
   grid-template-columns : var(--space-4-8) 1fr var(--space-4-8);
   min-height            : 100vh;
-  z-index :100;
+  z-index               : 100;
   grid-row-gap          : var(--space-6-4);
   position              : relative;
   overflow              : hidden;
 
-
   }
-.pattern {
-  fill-opacity          : .3;
 
-  position : absolute;
-  top      :100vh;
-  left     : 0;
-  width    : 100%;
-  height   : 85%;
-  z-index  : -5;
+.pattern {
+  fill-opacity : .3;
+
+  position     : absolute;
+  top          : 100vh;
+  left         : 0;
+  width        : 100%;
+  height       : 85%;
+  z-index      : -5;
   @media only screen and (max-width : 57rem) {
-    top                : 50vh;
+    top : 53vh;
 
     }
   }
 
 .nav-curve {
-  width    : 100%;
+
+  width    : 115%;
   height   : 60rem;
   position : absolute;
   top      : 90vh;
-  left     : 0;
+  left     : -2rem;
   z-index  : 88;
-  @media only screen and (max-width : 57rem) {
-    top                : 45vh;
-
+  @media only screen and (max-width : 62rem) {
+    top : 47vh;
     }
   }
+
 /*.luminance-mask {
   mask-mode: luminance;
   webkit-mask-mode: luminance;

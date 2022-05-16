@@ -108,7 +108,7 @@ body {
   color            : var(--color-Grey-dark-1);
   line-height      : 160%;
   position         : relative;
-
+  overflow-x: hidden;
   }
 
 a:visited, a:focus, a:link, a:hover {
