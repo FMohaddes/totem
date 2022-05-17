@@ -1,10 +1,11 @@
 .academy-ravancavi {
   position       : relative;
-  grid-column    : 2/3;
+  grid-column    : 1/-1;
   @include center;
   z-index        : 80;
+
   flex-direction : column;
-  margin         : var(--space-4) 0 var(--space-8);
+  margin         : 15rem 0 12rem;
   @media only screen and (max-width : 37rem) {
     grid-column : 1/-1;
     }
@@ -13,10 +14,20 @@
     @include center;
     align-items    : center;
     flex-direction : column;
-    color          : var(--color-white);
     width          : 50%;
     text-align     : center;
+    margin-top : 5rem;
+    position       : relative;
+    z-index : 188;
 
+    h3{
+      padding-top : 5rem;
+      }
+    p{
+      position : relative;
+      color          : var(--color-white);
+
+      }
     }
 
   }
@@ -31,7 +42,9 @@
   margin-top    : var(--space-3-2);
   max-width     : 90rem;
   min-height    : 46rem;
-  background    : linear-gradient(180deg, rgba(228, 240, 251, 0) 0%, rgba(228, 240, 251, 0.16) 7.37%, rgba(229, 241, 251, 0.45) 14.3%, #E6F2FC 26.21%, #E6F2FC 47.24%, #E6F2FC 68.94%, #E6F2FC 84.16%, rgba(228, 240, 251, 0) 99.95%);
+  z-index : 88;
+  background            : var(--color-Primary-light-gradient);
+
   @media only screen and (max-width : 57rem) {
     width      : 75rem;
     min-height : 42rem;
@@ -230,5 +243,14 @@
       }
 
     }
+
+  }
+
+.ravankavi-curve{
+  width    : 100%;
+  height   : 110%;
+  position : absolute;
+  top      : 0;
+  left     : 0;
 
   }
