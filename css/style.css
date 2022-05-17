@@ -1380,19 +1380,29 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 
 .academy-ravancavi {
-  position: relative;
   grid-column: 1/-1;
+  height: 77rem;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  margin: var(--space-4) 0 var(--space-8);
   align-items: center;
-  z-index: 80;
-  flex-direction: column;
-  margin: 15rem 0 12rem;
+  /*  position       : relative;
+    grid-column    : 1/-1;
+    @include center;
+    z-index        : 80;
+
+    flex-direction : column;
+    margin         : 15rem 0 12rem;
+    @media only screen and (max-width : 37rem) {
+      grid-column : 1/-1;
+      }
+  */
 }
 @media only screen and (max-width: 37rem) {
   .academy-ravancavi {
-    grid-column: 1/-1;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
   }
 }
 .academy-ravancavi-text-box {
@@ -2671,7 +2681,7 @@ main {
 
 .nav-curve {
   width: 115%;
-  height: 35rem;
+  height: 25rem;
   position: absolute;
   top: 90vh;
   left: -2rem;

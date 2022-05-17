@@ -1,5 +1,17 @@
 .academy-ravancavi {
-  position       : relative;
+  grid-column : 1/-1;
+  height      : 77rem;
+  position    : relative;
+  display     : flex;
+  margin      : var(--space-4) 0 var(--space-8);
+  align-items : center;
+  @media only screen and (max-width : 37rem) {
+    flex-direction: column;
+    align-items : start;
+    justify-content : center;
+    }
+
+/*  position       : relative;
   grid-column    : 1/-1;
   @include center;
   z-index        : 80;
@@ -9,7 +21,7 @@
   @media only screen and (max-width : 37rem) {
     grid-column : 1/-1;
     }
-
+*/
   &-text-box {
     @include center;
     align-items    : center;
