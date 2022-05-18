@@ -1384,7 +1384,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   height: 77rem;
   position: relative;
   display: flex;
-  margin: var(--space-4) 0 var(--space-8);
+  margin: 22rem 0 var(--space-8);
   align-items: center;
   /*  position       : relative;
     grid-column    : 1/-1;
@@ -1693,6 +1693,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   .academey-honary-content-box {
     justify-self: center;
     align-self: end;
+    width: 80%;
     margin-top: var(--space-3-2);
   }
 }
@@ -2019,11 +2020,11 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   background-repeat: no-repeat;
   background-size: cover;
   width: 110%;
-  height: 55%;
+  height: 60%;
 }
 @media only screen and (max-width: 45rem) {
   .cafe-ketab .cafe-curve {
-    height: 40%;
+    height: 50%;
   }
 }
 @media only screen and (max-width: 37rem) {
@@ -2099,7 +2100,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 @media only screen and (max-width: 42rem) {
   .cafe-ketab-content-box {
-    margin-top: -14rem;
+    margin-top: -12rem;
   }
 }
 @media only screen and (max-width: 37rem) {
@@ -2359,6 +2360,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 @media only screen and (max-width: 37rem) {
   .mahname-content-box {
     justify-self: center;
+    width: 80%;
     align-self: end;
     margin-top: var(--space-3-2);
   }
@@ -2499,6 +2501,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   .nashr-content-box {
     justify-self: center;
     align-self: end;
+    width: 80%;
     margin-top: var(--space-3-2);
   }
 }
@@ -2680,10 +2683,10 @@ main {
 }
 
 .nav-curve {
-  width: 115%;
-  height: 25rem;
+  width: 105%;
+  height: 30rem;
   position: absolute;
-  top: 90vh;
+  top: 88vh;
   left: -2rem;
   z-index: 88;
 }
