@@ -1920,7 +1920,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   top: 0;
   left: 0;
   background-position: 10% 40%;
-  background-image: var(--color-Primary-dark-gradient-overlay), url("/img/cinema.jpg");
+  background-image: var(--color-Primary-dark-gradient-overlay), url("//img/cinema.jpg");
   clip-path: url(#svgClip);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2015,7 +2015,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   top: 0;
   left: 0;
   background-position: 10% 40%;
-  background-image: var(--color-Primary-dark-gradient-overlay), url("/img/cafe-ketab.jpg");
+  background-image: var(--color-Primary-dark-gradient-overlay), url("//img/cafe-ketab.jpg");
   clip-path: url(#svgClip);
   background-repeat: no-repeat;
   background-size: cover;
@@ -3782,6 +3782,300 @@ aside .new-posts .new-post-content .new-post-text .new-post-date img {
   display: none !important;
 }
 
+.posts-wrapper {
+  position: relative;
+  padding-top: var(--space-6-4);
+  min-height: 120rem;
+  grid-column: 2/3;
+  margin-bottom: 15rem;
+}
+.posts-wrapper .posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 36rem));
+  column-gap: var(--space-6-4);
+  row-gap: var(--space-6-4);
+  align-content: start;
+  justify-content: center;
+  z-index: 5;
+}
+.posts-wrapper .posts .course-card {
+  display: grid;
+  grid-template-columns: var(--space-2-4) 1fr 1fr var(--space-2-4);
+  padding-top: var(--space-4-8);
+  border: var(--bdr);
+  position: relative;
+  background: var(--color-Primary-light-gradient);
+  border-radius: var(--bdrs-3);
+  justify-content: start;
+  align-content: start;
+  box-shadow: 0 1rem 1.4rem rgba(74, 58, 255, 0.01), 0 0.8rem 1.6rem rgba(23, 15, 73, 0.03);
+  backdrop-filter: blur(20px);
+}
+.posts-wrapper .posts .course-card-text-box {
+  grid-column: 2/3;
+  background: var(--color-Primary-gradient);
+  width: 18rem;
+  height: 11rem;
+  grid-row: 1/2;
+  opacity: 0.95;
+  box-shadow: var(--shadow-light);
+  border-radius: var(--bdrs-1);
+  color: var(--color-Grey-dark-1);
+  padding: var(--space-1-6);
+  margin-left: var(--space-1-6);
+}
+.posts-wrapper .posts .course-card-text-box h2 {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  margin-bottom: var(--space-0-8);
+}
+.posts-wrapper .posts .course-card-text-box p {
+  font-family: IRANYekanWebLigth, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey-dark-1);
+  line-height: 155%;
+}
+.posts-wrapper .posts .course-card-image {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  width: 16rem;
+  height: 19rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: var(--bdrs-1);
+}
+.posts-wrapper .posts .course-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(88%);
+}
+.posts-wrapper .posts .course-card-price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 18rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.posts-wrapper .posts .course-card-price p {
+  font-family: IRANYekanWebBold, Arial, serif;
+  font-size: var(--size-1-4);
+  color: var(--color-Grey-dark-1);
+}
+.posts-wrapper .posts .course-card-price div {
+  position: relative;
+  display: flex;
+}
+.posts-wrapper .posts .course-card-price div h6 {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+}
+.posts-wrapper .posts .course-card-price div span {
+  margin: 0 var(--space-0-4) var(--space-0-4) 0;
+  color: var(--color-Grey-light-1);
+  font-size: var(--size-1-4);
+  font-family: IRANYekanWebRegular, Arial, serif;
+}
+.posts-wrapper .posts .course-card-price .sale {
+  color: var(--color-Grey-light-1);
+  position: relative;
+  font-size: var(--size-1-8);
+  align-self: end;
+}
+.posts-wrapper .posts .course-card-price .sale::before {
+  position: absolute;
+  top: 0.8rem;
+  content: "";
+  display: block;
+  width: 5.5rem;
+  transform: rotate(170.42deg);
+  height: 0.3rem;
+  background-color: var(--color-Secondary);
+  border-radius: 55rem;
+}
+.posts-wrapper .posts .course-card-price .sale-price {
+  position: absolute;
+  font-size: var(--size-2);
+  top: -1.4rem;
+  left: 3.5rem;
+  transform: rotate(-3deg);
+}
+.posts-wrapper .posts .course-card-price .sale-price + span {
+  margin: 0 var(--space-1-6) var(--space-0-4) 0;
+}
+.posts-wrapper .posts .course-card-info {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  width: 31.1rem;
+  height: 5.2rem;
+  margin-top: var(--space-2-4);
+  border-top: 0.1rem solid var(--color-Primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.posts-wrapper .posts .course-card-info a {
+  font-size: var(--size-1);
+  font-family: IRANYekanWebBold, Arial, serif;
+  color: var(--color-Grey-dark-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bdrs-3);
+  background-color: var(--color-Secondary);
+  width: 9.7rem;
+  height: 3rem;
+}
+.posts-wrapper .posts .course-card-info-icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: var(--space-1-2);
+}
+.posts-wrapper .posts .course-card-info-icons div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: var(--space-0-8);
+}
+.posts-wrapper .posts .course-card-info-icons div span {
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-1);
+  color: var(--color-Grey);
+}
+.posts-wrapper .posts .course-card-info-icons div img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.posts-wrapper .posts .course-card-info .sale-percent {
+  display: flex;
+  align-items: center;
+}
+.posts-wrapper .posts .course-card-info .sale-percent span {
+  color: var(--color-Tertiary);
+  font-family: BTitrBold, Arial, serif;
+  font-size: var(--size-2);
+  margin-right: var(--space-1-2);
+}
+
+.pagination {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  width: 400px;
+  height: 60px;
+  border-radius: 9px;
+}
+.pagination, .pagination__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.pagination__list {
+  list-style-type: none;
+  padding: 0;
+  width: 350;
+  height: 50px;
+  border-radius: 9px;
+  margin: 0 9px;
+  overflow: hidden;
+}
+.pagination__item {
+  font-family: BTitrBold, Arial, serif;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.4rem;
+}
+.pagination__item > button, .pagination__button {
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 9px;
+  background: var(--color-Primary);
+  color: var(--color-Primary-dark);
+}
+.pagination__item > button:hover, .pagination__button:hover {
+  background: var(--color-Primary-dark);
+  color: var(--color-Primary-light);
+}
+.pagination .page-arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.pagination .page-arrow-left {
+  transform: scaleX(-1);
+}
+.pagination__item > button {
+  width: 45px;
+  height: 45px;
+}
+.pagination__item > button[data-level=target] {
+  background: var(--color-Primary-dark);
+  color: var(--color-Primary-light);
+}
+.pagination--move-prev {
+  animation: pagination-move-prev 0.5s ease both;
+}
+.pagination--move-next {
+  animation: pagination-move-next 0.5s ease both;
+}
+.pagination--move-top {
+  animation: pagination-move-top 0.5s ease both;
+}
+.pagination__button {
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes pagination-move-prev {
+  from, 0% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  to, 100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes pagination-move-next {
+  from, 0% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to, 100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes pagination-move-top {
+  from, 0% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  to, 100% {
+    transform: translateY(0px);
+  }
+}
 .cart-container {
   display: grid;
   grid-auto-flow: column;
