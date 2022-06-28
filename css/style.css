@@ -1641,7 +1641,7 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   height: 110%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -5rem;
 }
 
 .academey-honary {
