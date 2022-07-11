@@ -113,7 +113,7 @@
   }
 
 aside {
-  z-index        : 111;
+  z-index        : 11;
   position       : relative;
   grid-column    : 1/2;
   display        : flex;
@@ -348,7 +348,7 @@ aside {
   width         : 100%;
   grid-column   : 2/3;
   grid-row      : 2/3;
-  z-index       : 111;
+  z-index       : 11;
   position      : relative;
   @include glassBox;
   border        : var(--bdr);
@@ -373,7 +373,7 @@ aside {
   grid-column : 2/3;
   width       : 100%;
   position    : relative;
-  z-index     : 77;
+  z-index     : 11;
   @media only screen and (max-width : 42rem) {
     grid-row    : 4/5;
     grid-column : 1/3;

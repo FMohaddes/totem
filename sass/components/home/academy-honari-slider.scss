@@ -13,7 +13,6 @@
 
   &-text-box {
     z-index : 1;
-
     margin-top     : -15rem;
     display        : flex;
     flex-direction : column;
@@ -21,7 +20,7 @@
     width          : 30%;
 
     @media only screen and (max-width : 57rem) {
-      width : 50%;
+      width : 60%;
       }
     @media only screen and (max-width : 37rem) {
       padding        : 12rem  var(--space-4) var(--space-8)
@@ -54,7 +53,7 @@
       justify-self: center;
       align-self: end;
       width : 80%;
-      margin-top : var(--space-3-2);
+      margin-top : 10rem;
       }
     .course-card {
       display               : grid;
@@ -69,6 +68,9 @@
       justify-content       : start;
       align-content         : start;
       @include glassBox;
+      .link-card{
+
+        }
 
 
       &-text-box {
@@ -203,7 +205,7 @@
         justify-content : space-between;
         align-items     : center;
 
-        a {
+        .kharid{
           font-size        : var(--size-1);
           font-family      : IRANYekanWebBold, Arial, serif;
           color            : var(--color-Grey-dark-1);

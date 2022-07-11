@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
   $("#account-orders").on("click" ,function(){
     console.log("something");
@@ -24,7 +25,6 @@ $(document).ready(function(){
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '5000');
   });
-
 
   var  mn = $(".main-nav");
   mns = "main-nav-scrolled";
@@ -289,3 +289,4 @@ function range(start = 0, stop, step = 1, func = { onPush: (index) => index }) {
 
 
 
+*/

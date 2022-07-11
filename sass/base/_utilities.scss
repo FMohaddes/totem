@@ -83,21 +83,17 @@
 
   .swiper-button-prev {
     position : absolute;
-    top      : 53%;
+    top      : 63%;
     right    : 8vh;
     @media only screen and (max-width : 57rem) {
       right : 6vh;
       }
-    @media only screen and (max-width : 45rem) {
-      right : 4vh;
-      }
     @media only screen and (max-width : 37rem) {
-      right : 12vh;
-      top      : 33%;
-
+      right : 42vh;
+      top      : 11%;
       }
     @media only screen and (max-width : 32rem) {
-      right : 3vh;
+      right : 40vh;
 
       }
 
@@ -105,22 +101,20 @@
 
   .swiper-button-next {
     position : absolute;
-    top      : 53%;
+    top      : 63%;
     right    : 18vh;
     @media only screen and (max-width : 57rem) {
       right : 14vh;
       }
     @media only screen and (max-width : 45rem) {
-      right : 10vh;
+      right : 12vh;
       }
     @media only screen and (max-width : 37rem) {
-      right : 15vh;
-      top      : 33%;
-
-
+      right : 50vh;
+      top      : 11%;
       }
     @media only screen and (max-width : 32rem) {
-      right : 8vh;
+      right : 48vh;
       }
 
     }

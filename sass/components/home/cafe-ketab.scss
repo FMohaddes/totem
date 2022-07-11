@@ -21,6 +21,8 @@
   .cafe-curve {
     position            : absolute;
     top                 : 0;
+    margin : -2rem;
+
     left                : 0;
     background-position : 10% 40%;
     background-image    : var(--color-Primary-dark-gradient-overlay),
