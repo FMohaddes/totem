@@ -61,6 +61,7 @@ html {
   direction: rtl;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-size: var(--rem-lg);
 }
 @media only screen and (max-width: 70rem) {
   html {
