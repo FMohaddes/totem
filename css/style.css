@@ -61,26 +61,26 @@ html {
   direction: rtl;
   text-decoration: none;
   scroll-behavior: smooth;
-  /* @media only screen and  (max-width: 190rem) {
-     font-size : var(--rem-xxlg);
-     }
-   @media only screen  and (max-width: 120rem) {
-     font-size : var(--rem-lg);
-     }
-   @media only screen and (max-width : 70rem) {
-     font-size : var(--rem-md);
-     }
-   @media only screen and (max-width : 57rem) {
-     font-size : var(--rem-sm);
-
-     }
-   @media only screen and (max-width : 37rem) {
-     font-size : var(--rem-xsm);
-     }
-   @media only screen and (max-width : 32rem) {
-     font-size : var(--rem-xxsm);
-
-     }*/
+}
+@media only screen and (max-width: 70rem) {
+  html {
+    font-size: var(--rem-md);
+  }
+}
+@media only screen and (max-width: 57rem) {
+  html {
+    font-size: var(--rem-sm);
+  }
+}
+@media only screen and (max-width: 37rem) {
+  html {
+    font-size: var(--rem-xsm);
+  }
+}
+@media only screen and (max-width: 32rem) {
+  html {
+    font-size: var(--rem-xxsm);
+  }
 }
 
 body {
