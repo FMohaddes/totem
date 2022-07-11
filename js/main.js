@@ -1,4 +1,3 @@
-/*
 $(document).ready(function(){
   $("#account-orders").on("click" ,function(){
     console.log("something");
@@ -289,4 +288,3 @@ function range(start = 0, stop, step = 1, func = { onPush: (index) => index }) {
 
 
 
-*/
