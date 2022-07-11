@@ -77,13 +77,13 @@ html {
   direction       : rtl;
   text-decoration : none;
   scroll-behavior : smooth;
-  @media only screen and  (max-width: 190rem) {
+ /* @media only screen and  (max-width: 190rem) {
     font-size : var(--rem-xxlg);
     }
   @media only screen  and (max-width: 120rem) {
     font-size : var(--rem-lg);
     }
-  @media only screen and (max-width : 76rem) {
+  @media only screen and (max-width : 70rem) {
     font-size : var(--rem-md);
     }
   @media only screen and (max-width : 57rem) {
@@ -96,7 +96,7 @@ html {
   @media only screen and (max-width : 32rem) {
     font-size : var(--rem-xxsm);
 
-    }
+    }*/
   }
 
 body {
