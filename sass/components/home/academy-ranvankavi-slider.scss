@@ -1,9 +1,8 @@
 .academy-ravancavi {
   grid-column : 1/-1;
-  height      : 77rem;
   position    : relative;
   display     : flex;
-  margin      : 22rem 0 var(--space-8);
+  margin      : -20rem 0 var(--space-8);
   align-items : center;
   @media only screen and (max-width : 37rem) {
     flex-direction: column;
@@ -47,8 +46,8 @@
 .ravankavi-slider {
   position      : relative;
   transition    : all .3s;
-  //border        : var(--bdr);
-  //@include glassBox;
+  border        : var(--bdr);
+  @include glassBox;
   border-radius : var(--bdrs-3);
   margin-top    : var(--space-3-2);
   max-width     : 90rem;

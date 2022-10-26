@@ -2,41 +2,31 @@ main {
   display               : grid;
   grid-template-columns : var(--space-4-8) 1fr var(--space-4-8);
   min-height            : 100vh;
-  z-index               : 100;
+  fill-opacity          : .3;
+  z-index : 1;
   grid-row-gap          : var(--space-6-4);
   position              : relative;
   overflow              : hidden;
 
-  }
 
+  }
 .pattern {
-  fill-opacity : .3;
-  position     : absolute;
-  top          : 0;
-  left         : 0;
-  width        : 100%;
-  height       : 100%;
-  z-index      : -5;
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 100%;
+  z-index  : -5;
   }
 
 .nav-curve {
-  width    : 105%;
-  height   : 40rem;
+  width    : 120%;
+  height   : 60rem;
   position : absolute;
-  top      : 88vh;
-  left     : 0;
-  z-index  : 88;
-  margin : -2rem;
-
-  @media only screen and (max-width : 62rem) {
-    top : 47vh;
-    }
+  top      : -15rem;
+  left     : -5rem;
+  z-index  : 1;
   }
-.nav-without-slider{
-  top      : 5rem !important;
-
-  }
-
 /*.luminance-mask {
   mask-mode: luminance;
   webkit-mask-mode: luminance;
@@ -56,7 +46,6 @@ main {
   -webkit-mask-image: linear-gradient(0deg,transparent,white 20%,black 60%, white 80%, transparent);
 
   }*/
-
 
 
 

@@ -1,11 +1,11 @@
 <svg preserveAspectRatio="none" width="1390" height="660" viewBox="0 0 1390 660" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M17 660C5.95434 660 -2.99998 651.046 -2.99998 640L-2.99997 101.371C-2.99997 87.4505 10.9572 77.342 24.4074 80.9297C104.62 102.326 358.082 151.331 747.545 53.375C1163.18 -51.1626 1342.02 26.2927 1381.38 48.1129C1386.97 51.214 1390 57.1583 1390 63.5538L1390 640C1390 651.046 1381.05 660 1370 660L17 660Z" fill="url(#paint0_radial_530_1667)" fill-opacity="0.4"/>
+  <path d="M17 660C5.95434 660 -2.99998 651.046 -2.99998 640L-2.99997 101.371C-2.99997 87.4504 10.9572 77.342 24.4074 80.9297C104.62 102.326 358.082 151.331 747.545 53.375C1163.18 -51.1626 1342.02 26.2927 1381.38 48.1129C1386.97 51.214 1390 57.1583 1390 63.5538L1390 640C1390 651.046 1381.05 660 1370 660L17 660Z" fill="url(#paint0_radial_530_1667)"/>
   <defs>
     <radialGradient id="paint0_radial_530_1667" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(380.5 303.291) rotate(-2.15492) scale(1010.21 376.651)">
-      <stop stop-color="#47C3CD" stop-opacity="0.62"/>
-      <stop offset="0.557634" stop-color="#47C3CD" stop-opacity="0.67"/>
-      <stop offset="0.759738" stop-color="#47C3CD" stop-opacity="0.48"/>
-      <stop offset="0.899739" stop-color="#47C3CD" stop-opacity="0"/>
+      <stop stop-color="#E4F0FB"/>
+      <stop offset="0.557634" stop-color="#E4F0FB"/>
+      <stop offset="0.759738" stop-color="#E4F0FB" stop-opacity="0.674778"/>
+      <stop offset="1" stop-color="#E4F0FB" stop-opacity="0"/>
     </radialGradient>
   </defs>
 </svg>
